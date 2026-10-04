@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'scripts/generate-seo.js'
+      - 'scripts/validate-seo.js'
       - '.github/workflows/seo-pages.yml'
   workflow_dispatch:
 permissions:
