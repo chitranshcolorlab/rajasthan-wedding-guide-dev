@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /rajasthan/
+# DEV safety: generated SEO pages remain noindex,nofollow and are not submitted to search engines.
