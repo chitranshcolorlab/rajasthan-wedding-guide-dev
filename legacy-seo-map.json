@@ -1,22 +1,76 @@
 {
   "policy": "REVIEW_BEFORE_PRODUCTION",
-  "note": "Do not redirect legacy URLs until generated production pages are live and verified. Keep existing vendor profile/detail pages unchanged.",
+  "note": "No legacy redirect is activated by this file. City-level legacy URLs migrate only after destination pages are live and verified. Rajasthan-wide category hubs remain category-specific.",
   "mappings": {
-    "didwana.html": "/rajasthan/didwana-kuchaman/didwana/",
-    "didwana-photographers.html": "/rajasthan/didwana-kuchaman/didwana/photographers-films/",
-    "didwana-makeup-artists.html": "/rajasthan/didwana-kuchaman/didwana/makeup-artists/",
-    "didwana-rental-dresses.html": "/rajasthan/didwana-kuchaman/didwana/wedding-rental-dresses/",
-    "didwana-venues.html": "/rajasthan/didwana-kuchaman/didwana/wedding-venues/",
-    "photographers.html": "/rajasthan/",
-    "makeup-artists.html": "/rajasthan/",
-    "venues.html": "/rajasthan/",
-    "rental-dresses.html": "/rajasthan/",
-    "caterers.html": "/rajasthan/",
-    "decorators.html": "/rajasthan/",
-    "dj-entertainment.html": "/rajasthan/",
-    "mehendi-artists.html": "/rajasthan/",
-    "wedding-planners.html": "/rajasthan/",
-    "anchors-emcees.html": "/rajasthan/",
-    "photographers-approved.html": "/rajasthan/didwana-kuchaman/didwana/photographers-films/"
+    "didwana.html": {
+      "action": "MIGRATE_AFTER_LIVE",
+      "target": "/rajasthan/didwana-kuchaman/didwana/"
+    },
+    "didwana-photographers.html": {
+      "action": "MIGRATE_AFTER_LIVE",
+      "target": "/rajasthan/didwana-kuchaman/didwana/photographers-films/"
+    },
+    "didwana-makeup-artists.html": {
+      "action": "MIGRATE_AFTER_LIVE",
+      "target": "/rajasthan/didwana-kuchaman/didwana/makeup-artists/"
+    },
+    "didwana-rental-dresses.html": {
+      "action": "MIGRATE_AFTER_LIVE",
+      "target": "/rajasthan/didwana-kuchaman/didwana/wedding-rental-dresses/"
+    },
+    "didwana-venues.html": {
+      "action": "MIGRATE_AFTER_LIVE",
+      "target": "/rajasthan/didwana-kuchaman/didwana/wedding-venues/"
+    },
+    "photographers-approved.html": {
+      "action": "MIGRATE_AFTER_LIVE",
+      "target": "/rajasthan/didwana-kuchaman/didwana/photographers-films/"
+    },
+    "photographers.html": {
+      "action": "KEEP_STATE_CATEGORY",
+      "reason": "Rajasthan-wide category intent; do not redirect to generic state hub."
+    },
+    "makeup-artists.html": {
+      "action": "KEEP_STATE_CATEGORY",
+      "reason": "Rajasthan-wide category intent; do not redirect to generic state hub."
+    },
+    "venues.html": {
+      "action": "KEEP_STATE_CATEGORY",
+      "reason": "Rajasthan-wide category intent; do not redirect to generic state hub."
+    },
+    "rental-dresses.html": {
+      "action": "KEEP_STATE_CATEGORY",
+      "reason": "Rajasthan-wide category intent; do not redirect to generic state hub."
+    },
+    "caterers.html": {
+      "action": "KEEP_STATE_CATEGORY",
+      "reason": "Rajasthan-wide category intent; do not redirect to generic state hub."
+    },
+    "decorators.html": {
+      "action": "KEEP_STATE_CATEGORY",
+      "reason": "Rajasthan-wide category intent; do not redirect to generic state hub."
+    },
+    "dj-entertainment.html": {
+      "action": "KEEP_STATE_CATEGORY",
+      "reason": "Rajasthan-wide category intent; do not redirect to generic state hub."
+    },
+    "mehendi-artists.html": {
+      "action": "KEEP_STATE_CATEGORY",
+      "reason": "Rajasthan-wide category intent; do not redirect to generic state hub."
+    },
+    "wedding-planners.html": {
+      "action": "KEEP_STATE_CATEGORY",
+      "reason": "Rajasthan-wide category intent; do not redirect to generic state hub."
+    },
+    "anchors-emcees.html": {
+      "action": "KEEP_STATE_CATEGORY",
+      "reason": "Rajasthan-wide category intent; do not redirect to generic state hub."
+    },
+    "categories.html": {
+      "action": "KEEP_NAV_HUB"
+    },
+    "cities.html": {
+      "action": "KEEP_NAV_HUB"
+    }
   }
 }
