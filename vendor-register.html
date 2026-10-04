@@ -3,5 +3,14 @@
 'Shahpura':['Shahpura','Shahpura Bhilwara'],
 'Dudu':['Dudu','Dudu Jaipur'],
 'Sanchore':['Sanchore','Sanchor','Sanchore Jalore'],
-'Neem Ka Thana':['Neem Ka Thana','Neemkathana','Neem-Ka-Thana','Neem Ka Thana Sikar','Neemkathana Sikar']
+'Neem Ka Thana':['Neem Ka Thana','Neemkathana','Neem-Ka-Thana','Neem Ka Thana Sikar','Neemkathana Sikar'],
+'Sri Madhopur':['Sri Madhopur','Srimadhopur','Shri Madhopur','Sri Madhopur Sikar'],
+'Salumber':['Salumber','Salumbar','Salumber Rajasthan','Salumbar Rajasthan'],
+'Balotra':['Balotra','Balotara','Balotra Rajasthan','Balotara Rajasthan'],
+'Nawa':['Nawa','Nawan','Nawa City','Nawan Rajasthan'],
+'Reengus':['Reengus','Reengas','Ringas','Reengus Sikar','Ringas Sikar'],
+'Didwana-Kuchaman':['Didwana-Kuchaman','Didwana Kuchaman','Deedwana Kuchaman'],
+'Khairthal-Tijara':['Khairthal-Tijara','Khairthal Tijara','Khairtal Tijara','Kherthal Tijara'],
+'Kotputli-Behror':['Kotputli-Behror','Kotputli Behror','Kotputli Beharor'],
+'Sri Ganganagar':['Sri Ganganagar','Shri Ganganagar','Ganganagar']
 };const d=document.getElementById('district'),c=document.getElementById('city');Object.keys(DATA).sort().forEach(x=>d.add(new Option(x,x)));d.addEventListener('change',()=>{c.innerHTML='';if(!d.value){c.add(new Option('Select District First',''));c.disabled=true;return}c.add(new Option('Select City / Town',''));DATA[d.value].forEach(x=>c.add(new Option(x,x)));c.disabled=false});document.getElementById('vendorForm').addEventListener('submit',async function(e){e.preventDefault();const f=this,b=f.querySelector('.submit'),s=document.getElementById('success'),fd=new FormData(f);const payload={action:'submit',businessName:fd.get('businessName')||'',ownerName:fd.get('ownerName')||'',mobile:fd.get('mobile')||'',whatsapp:fd.get('whatsapp')||'',category:fd.get('category')||'',district:fd.get('district')||'',city:fd.get('city')||'',services:fd.get('services')||'',maps:fd.get('maps')||'',status:'Pending Approval'};b.disabled=true;b.textContent='SUBMITTING...';try{await fetch(WEB_APP_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});s.textContent='Development test submitted. Please verify District and City columns in Google Sheet.';s.style.display='block';}catch(err){alert('Submission failed.')}finally{b.disabled=false;b.textContent='SUBMIT DEVELOPMENT TEST'}});</script></body></html>
