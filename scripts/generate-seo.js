@@ -22,3 +22,22 @@ const sitemap='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www
 fs.writeFileSync('sitemap-seo.xml',sitemap);
 fs.writeFileSync('robots-dev.txt','User-agent: *\nDisallow: /rajasthan/\n# DEV safety: generated SEO pages remain noindex,nofollow and are not submitted to search engines.\n');
 console.log(JSON.stringify({districts:Object.keys(DATA).length,cities,pages,categories:CATS.length,sitemapUrls:urls.length,indexing:'NOINDEX DEV'}));
+const legacyMap={
+"didwana.html":"/rajasthan/didwana-kuchaman/didwana/",
+"didwana-photographers.html":"/rajasthan/didwana-kuchaman/didwana/photographers-films/",
+"didwana-makeup-artists.html":"/rajasthan/didwana-kuchaman/didwana/makeup-artists/",
+"didwana-rental-dresses.html":"/rajasthan/didwana-kuchaman/didwana/wedding-rental-dresses/",
+"didwana-venues.html":"/rajasthan/didwana-kuchaman/didwana/wedding-venues/",
+"photographers.html":"/rajasthan/",
+"makeup-artists.html":"/rajasthan/",
+"venues.html":"/rajasthan/",
+"rental-dresses.html":"/rajasthan/",
+"caterers.html":"/rajasthan/",
+"decorators.html":"/rajasthan/",
+"dj-entertainment.html":"/rajasthan/",
+"mehendi-artists.html":"/rajasthan/",
+"wedding-planners.html":"/rajasthan/",
+"anchors-emcees.html":"/rajasthan/",
+"photographers-approved.html":"/rajasthan/didwana-kuchaman/didwana/photographers-films/"
+};
+fs.writeFileSync('legacy-seo-map.json',JSON.stringify({policy:"REVIEW_BEFORE_PRODUCTION",note:"Do not redirect legacy URLs until generated production pages are live and verified. Keep existing vendor profile/detail pages unchanged.",mappings:legacyMap},null,2)+"\n");
