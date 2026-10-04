@@ -1,0 +1,22 @@
+{
+  "policy": "REVIEW_BEFORE_PRODUCTION",
+  "note": "Do not redirect legacy URLs until generated production pages are live and verified. Keep existing vendor profile/detail pages unchanged.",
+  "mappings": {
+    "didwana.html": "/rajasthan/didwana-kuchaman/didwana/",
+    "didwana-photographers.html": "/rajasthan/didwana-kuchaman/didwana/photographers-films/",
+    "didwana-makeup-artists.html": "/rajasthan/didwana-kuchaman/didwana/makeup-artists/",
+    "didwana-rental-dresses.html": "/rajasthan/didwana-kuchaman/didwana/wedding-rental-dresses/",
+    "didwana-venues.html": "/rajasthan/didwana-kuchaman/didwana/wedding-venues/",
+    "photographers.html": "/rajasthan/",
+    "makeup-artists.html": "/rajasthan/",
+    "venues.html": "/rajasthan/",
+    "rental-dresses.html": "/rajasthan/",
+    "caterers.html": "/rajasthan/",
+    "decorators.html": "/rajasthan/",
+    "dj-entertainment.html": "/rajasthan/",
+    "mehendi-artists.html": "/rajasthan/",
+    "wedding-planners.html": "/rajasthan/",
+    "anchors-emcees.html": "/rajasthan/",
+    "photographers-approved.html": "/rajasthan/didwana-kuchaman/didwana/photographers-films/"
+  }
+}
