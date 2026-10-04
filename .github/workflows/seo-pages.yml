@@ -17,6 +17,14 @@ jobs:
           node-version: '20'
       - name: Generate district city category SEO pages
         run: node scripts/generate-seo.js
+      - name: Validate production-ready SEO output
+        env:
+          SEO_MODE: production
+        run: |
+          node scripts/generate-seo.js
+          node scripts/validate-seo.js
+      - name: Regenerate safe DEV output
+        run: node scripts/generate-seo.js
       - name: Commit generated pages
         run: |
           git config user.name "github-actions[bot]"
