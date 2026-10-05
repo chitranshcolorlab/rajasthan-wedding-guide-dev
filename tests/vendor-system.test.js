@@ -97,3 +97,11 @@ test('optional public business details survive snapshot and render safely',()=>{
  for(const value of ['5','Didwana','Hindi, English','&lt;script&gt;alert(1)&lt;/script&gt;'])assert.ok(html.includes(value));
  assert.ok(!html.includes('<script>alert(1)</script>'));
 });
+
+test('ten uploaded public photo links survive publishing and render as ten images',()=>{
+ const photos=Array.from({length:10},(_,i)=>'https://example.com/photo-'+i+'.webp');
+ const v=normalize([{...fixture(), 'Photo URLs':photos.join('\n')}])[0];
+ const html=render(v,'https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/');
+ assert.equal((html.match(/loading="lazy"/g)||[]).length,10);
+ for(const url of photos)assert.ok(html.includes(url));
+});
