@@ -17,4 +17,15 @@ The user created and saved a fine-grained credential through the secure account 
 
 Fixed endpoint: https://api.github.com/repos/chitranshcolorlab/rajasthan-wedding-guide-dev/actions/workflows/vendor-publisher.yml/dispatches, ref main (workflow checks out DEV feature branch). Authorization is a header; redirect following is disabled. Helper accepts 200 or 204. Missing configuration or wrong environment/project dispatches nothing. Owner retryDevPublication remains available.
 
-This verifies the DEV approval path. Reject/Edit Required publication and token-failure recovery still require live acceptance. Scheduled cron root cause remains unresolved; this direct dispatch path avoids waiting for cron. AUTO-001 and full QA-64 acceptance are not independently closed by this smoke test. Production readiness/signoff is not claimed.
+This verifies DEV approval, Edit Required removal, reapproval and Reject removal. Token-failure recovery still requires live acceptance. Scheduled cron root cause remains unresolved; this direct dispatch path avoids waiting for cron. AUTO-001 and full QA-64 acceptance are not independently closed by this smoke test. Production readiness/signoff is not claimed.
+
+## Edit Required and Reject live acceptance (2026-10-05)
+
+The same disposable submission RWG-12eb3b05-9f7f-4005-88fc-96450e2fb3f0 was used throughout. Authenticated admin status changes requested publication without manual workflow dispatch.
+
+- Approved → Edit Required: publisher 37327464173 and Pages 37327514317 succeeded. Public snapshot excluded the submission. Live old profile URL returned GitHub Pages 404.
+- Edit Required → Approved: publisher 37327731425 and Pages 37327782271 succeeded. Browser verified the profile was live again at the same persisted slug, dev-approval-publish-test-not-a-real-vendor-didwana.
+- Approved → Rejected: publisher 37328012956 and Pages 37328064662 succeeded. Public snapshot excluded the submission. Live profile URL returned 404 and the rendered Didwana photographers category listing contained the other five approved test vendors, with this rejected vendor absent.
+- Private Admin Rejected list retained the submission; no row deletion occurred. Final status is Rejected. Review notes identify it as a disposable test and prohibit contacting placeholder numbers.
+
+This is DEV smoke acceptance, not independent full release acceptance. Production was not modified.
