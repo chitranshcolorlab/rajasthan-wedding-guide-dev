@@ -1,6 +1,26 @@
 {
   "candidateCommit": "",
-  "defects": [],
+  "defects": [
+    {
+      "id": "DATA-001",
+      "area": "data-integrity",
+      "severity": "S1",
+      "priority": "P0",
+      "releaseBlocker": true,
+      "status": "FIX READY",
+      "observed": "Vendor list used first cell rather than Submission ID; moved blank Email column to first position hides existing vendors.",
+      "expected": "Header-based list retains valid vendor rows regardless of column order.",
+      "rootCause": "Positional row filter r[0] in public GET and authenticated admin-list.",
+      "changedFiles": [
+        "backend/Code.gs",
+        "tests/vendor-system.test.js"
+      ],
+      "selfTest": "14 automated tests PASS including failing-before/passing-after reordered empty-first-column regression.",
+      "environment": "isolated DEV",
+      "qaOwner": "Unassigned",
+      "targetFixVersion": "DEV backend deployment v2"
+    }
+  ],
   "tests": {
     "QA-01": {
       "status": "NOT RUN",

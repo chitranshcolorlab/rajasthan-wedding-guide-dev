@@ -11,3 +11,11 @@
 - Main contains schedule-only workflow checking out DEV preview branch. Every-five-minute cron configured; scheduled execution itself has not yet been observed. Manual workflow dispatch verified.
 
 This is developer smoke evidence, not release sign-off. QA-64 requires the exact specified golden vendor, scheduled publishing and candidate-specific independent QA evidence; full 64-case QA, four legacy/media checks and sign-offs remain pending. Test vendor uses placeholder 9999999999, is visibly labelled not real, and remains only on noindex DEV. Do not call it. No photos were submitted in this smoke test.
+
+## Follow-up checks
+
+- Invalid mobile 123 rejected by live registration; admin pending list remained empty.
+- Exact golden vendor Shree Krishna Wedding Photography registered through live form: RWG-7569d007-b2a7-49c1-b447-8f5bad3dbecc. Authenticated approval and repeat approval verified.
+- Original disposable sample changed to Rejected through admin with reason. Publisher manual run 37282304188 succeeded, creating golden vendor and removing original sample from approved snapshot/profile/sitemap.
+- DATA-001 reproduced by regression: after blank Email column moves first, GET/admin lists lose existing vendor. Fixed both filters to use named Submission ID; 14 tests PASS. Independent QA closure pending.
+- Scheduler confirmed enabled in GitHub UI. No schedule event observed yet; manual publishing is verified but scheduled publishing remains unverified.

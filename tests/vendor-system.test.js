@@ -82,3 +82,10 @@ test('header reordering preserves row ownership and approval status',()=>{
  for(const row of b.rows)[row[a],row[z]]=[row[z],row[a]];
  const result=parsed(b.context.updateStatus_({id:'v5',status:'Approved',note:'reviewed'},admin));assert.equal(result.ok,true);assert.equal(b.rows[1][z],'Approved');assert.equal(b.rows[1][a],'reviewed');
 });
+test('public and private lists find vendor ID after an empty column is moved first',()=>{
+ const v=fixture();v['Email']='';const b=backend([v]);
+ const email=b.headers.indexOf('Email');for(const row of b.rows)[row[0],row[email]]=[row[email],row[0]];
+ assert.equal(parsed(b.context.doGet({parameter:{action:'list'}})).items.length,1);
+ b.context.verifyGoogleAdminToken_=()=>admin;
+ assert.equal(parsed(b.context.doPost({postData:{contents:JSON.stringify({action:'admin-list',idToken:'mock'})}})).items.length,1);
+});
