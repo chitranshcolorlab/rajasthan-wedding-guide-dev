@@ -1,6 +1,6 @@
 # DEV validation and release control
 
-This branch implements the automatic publisher and a release gate. Local test evidence is simulated, not production acceptance. The DEV repository lacks the four existing premium profile assets; their URLs and media must be tested against the unchanged production site and a complete DEV copy before release. QA-64 remains NOT RUN until a real DEV submission, authenticated approval, scheduled publishing, card navigation and direct refresh are verified. Do not count the local unit test as that acceptance test.
+This branch implements the automatic publisher and a release gate. Local test evidence is simulated, not production acceptance. The four existing premium profiles and their media now have pinned DEV copies. Desktop media and redirect checks are recorded in qa/legacy-dev-live-result.md; this does not replace full candidate regression or independent signoff. QA-64 remains NOT RUN until a real DEV submission, authenticated approval, scheduled publishing, card navigation and direct refresh are verified. Do not count the local unit test as that acceptance test.
 
 ## Defect lifecycle
 

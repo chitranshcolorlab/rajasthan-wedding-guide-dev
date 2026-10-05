@@ -19,6 +19,20 @@
       "environment": "isolated DEV",
       "qaOwner": "Unassigned",
       "targetFixVersion": "DEV backend deployment v2"
+    },
+    {
+      "id": "AUTO-001",
+      "area": "automatic-publication",
+      "severity": "S1",
+      "priority": "P1",
+      "releaseBlocker": true,
+      "status": "NEW",
+      "observed": "Approved DEV record was absent from published snapshot; schedule-event run count stayed zero despite enabled default-branch cron over repeated checks.",
+      "expected": "An actual scheduled run synchronizes approved DEV records without manual dispatch or code push.",
+      "rootCause": "Unconfirmed; enabled workflow and default-branch cron verified. Offset cron and disable/re-enable tried; no successful timed run observed.",
+      "environment": "isolated DEV",
+      "qaOwner": "Unassigned",
+      "evidence": "qa/scheduler-live-result.md"
     }
   ],
   "tests": {
