@@ -1,4 +1,27 @@
 {
   "ok": true,
-  "items": []
+  "items": [
+    {
+      "Submission ID": "RWG-259a2c9d-772a-4fa7-9016-ec0085cc1597",
+      "Business Name": "DEV QA64 Test Studio — Not a real vendor",
+      "Mobile": "9999999999",
+      "WhatsApp": "9999999999",
+      "Category": "Photographers & Films",
+      "District": "Didwana-Kuchaman",
+      "City": "Didwana",
+      "About Business": "",
+      "Services": "Disposable DEV test for registration, approval, generated profile and sitemap. Placeholder phone; do not call.",
+      "Starting Price": "",
+      "Full Address": "",
+      "Logo URL": "",
+      "Photo URLs": "",
+      "Website": "",
+      "Instagram": "",
+      "Facebook": "",
+      "Google Maps": "",
+      "Portfolio Link": "",
+      "Status": "Approved",
+      "Slug": "dev-qa64-test-studio-not-a-real-vendor-didwana"
+    }
+  ]
 }
