@@ -13,4 +13,4 @@
 'Khairthal-Tijara':['Khairthal-Tijara','Khairthal Tijara','Khairtal Tijara','Kherthal Tijara'],
 'Kotputli-Behror':['Kotputli-Behror','Kotputli Behror','Kotputli Beharor'],
 'Sri Ganganagar':['Sri Ganganagar','Shri Ganganagar','Ganganagar']
-};const d=document.getElementById('district'),c=document.getElementById('city');Object.keys(DATA).sort().forEach(x=>d.add(new Option(x,x)));d.addEventListener('change',()=>{c.innerHTML='';if(!d.value){c.add(new Option('Select District First',''));c.disabled=true;return}c.add(new Option('Select City / Town',''));DATA[d.value].forEach(x=>c.add(new Option(x,x)));c.disabled=false});</script><script src="scripts/vendor-register.js"></script></body></html>
+};const d=document.getElementById('district'),c=document.getElementById('city');Object.keys(DATA).sort().forEach(x=>d.add(new Option(x,x)));d.addEventListener('change',()=>{c.innerHTML='';if(!d.value){c.add(new Option('Select District First',''));c.disabled=true;return}c.add(new Option('Select City / Town',''));DATA[d.value].forEach(x=>c.add(new Option(x,x)));c.disabled=false});</script><script src="scripts/vendor-register.js?v=20261005-kb2"></script></body></html>
