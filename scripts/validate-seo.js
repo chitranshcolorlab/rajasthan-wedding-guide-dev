@@ -21,7 +21,7 @@ for(const file of files){
  const hrefs=[...c.matchAll(/href=["']([^"']+)["']/g)].map(x=>x[1]);
  for(const h of hrefs){const t=relTarget(file,h); if(t&&t.includes(path.resolve('rajasthan'))&&!fs.existsSync(t))errors.push(file+': broken internal '+h);}
  if(file.split(path.sep).length>=5 && file!==path.join('rajasthan','index.html')){
-   if(c.includes('Approved ')&&!c.includes('../../../../vendor.html?id='))errors.push(file+': vendor profile link missing');
+   if(c.includes('Approved ')&&!c.includes('../../../../scripts/category-vendors.js'))errors.push(file+': vendor profile link missing');
  }
 }
 const sitemap=fs.readFileSync('sitemap-seo.xml','utf8'), urls=(sitemap.match(/<url>/g)||[]).length;
