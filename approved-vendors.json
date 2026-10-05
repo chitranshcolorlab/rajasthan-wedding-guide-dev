@@ -2,15 +2,15 @@
   "ok": true,
   "items": [
     {
-      "Submission ID": "RWG-259a2c9d-772a-4fa7-9016-ec0085cc1597",
-      "Business Name": "DEV QA64 Test Studio — Not a real vendor",
+      "Submission ID": "RWG-7569d007-b2a7-49c1-b447-8f5bad3dbecc",
+      "Business Name": "Shree Krishna Wedding Photography",
       "Mobile": "9999999999",
       "WhatsApp": "9999999999",
       "Category": "Photographers & Films",
       "District": "Didwana-Kuchaman",
       "City": "Didwana",
       "About Business": "",
-      "Services": "Disposable DEV test for registration, approval, generated profile and sitemap. Placeholder phone; do not call.",
+      "Services": "DEV acceptance test only. Wedding photography and films. Placeholder contact — do not call.",
       "Starting Price": "",
       "Full Address": "",
       "Logo URL": "",
@@ -21,7 +21,7 @@
       "Google Maps": "",
       "Portfolio Link": "",
       "Status": "Approved",
-      "Slug": "dev-qa64-test-studio-not-a-real-vendor-didwana"
+      "Slug": "shree-krishna-wedding-photography-didwana"
     }
   ]
 }
