@@ -1,6 +1,14 @@
 name: Publish approved DEV vendors
 on:
   workflow_dispatch:
+  push:
+    branches: [dev/automatic-vendor-system]
+    paths:
+      - .github/workflows/vendor-publisher.yml
+      - scripts/publish-vendors.js
+      - scripts/dev-config.js
+      - backend/Code.gs
+      - tests/**
   schedule:
     - cron: '*/5 * * * *'
 permissions:
@@ -30,3 +38,4 @@ jobs:
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'Synchronize approved DEV vendor profiles'
           git push
+
