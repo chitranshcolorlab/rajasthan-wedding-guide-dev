@@ -13,8 +13,8 @@ jobs:
     if: github.repository == 'chitranshcolorlab/rajasthan-wedding-guide-dev'
     runs-on: ubuntu-latest
     env:
-      DEV_API_URL: ${{ secrets.DEV_API_URL }}
-      DEV_BASE_URL: ${{ vars.DEV_BASE_URL }}
+      DEV_API_URL: ${{ secrets.DEV_API_URL || 'https://script.google.com/macros/s/AKfycbwd2VnMXDxSHO_7dm992VZVX8wz1wUXs04lJ84ZeOMFDtYAB530DxtJN6ns6pr3B6gP6g/exec' }}
+      DEV_BASE_URL: ${{ vars.DEV_BASE_URL || 'https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
