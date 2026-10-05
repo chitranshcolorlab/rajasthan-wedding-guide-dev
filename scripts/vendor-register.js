@@ -5,7 +5,7 @@ const uploadImageLimit = 200 * 1024;
 function blobData(blob) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
-    reader.onload = () => resolve({type: blob.type, data: reader.result});
+    reader.onload = () => resolve({type: blob.type, data: reader.result, sizeBytes: blob.size});
     reader.onerror = () => reject(new Error('Could not read the compressed image.'));
     reader.readAsDataURL(blob);
   });
@@ -65,7 +65,8 @@ registrationForm.addEventListener('submit', async function(event) {
     const response = await fetch(WEB_APP_URL, {method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body:JSON.stringify(payload)});
     const result = await response.json();
     if (!result.ok) throw new Error(result.error || 'Submission failed.');
-    message.textContent = 'Submitted for review. Submission ID: ' + result.id + '. Status: Pending Approval.';
+    const sizes = [...(payload.logo ? [payload.logo] : []), ...payload.photos].map(image => Math.ceil(image.sizeBytes / 1024) + ' KB');
+    message.textContent = 'Submitted for review. Submission ID: ' + result.id + '. Status: Pending Approval.' + (sizes.length ? ' Uploaded image sizes: ' + sizes.join(', ') + '.' : '');
     message.style.display = 'block'; this.reset();
     document.getElementById('district').dispatchEvent(new Event('change'));
   } catch (error) {
