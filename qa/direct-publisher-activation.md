@@ -1,0 +1,11 @@
+# DEV approval-triggered publisher (prepared, not activated)
+
+The Apps Script backend now contains requestDevPublication_(). After a verified status change commits to the isolated sheet and releases its lock, it asks the fixed DEV GitHub workflow to run. Approved, Rejected and Edit Required changes all request synchronization. HTTP/API failure never turns a committed approval into a reported approval failure. Admin feedback distinguishes queued publication from live publication; queued is not a completed deployment.
+
+The implementation is prepared in the DEV feature branch only. Live Apps Script remains Version 3 until separately deployed. No GitHub credential was created, copied or configured. AUTO-001 remains open; this draft is not a live fix or full QA-64 acceptance.
+
+Activation requires explicit authorization for a new fine-grained GitHub token restricted to chitranshcolorlab/rajasthan-wedding-guide-dev, with Actions read/write and mandatory Metadata read only. No production repository access. Use a short expiry (30 days) and store it only in the isolated Apps Script Script Property DEV_PUBLISH_GITHUB_TOKEN. Never place a real token in source, frontend, logs, reports or chat. Token creation/secure entry must be completed through the account's secure UI; no credential is requested in chat.
+
+Fixed dispatch endpoint: https://api.github.com/repos/chitranshcolorlab/rajasthan-wedding-guide-dev/actions/workflows/vendor-publisher.yml/dispatches, ref main (workflow checks out the DEV feature branch). Authorization is sent in a header, redirect following is disabled. GitHub docs: https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event . The helper accepts 200 and 204 success codes. Missing configuration or wrong environment/project sends no request.
+
+Validation: all 26 local automated tests pass, including six new dispatch tests. These are simulated API tests, not live acceptance. After permission and secure setup, deploy the backend and verify an actual authenticated status change causes a workflow run, generated snapshot, Pages deployment and working profile. Failed dispatch can be retried by the project owner running retryDevPublication; existing manual publisher remains available.
