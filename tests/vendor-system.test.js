@@ -89,3 +89,11 @@ test('public and private lists find vendor ID after an empty column is moved fir
  b.context.verifyGoogleAdminToken_=()=>admin;
  assert.equal(parsed(b.context.doPost({postData:{contents:JSON.stringify({action:'admin-list',idToken:'mock'})}})).items.length,1);
 });
+
+test('optional public business details survive snapshot and render safely',()=>{
+ const row={...fixture(), 'Years in Business':'5', 'Service Areas':'Didwana', Languages:'Hindi, English', Specialities:'<script>alert(1)</script>'};
+ const v=normalize([row])[0],html=render(v,'https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/');
+ assert.equal(v.Languages,'Hindi, English');
+ for(const value of ['5','Didwana','Hindi, English','&lt;script&gt;alert(1)&lt;/script&gt;'])assert.ok(html.includes(value));
+ assert.ok(!html.includes('<script>alert(1)</script>'));
+});
