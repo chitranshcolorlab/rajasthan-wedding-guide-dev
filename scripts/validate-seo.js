@@ -1,5 +1,6 @@
 const fs=require('fs'),path=require('path');
-const ROOT=path.resolve('rajasthan'), PROD='https://rajasthanweddingguide.com/';
+const IS_PROD=process.env.SEO_MODE==='production';
+const ROOT=path.resolve('rajasthan'), PROD=IS_PROD?'https://rajasthanweddingguide.com/':'https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/';
 const files=[];
 function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const p=path.join(d,e.name);e.isDirectory()?walk(p):e.name==='index.html'&&files.push(p)}}
 walk(ROOT);
@@ -14,7 +15,7 @@ function relTarget(from,href){
 }
 for(const file of files){
  const c=fs.readFileSync(file,'utf8');
- if(/DEV SEO system/.test(c))errors.push(file+': DEV warning in production build');
+ if(IS_PROD&&/DEV SEO system/.test(c))errors.push(file+': DEV warning in production build');
  if(!/name="robots" content="noindex,nofollow"/.test(c))errors.push(file+': noindex missing');
  const m=c.match(/rel="canonical" href="([^"]+)"/); if(!m)errors.push(file+': canonical missing');
  else {const u=m[1]; if(!u.startsWith(PROD))errors.push(file+': bad canonical '+u); if(canon.has(u))errors.push(file+': duplicate canonical with '+canon.get(u)); else canon.set(u,file);}
