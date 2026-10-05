@@ -1,0 +1,19 @@
+QA,Area,Default severity if failed,Priority,Release blocker,Defect ID,Owner,Target fix version,Retest status,Developer Notes/Evidence
+QA-01–04,Approval automation,S0,P0,YES,,Backend,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-05,Validation,S1,P0,YES,,Backend,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-06,Double approval,S1,P0,YES,,Backend,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-07–13,Slug generation/permanence,S1,P0,YES,,Backend,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-14–18,Profile/data/media,S1,P1,YES,,Full-stack,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-19–20,Call/WhatsApp,S2,P1,YES,,Frontend,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-21–22,Direct URL/404,S1,P0,YES,,Full-stack,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-23–28,Category/publishing,S1,P0,YES,,Full-stack,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-29–32,Profile linking,S0,P0,YES,,Full-stack,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-33–35,SEO core,S1,P1,YES,,SEO + Dev,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-36–39,Open Graph,S3,P2,NO,,SEO + Dev,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-40,JSON-LD,S2,P1,YES,,SEO + Dev,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-41–45,Indexing/sitemap,S1,P1,YES,,Backend/SEO,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-46–49,Security/data integrity,S0,P0,YES,,Backend,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-50,Optional fields,S1,P1,YES,,Full-stack,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-51–57,Legacy regression,S0,P0,YES,,QA + Dev,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-58–63,Responsive/UX,S2,P2,YES,,Frontend,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact
+QA-64,Zero manual coding,S0,P0,YES,,Full-stack + QA,DEV v1,NOT RUN,No actual DEV evidence yet; severity finalized from observed impact

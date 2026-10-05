@@ -1,0 +1,41 @@
+name: Publish approved DEV vendors
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev/automatic-vendor-system]
+    paths:
+      - .github/workflows/vendor-publisher.yml
+      - scripts/publish-vendors.js
+      - scripts/dev-config.js
+      - backend/Code.gs
+      - tests/**
+  schedule:
+    - cron: '*/5 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: dev-vendor-publisher
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'chitranshcolorlab/rajasthan-wedding-guide-dev'
+    runs-on: ubuntu-latest
+    env:
+      DEV_API_URL: ${{ secrets.DEV_API_URL || 'https://script.google.com/macros/s/AKfycbwd2VnMXDxSHO_7dm992VZVX8wz1wUXs04lJ84ZeOMFDtYAB530DxtJN6ns6pr3B6gP6g/exec' }}
+      DEV_BASE_URL: ${{ vars.DEV_BASE_URL || 'https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: node --test tests/*.test.js
+      - run: node scripts/publish-vendors.js
+      - name: Commit synchronized profiles
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add vendors approved-vendors.json sitemap-vendors.xml
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Synchronize approved DEV vendor profiles'
+          git push
+

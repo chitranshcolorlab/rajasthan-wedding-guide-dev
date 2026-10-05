@@ -1,0 +1,438 @@
+{
+  "candidateCommit": "",
+  "defects": [],
+  "tests": {
+    "QA-01": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-02": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-03": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-04": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-05": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-06": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-07": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-08": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-09": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-10": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-11": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-12": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-13": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-14": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-15": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-16": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-17": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-18": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-19": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-20": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-21": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-22": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-23": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-24": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-25": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-26": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-27": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-28": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-29": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-30": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-31": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-32": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-33": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-34": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-35": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-36": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-37": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-38": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-39": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-40": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-41": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-42": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-43": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-44": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-45": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-46": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-47": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-48": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-49": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-50": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-51": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-52": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-53": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-54": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-55": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-56": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-57": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-58": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-59": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-60": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-61": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-62": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-63": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    },
+    "QA-64": {
+      "status": "NOT RUN",
+      "commit": "",
+      "environment": "DEV",
+      "evidence": ""
+    }
+  },
+  "legacy": [
+    {
+      "url": "",
+      "status": "NOT RUN",
+      "commit": "",
+      "evidence": ""
+    },
+    {
+      "url": "",
+      "status": "NOT RUN",
+      "commit": "",
+      "evidence": ""
+    },
+    {
+      "url": "",
+      "status": "NOT RUN",
+      "commit": "",
+      "evidence": ""
+    },
+    {
+      "url": "",
+      "status": "NOT RUN",
+      "commit": "",
+      "evidence": ""
+    }
+  ],
+  "signoffs": {
+    "QA": {
+      "name": "",
+      "date": "",
+      "commit": ""
+    },
+    "Developer": {
+      "name": "",
+      "date": "",
+      "commit": ""
+    },
+    "Release Owner": {
+      "name": "",
+      "date": "",
+      "commit": ""
+    },
+    "Approver": {
+      "name": "",
+      "date": "",
+      "commit": ""
+    }
+  }
+}
