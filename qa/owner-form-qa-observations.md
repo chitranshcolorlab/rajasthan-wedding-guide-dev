@@ -11,3 +11,9 @@ Owner Sharad Mathur agreed to perform final QA at 19:18 IST. The following expli
 | 19:25:19 | Category options include Wedding Venues, Photographers & Films, Anchors & Emcees | ha |
 
 These are owner-reported UI observations, without screenshots or exact browser/device details. No submission success inferred. No approved individual criteria mapping or frozen candidate has yet been recorded; therefore formal per-ID statuses, independent defect closure and release signatures remain unchanged. Snapshot repository head when recording: 0e46695d4d46dae7bda9f5dd9772830818b8e92b. This is not evidence that owner's browser served that exact build.
+
+## Desktop environment and invalid phone check
+
+Owner specified computer Chrome at 19:25:59 IST, applying to preceding five UI checks. OS/browser version not specified.
+
+At 19:26:51 owner reported no error after entering 12345 in Mobile and leaving field. Source review confirms there is no blur validation: phone validation occurs in backend at Submit. At 19:28:22 the initially incomplete form was blocked at Business Name by required-field validation; this was not a phone-validation failure. Owner was then instructed to fill all required fields with disposable DEV Phone QA values, Mobile 12345 and WhatsApp 9999999999, without photos. At 19:29:37 owner explicitly reported invalid phone number message after Submit. This supports owner-observed rejection of invalid Mobile. Exact error text, backend/database audit and absence of a saved row were not independently captured. No success or formal candidate PASS inferred.
