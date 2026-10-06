@@ -59,7 +59,7 @@ Repository release policy: [QA README](README.md), “Developer cannot close the
 - [Unpublication](fresh-owner-qa-unpublication-result.md): exact disposable record moved to Edit Required, category/public snapshot/sitemap removed it, old profile HTTP 404.
 - [Restoration](fresh-owner-qa-restoration-result.md): reapproval recovered after unreadable response through saved-status check; same persisted slug/profile and category card restored. Publisher 37468525858 and Pages 37468581967 succeeded. Current approved count 15.
 - [Empty approved list preservation](empty-approved-list-result.md): successful empty list removes managed output and preserves 48 pinned legacy paths; separate from failure preservation.
-- Owner legacy media observations are in [owner-legacy-review.md](owner-legacy-review.md). Madan Mohan Resort photo/video confirmation remains outstanding; no PASS inferred from generic next responses.
+- Owner legacy media observations are in [owner-legacy-review.md](owner-legacy-review.md). Madan Mohan Resort photos/video were explicitly confirmed by owner at 18:44 IST after a specific check request; device/browser and frozen candidate were not specified. Formal independent candidate acceptance remains outstanding.
 
 Scheduler check at 18:43 IST: latest returned schedule-event run remains 37434340529, created 08:10:22 UTC (13:40:22 IST), successful publisher job 112172352202. No new schedule-event run in the returned collection since then; this does not establish five-minute cadence or fresh scheduled propagation. Dispatch/timer mitigations already have evidence. AUTO-001 remains open.
 

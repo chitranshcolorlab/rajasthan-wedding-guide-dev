@@ -26,3 +26,7 @@ Asked whether hero photo plus eight gallery photos (nine total) displayed correc
 ## Chitransh profile follow-up — 17:44 IST
 
 Asked to open the DEV Chitransh Color Lab profile and check business name, address and services, Sharad Mathur replied “ok hai chal rahi hai”. Recorded as owner-reported profile opens and requested displayed information looks correct. No contact/external-link action or media playback was requested or inferred. Reviewed repository head: 91caa878daceb802c40d1c6c52b8d87f8531b50e. Exact served candidate/device metadata, formal legacy PASS and release signatures remain unrecorded.
+
+## Madan Mohan Resort owner confirmation — 6 October 2026, 18:44 IST
+
+After an explicit request to verify all profile photos open and video plays, owner replied “ha ok hai”. This records owner confirmation of those two behaviors on the supplied DEV profile. Exact device/browser, media-by-media playback detail and frozen candidate were not specified. Earlier ambiguous next replies are not used as evidence. Formal independent candidate legacy acceptance and signatures remain unchanged.
