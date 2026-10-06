@@ -312,6 +312,32 @@
       "Portfolio Link": "https://example.com/portfolio",
       "Status": "Approved",
       "Slug": "dev-optional-fields-20261006-not-a-real-vendor-didwana"
+    },
+    {
+      "Submission ID": "RWG-26384e44-2a2c-4ddf-a41e-8f6339ca8c17",
+      "Business Name": "DEV Safe Links 20261006 — Not a real vendor",
+      "Mobile": "9999999999",
+      "WhatsApp": "9999999999",
+      "Category": "Photographers & Films",
+      "District": "Didwana-Kuchaman",
+      "City": "Didwana",
+      "About Business": "DEV literal <img src=\"x\" alt=\"QA markup\"> <script type=\"text/plain\">QA inert text</script> & \"quotes\"",
+      "Services": "Disposable DEV URL-sanitization check. Do not contact.",
+      "Starting Price": "",
+      "Years in Business": "",
+      "Service Areas": "",
+      "Languages": "",
+      "Specialities": "",
+      "Full Address": "",
+      "Logo URL": "",
+      "Photo URLs": "",
+      "Website": "javascript:alert(1)",
+      "Instagram": "data:text/plain,DEV-QA",
+      "Facebook": "ftp://example.com/",
+      "Google Maps": "https://maps.google.com/",
+      "Portfolio Link": "//example.com/portfolio",
+      "Status": "Approved",
+      "Slug": "dev-safe-links-20261006-not-a-real-vendor-didwana"
     }
   ]
 }
