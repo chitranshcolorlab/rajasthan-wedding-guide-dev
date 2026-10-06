@@ -1,6 +1,8 @@
 # DEV validation and release control
 
-This branch implements the automatic publisher and a release gate. Local test evidence is simulated, not production acceptance. The four existing premium profiles and their media now have pinned DEV copies. Desktop media and redirect checks are recorded in qa/legacy-dev-live-result.md; this does not replace full candidate regression or independent signoff. QA-64 remains NOT RUN until a real DEV submission, authenticated approval, scheduled publishing, card navigation and direct refresh are verified. Do not count the local unit test as that acceptance test.
+Actual live developer verification is recorded in [launch-checklist.md](launch-checklist.md), release-matrix.csv and the developerVerification fields of release-state.json. Automated tests and developer smoke evidence are distinct from independent acceptance on a frozen candidate. NOT RUN in the formal per-ID records does not mean no work has been tested: group-level completed checks and remaining acceptance are now explicit. Exact per-ID criteria are not mapped from the grouped matrix, so no individual PASS or role signature is inferred.
+
+Direct status-triggered publication, unpublish, stable republish and controlled dispatch-failure recovery have live evidence. The original scheduled-publication requirement remains unverified; AUTO-001 remains open. DATA-001 remains FIX READY awaiting independent live reordered-column retest. Four legacy profiles have desktop media/redirect smoke evidence. Physical device checks and final candidate signoff remain pending. QA-64 is incomplete under its existing scheduled-publication requirement; this update does not waive or weaken that gate.
 
 ## Defect lifecycle
 

@@ -18,7 +18,11 @@
       "selfTest": "14 automated tests PASS including failing-before/passing-after reordered empty-first-column regression.",
       "environment": "isolated DEV",
       "qaOwner": "Unassigned",
-      "targetFixVersion": "DEV backend deployment v2"
+      "targetFixVersion": "DEV backend deployment v2",
+      "developerEvidence": [
+        "qa/live-smoke-2026-10-05.md"
+      ],
+      "remainingAcceptance": "Independent live reordered-column regression on frozen candidate; developer regression does not close defect."
     },
     {
       "id": "AUTO-001",
@@ -32,7 +36,9 @@
       "rootCause": "Unconfirmed; enabled workflow and default-branch cron verified. Offset cron and disable/re-enable tried; no successful timed run observed.",
       "environment": "isolated DEV",
       "qaOwner": "Unassigned",
-      "evidence": "qa/scheduler-live-result.md"
+      "evidence": "qa/scheduler-live-result.md",
+      "mitigation": "Status-triggered direct workflow dispatch, unpublish, forced dispatch failure and owner retry verified. This does not establish an actual schedule-event run or close the original scheduled requirement.",
+      "mitigationEvidence": "qa/direct-publisher-activation.md"
     }
   ],
   "tests": {
@@ -40,385 +46,719 @@
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance."
     },
     "QA-02": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance."
     },
     "QA-03": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance."
     },
     "QA-04": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance."
     },
     "QA-05": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/registration-validation-live-result.md"
+      ],
+      "remainingAcceptance": "Complete case mapping and candidate retest."
     },
     "QA-06": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/concurrent-registration-live-result.md"
+      ],
+      "remainingAcceptance": "Actual simultaneous authenticated approvals; registrations are not approval concurrency."
     },
     "QA-07": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
     },
     "QA-08": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
     },
     "QA-09": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
     },
     "QA-10": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
     },
     "QA-11": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
     },
     "QA-12": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
     },
     "QA-13": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
     },
     "QA-14": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/backend-kb-live-result.md",
+        "qa/ten-photo-live-result.md"
+      ],
+      "remainingAcceptance": "Full profile/media cases on candidate."
     },
     "QA-15": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/backend-kb-live-result.md",
+        "qa/ten-photo-live-result.md"
+      ],
+      "remainingAcceptance": "Full profile/media cases on candidate."
     },
     "QA-16": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/backend-kb-live-result.md",
+        "qa/ten-photo-live-result.md"
+      ],
+      "remainingAcceptance": "Full profile/media cases on candidate."
     },
     "QA-17": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/backend-kb-live-result.md",
+        "qa/ten-photo-live-result.md"
+      ],
+      "remainingAcceptance": "Full profile/media cases on candidate."
     },
     "QA-18": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/backend-kb-live-result.md",
+        "qa/ten-photo-live-result.md"
+      ],
+      "remainingAcceptance": "Full profile/media cases on candidate."
     },
     "QA-19": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Actual device contact behavior not exercised with placeholder numbers."
     },
     "QA-20": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Actual device contact behavior not exercised with placeholder numbers."
     },
     "QA-21": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Candidate-specific route/refresh acceptance."
     },
     "QA-22": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Candidate-specific route/refresh acceptance."
     },
     "QA-23": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Full category cases on candidate."
     },
     "QA-24": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Full category cases on candidate."
     },
     "QA-25": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Full category cases on candidate."
     },
     "QA-26": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Full category cases on candidate."
     },
     "QA-27": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Full category cases on candidate."
     },
     "QA-28": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Full category cases on candidate."
     },
     "QA-29": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/live-smoke-2026-10-05.md"
+      ],
+      "remainingAcceptance": "All linking cases on frozen candidate."
     },
     "QA-30": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/live-smoke-2026-10-05.md"
+      ],
+      "remainingAcceptance": "All linking cases on frozen candidate."
     },
     "QA-31": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/live-smoke-2026-10-05.md"
+      ],
+      "remainingAcceptance": "All linking cases on frozen candidate."
     },
     "QA-32": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/live-smoke-2026-10-05.md"
+      ],
+      "remainingAcceptance": "All linking cases on frozen candidate."
     },
     "QA-33": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Full candidate SEO cases."
     },
     "QA-34": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Full candidate SEO cases."
     },
     "QA-35": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Full candidate SEO cases."
     },
     "QA-36": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Social crawler preview and candidate case mapping."
     },
     "QA-37": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Social crawler preview and candidate case mapping."
     },
     "QA-38": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Social crawler preview and candidate case mapping."
     },
     "QA-39": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Social crawler preview and candidate case mapping."
     },
     "QA-40": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Candidate-specific complete schema acceptance."
     },
     "QA-41": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
     },
     "QA-42": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
     },
     "QA-43": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
     },
     "QA-44": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
     },
     "QA-45": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
     },
     "QA-46": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md",
+        "qa/registration-validation-live-result.md",
+        "qa/concurrent-registration-live-result.md"
+      ],
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
     },
     "QA-47": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md",
+        "qa/registration-validation-live-result.md",
+        "qa/concurrent-registration-live-result.md"
+      ],
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
     },
     "QA-48": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md",
+        "qa/registration-validation-live-result.md",
+        "qa/concurrent-registration-live-result.md"
+      ],
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
     },
     "QA-49": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md",
+        "qa/registration-validation-live-result.md",
+        "qa/concurrent-registration-live-result.md"
+      ],
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
     },
     "QA-50": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/live-smoke-2026-10-05.md"
+      ],
+      "remainingAcceptance": "Live optional-field acceptance on candidate."
     },
     "QA-51": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/legacy-dev-live-result.md"
+      ],
+      "remainingAcceptance": "Full independent candidate legacy regression."
     },
     "QA-52": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/legacy-dev-live-result.md"
+      ],
+      "remainingAcceptance": "Full independent candidate legacy regression."
     },
     "QA-53": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/legacy-dev-live-result.md"
+      ],
+      "remainingAcceptance": "Full independent candidate legacy regression."
     },
     "QA-54": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/legacy-dev-live-result.md"
+      ],
+      "remainingAcceptance": "Full independent candidate legacy regression."
     },
     "QA-55": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/legacy-dev-live-result.md"
+      ],
+      "remainingAcceptance": "Full independent candidate legacy regression."
     },
     "QA-56": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/legacy-dev-live-result.md"
+      ],
+      "remainingAcceptance": "Full independent candidate legacy regression."
     },
     "QA-57": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/legacy-dev-live-result.md"
+      ],
+      "remainingAcceptance": "Full independent candidate legacy regression."
     },
     "QA-58": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
     },
     "QA-59": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
     },
     "QA-60": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
     },
     "QA-61": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
     },
     "QA-62": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
     },
     "QA-63": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/security-seo-mobile-live-result.md"
+      ],
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
     },
     "QA-64": {
       "status": "NOT RUN",
       "commit": "",
       "environment": "DEV",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerEvidence": [
+        "qa/live-smoke-2026-10-05.md",
+        "qa/direct-publisher-activation.md"
+      ],
+      "remainingAcceptance": "Original scheduled-publication requirement remains unverified; complete golden-vendor candidate evidence and independent signoff."
     }
   },
   "legacy": [
@@ -426,25 +766,37 @@
       "url": "",
       "status": "NOT RUN",
       "commit": "",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "Desktop DEV media/redirect smoke verified; formal candidate regression pending",
+      "developerEvidence": "qa/legacy-dev-live-result.md",
+      "profile": "Chitransh Color Lab"
     },
     {
       "url": "",
       "status": "NOT RUN",
       "commit": "",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "Desktop DEV media/redirect smoke verified; formal candidate regression pending",
+      "developerEvidence": "qa/legacy-dev-live-result.md",
+      "profile": "Fashion Flavour"
     },
     {
       "url": "",
       "status": "NOT RUN",
       "commit": "",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "Desktop DEV media/redirect smoke verified; formal candidate regression pending",
+      "developerEvidence": "qa/legacy-dev-live-result.md",
+      "profile": "Madan Mohan Resort"
     },
     {
       "url": "",
       "status": "NOT RUN",
       "commit": "",
-      "evidence": ""
+      "evidence": "",
+      "developerCoverage": "Desktop DEV media/redirect smoke verified; formal candidate regression pending",
+      "developerEvidence": "qa/legacy-dev-live-result.md",
+      "profile": "Harshita Shekhawat"
     }
   ],
   "signoffs": {
@@ -468,5 +820,179 @@
       "date": "",
       "commit": ""
     }
+  },
+  "developerVerification": {
+    "updatedDate": "2026-10-06",
+    "environment": "isolated DEV",
+    "evidenceSourceCommit": "7adb2fb2f0a3b7ec4f752f0693e795eb28f653e4",
+    "formalStatusMeaning": "NOT RUN means formal candidate-specific acceptance has not been recorded; developer checks below have been performed and must not be described as no evidence.",
+    "groups": [
+      {
+        "qa": "QA-01–04",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Authenticated approve / edit-required / reapprove / reject triggered successful direct publication; forced dispatch failure retained approval and owner retry recovered.",
+        "remaining": "Scheduled execution and frozen-candidate acceptance.",
+        "evidence": [
+          "qa/direct-publisher-activation.md"
+        ]
+      },
+      {
+        "qa": "QA-05",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Six invalid live submissions rejected; forged Approved status stored Pending and hidden.",
+        "remaining": "Complete case mapping and candidate retest.",
+        "evidence": [
+          "qa/registration-validation-live-result.md"
+        ]
+      },
+      {
+        "qa": "QA-06",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Repeat approval smoke verified; simultaneous registrations created unique pending IDs.",
+        "remaining": "Actual simultaneous authenticated approvals; registrations are not approval concurrency.",
+        "evidence": [
+          "qa/concurrent-registration-live-result.md"
+        ]
+      },
+      {
+        "qa": "QA-07–13",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Persisted slug retained through edit-required / reapprove / reject / recovery; golden-vendor repeat approval smoke.",
+        "remaining": "All slug edge cases and simultaneous same-name approval on candidate.",
+        "evidence": [
+          "qa/direct-publisher-activation.md"
+        ]
+      },
+      {
+        "qa": "QA-14–18",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Large image compressed to 168 KB; server rejected 204801 bytes and eleven photos; ten gallery images loaded.",
+        "remaining": "Full profile/media cases on candidate.",
+        "evidence": [
+          "qa/backend-kb-live-result.md",
+          "qa/ten-photo-live-result.md"
+        ]
+      },
+      {
+        "qa": "QA-19–20",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "tel and encoded WhatsApp hrefs inspected.",
+        "remaining": "Actual device contact behavior not exercised with placeholder numbers.",
+        "evidence": [
+          "qa/security-seo-mobile-live-result.md"
+        ]
+      },
+      {
+        "qa": "QA-21–22",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Rejected/edit-required profile returned 404; reapproved profile loaded at same URL.",
+        "remaining": "Candidate-specific route/refresh acceptance.",
+        "evidence": [
+          "qa/direct-publisher-activation.md"
+        ]
+      },
+      {
+        "qa": "QA-23–28",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Rejected vendor absent from category and public snapshot; other five cards retained.",
+        "remaining": "Full category cases on candidate.",
+        "evidence": [
+          "qa/direct-publisher-activation.md"
+        ]
+      },
+      {
+        "qa": "QA-29–32",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Live category card navigation and direct profile refresh verified in developer smoke.",
+        "remaining": "All linking cases on frozen candidate.",
+        "evidence": [
+          "qa/live-smoke-2026-10-05.md"
+        ]
+      },
+      {
+        "qa": "QA-33–35",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Single H1 and business title/description/canonical verified.",
+        "remaining": "Full candidate SEO cases.",
+        "evidence": [
+          "qa/security-seo-mobile-live-result.md"
+        ]
+      },
+      {
+        "qa": "QA-36–39",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Open Graph fields inspected; logo profile has og:image; no-logo omission observed.",
+        "remaining": "Social crawler preview and candidate case mapping.",
+        "evidence": [
+          "qa/security-seo-mobile-live-result.md"
+        ]
+      },
+      {
+        "qa": "QA-40",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "LocalBusiness JSON-LD parsed with matching name URL phone and location.",
+        "remaining": "Candidate-specific complete schema acceptance.",
+        "evidence": [
+          "qa/security-seo-mobile-live-result.md"
+        ]
+      },
+      {
+        "qa": "QA-41–45",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Six unique DEV sitemap URLs exactly matched approved slugs; no rejected/production URL; noindex verified.",
+        "remaining": "Scheduled synchronization and full indexing cases; DEV remains noindex.",
+        "evidence": [
+          "qa/security-seo-mobile-live-result.md"
+        ]
+      },
+      {
+        "qa": "QA-46–49",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Approved-only public data; private fields absent; missing/invalid token requests rejected; forged status ignored; overlapping registration IDs unique.",
+        "remaining": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest.",
+        "evidence": [
+          "qa/security-seo-mobile-live-result.md",
+          "qa/registration-validation-live-result.md",
+          "qa/concurrent-registration-live-result.md"
+        ]
+      },
+      {
+        "qa": "QA-50",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Optional-field preservation and escaping covered by implementation/local tests only.",
+        "remaining": "Live optional-field acceptance on candidate.",
+        "evidence": [
+          "qa/live-smoke-2026-10-05.md"
+        ]
+      },
+      {
+        "qa": "QA-51–57",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Four pinned legacy DEV profiles: redirects and desktop image/video loading verified.",
+        "remaining": "Full independent candidate legacy regression.",
+        "evidence": [
+          "qa/legacy-dev-live-result.md"
+        ]
+      },
+      {
+        "qa": "QA-58–63",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "375px frame smoke: no horizontal overflow; contact buttons 48px high; logo/gallery loaded.",
+        "remaining": "Physical Android/iOS touch and all responsive cases.",
+        "evidence": [
+          "qa/security-seo-mobile-live-result.md"
+        ]
+      },
+      {
+        "qa": "QA-64",
+        "coverage": "PARTIAL — DEVELOPER VERIFIED",
+        "completed": "Real form submission and authenticated approval produced profile without vendor-specific code; direct status-triggered publish and recovery verified.",
+        "remaining": "Original scheduled-publication requirement remains unverified; complete golden-vendor candidate evidence and independent signoff.",
+        "evidence": [
+          "qa/live-smoke-2026-10-05.md",
+          "qa/direct-publisher-activation.md"
+        ]
+      }
+    ]
   }
 }
