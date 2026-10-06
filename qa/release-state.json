@@ -143,9 +143,10 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/concurrent-registration-live-result.md"
+        "qa/concurrent-registration-live-result.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "Actual simultaneous authenticated approvals; registrations are not approval concurrency."
+      "remainingAcceptance": "Complete individual double-approval cases and independent frozen-candidate retest."
     },
     "QA-07": {
       "status": "NOT RUN",
@@ -154,9 +155,10 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
     },
     "QA-08": {
       "status": "NOT RUN",
@@ -165,9 +167,10 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
     },
     "QA-09": {
       "status": "NOT RUN",
@@ -176,9 +179,10 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
     },
     "QA-10": {
       "status": "NOT RUN",
@@ -187,9 +191,10 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
     },
     "QA-11": {
       "status": "NOT RUN",
@@ -198,9 +203,10 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
     },
     "QA-12": {
       "status": "NOT RUN",
@@ -209,9 +215,10 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
     },
     "QA-13": {
       "status": "NOT RUN",
@@ -220,9 +227,10 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All slug edge cases and simultaneous same-name approval on candidate."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
     },
     "QA-14": {
       "status": "NOT RUN",
@@ -316,7 +324,7 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Candidate-specific route/refresh acceptance."
+      "remainingAcceptance": "Independent candidate-specific direct URL/refresh/404 acceptance."
     },
     "QA-22": {
       "status": "NOT RUN",
@@ -328,7 +336,7 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Candidate-specific route/refresh acceptance."
+      "remainingAcceptance": "Independent candidate-specific direct URL/refresh/404 acceptance."
     },
     "QA-23": {
       "status": "NOT RUN",
@@ -340,7 +348,7 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category cases on candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
     },
     "QA-24": {
       "status": "NOT RUN",
@@ -352,7 +360,7 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category cases on candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
     },
     "QA-25": {
       "status": "NOT RUN",
@@ -364,7 +372,7 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category cases on candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
     },
     "QA-26": {
       "status": "NOT RUN",
@@ -376,7 +384,7 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category cases on candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
     },
     "QA-27": {
       "status": "NOT RUN",
@@ -388,7 +396,7 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category cases on candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
     },
     "QA-28": {
       "status": "NOT RUN",
@@ -400,7 +408,7 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category cases on candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
     },
     "QA-29": {
       "status": "NOT RUN",
@@ -412,7 +420,7 @@
         "qa/live-smoke-2026-10-05.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "All linking cases on frozen candidate."
+      "remainingAcceptance": "Full individual linking acceptance on frozen candidate."
     },
     "QA-30": {
       "status": "NOT RUN",
@@ -424,7 +432,7 @@
         "qa/live-smoke-2026-10-05.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "All linking cases on frozen candidate."
+      "remainingAcceptance": "Full individual linking acceptance on frozen candidate."
     },
     "QA-31": {
       "status": "NOT RUN",
@@ -436,7 +444,7 @@
         "qa/live-smoke-2026-10-05.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "All linking cases on frozen candidate."
+      "remainingAcceptance": "Full individual linking acceptance on frozen candidate."
     },
     "QA-32": {
       "status": "NOT RUN",
@@ -448,7 +456,7 @@
         "qa/live-smoke-2026-10-05.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "All linking cases on frozen candidate."
+      "remainingAcceptance": "Full individual linking acceptance on frozen candidate."
     },
     "QA-33": {
       "status": "NOT RUN",
@@ -460,7 +468,7 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full candidate SEO cases."
+      "remainingAcceptance": "Full candidate SEO criteria and independent acceptance."
     },
     "QA-34": {
       "status": "NOT RUN",
@@ -472,7 +480,7 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full candidate SEO cases."
+      "remainingAcceptance": "Full candidate SEO criteria and independent acceptance."
     },
     "QA-35": {
       "status": "NOT RUN",
@@ -484,7 +492,7 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full candidate SEO cases."
+      "remainingAcceptance": "Full candidate SEO criteria and independent acceptance."
     },
     "QA-36": {
       "status": "NOT RUN",
@@ -540,7 +548,7 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Candidate-specific complete schema acceptance."
+      "remainingAcceptance": "Full schema/candidate acceptance."
     },
     "QA-41": {
       "status": "NOT RUN",
@@ -550,9 +558,10 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
-        "qa/latest-catalog-route-live-result.md"
+        "qa/latest-catalog-route-live-result.md",
+        "qa/scheduler-observed-2026-10-06.md"
       ],
-      "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
+      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex."
     },
     "QA-42": {
       "status": "NOT RUN",
@@ -562,9 +571,10 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
-        "qa/latest-catalog-route-live-result.md"
+        "qa/latest-catalog-route-live-result.md",
+        "qa/scheduler-observed-2026-10-06.md"
       ],
-      "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
+      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex."
     },
     "QA-43": {
       "status": "NOT RUN",
@@ -574,9 +584,10 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
-        "qa/latest-catalog-route-live-result.md"
+        "qa/latest-catalog-route-live-result.md",
+        "qa/scheduler-observed-2026-10-06.md"
       ],
-      "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
+      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex."
     },
     "QA-44": {
       "status": "NOT RUN",
@@ -586,9 +597,10 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
-        "qa/latest-catalog-route-live-result.md"
+        "qa/latest-catalog-route-live-result.md",
+        "qa/scheduler-observed-2026-10-06.md"
       ],
-      "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
+      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex."
     },
     "QA-45": {
       "status": "NOT RUN",
@@ -598,9 +610,10 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
-        "qa/latest-catalog-route-live-result.md"
+        "qa/latest-catalog-route-live-result.md",
+        "qa/scheduler-observed-2026-10-06.md"
       ],
-      "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
+      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex."
     },
     "QA-46": {
       "status": "NOT RUN",
@@ -612,9 +625,11 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/registration-validation-live-result.md",
         "qa/concurrent-registration-live-result.md",
-        "qa/safe-links-live-result.md"
+        "qa/safe-links-live-result.md",
+        "qa/data001-column-reorder-live-result.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest."
     },
     "QA-47": {
       "status": "NOT RUN",
@@ -626,9 +641,11 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/registration-validation-live-result.md",
         "qa/concurrent-registration-live-result.md",
-        "qa/safe-links-live-result.md"
+        "qa/safe-links-live-result.md",
+        "qa/data001-column-reorder-live-result.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest."
     },
     "QA-48": {
       "status": "NOT RUN",
@@ -640,9 +657,11 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/registration-validation-live-result.md",
         "qa/concurrent-registration-live-result.md",
-        "qa/safe-links-live-result.md"
+        "qa/safe-links-live-result.md",
+        "qa/data001-column-reorder-live-result.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest."
     },
     "QA-49": {
       "status": "NOT RUN",
@@ -654,9 +673,11 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/registration-validation-live-result.md",
         "qa/concurrent-registration-live-result.md",
-        "qa/safe-links-live-result.md"
+        "qa/safe-links-live-result.md",
+        "qa/data001-column-reorder-live-result.md",
+        "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest."
     },
     "QA-50": {
       "status": "NOT RUN",
@@ -668,7 +689,7 @@
         "qa/live-smoke-2026-10-05.md",
         "qa/optional-fields-live-result.md"
       ],
-      "remainingAcceptance": "Independent frozen-candidate optional-field acceptance; live supplied-value and literal-tag smoke passed."
+      "remainingAcceptance": "Complete optional-field cases and independent frozen-candidate acceptance."
     },
     "QA-51": {
       "status": "NOT RUN",
