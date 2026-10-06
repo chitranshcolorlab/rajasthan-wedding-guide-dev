@@ -10,3 +10,7 @@ Live path: /vendors/dev-owner-qa-20261006-1755-not-a-real-vendor-didwana/
 Proof screenshots: dev-owner-approval-20261006.jpg and dev-owner-new-profile-20261006.jpg (private saved evidence).
 
 No vendor-specific source edit was needed for this record. This checks direct approval-triggered dispatch, not a fresh GitHub schedule-event attribution or independent QA-64 closure. Category card/metadata/sitemap full new-record acceptance and owner retest remain separate. Formal candidate/defect/signoff records unchanged. Current approved count increases from 14 to 15; historical reports remain historical.
+
+## Owner category visibility — 6 October 2026, 18:29 IST
+
+Asked to refresh the new profile, follow its Photographers & Films in Didwana category link and check the new card and View Profile navigation, Sharad Mathur replied “dikh raha hai”. Recorded as owner-confirmed category visibility of DEV Owner QA 20261006 1755. Reply does not separately confirm the View Profile click target or refresh outcome; no additional PASS inferred. Formal candidate, blockers and signatures unchanged.
