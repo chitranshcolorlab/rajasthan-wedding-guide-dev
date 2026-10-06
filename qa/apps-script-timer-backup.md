@@ -19,3 +19,7 @@ Every tick requests publication; unchanged publisher output makes no commit. App
 Sources:
 - https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
 - https://developers.google.com/apps-script/guides/triggers/installable
+
+## Retry deployment verification
+
+Commit 7ec04f9b4914e17f36b011f09c0f449290a471cc triggered push publisher 37439175688: SUCCESS; job 112188373968 passed all 37 tests, zero failures, fetched and validated fourteen approved DEV vendors and completed publisher without a generated content change. No real transient HTML was forced on the live service; deterministic six-case tests establish retry behavior, live run establishes integration. Browser reopened cleanup profile after resume and observed original About/Services text without marker. Pages documentation rebuild 37439174548 was queued at last check; publisher implementation is executed directly from checked-out repository and its successful run is already verified. Independent QA release gate remains blocked.

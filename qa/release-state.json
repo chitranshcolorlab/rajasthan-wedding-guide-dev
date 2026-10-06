@@ -85,11 +85,13 @@
         "remaining": "Independent candidate QA, continued cadence observation, GitHub cron-specific acceptance and real approval-to-timer test."
       },
       "publisherResponseRetry": {
-        "state": "FIX READY — LOCAL SIX TESTS PASS; DEV CI PENDING",
+        "state": "FIX READY — SIX LOCAL TESTS AND FULL 37-TEST DEV CI PASS",
         "failureRun": 37435553117,
         "observed": "Public API JSON parse received HTML; no generated output committed by failed run. Later timer runs succeeded.",
         "rootCause": "HTML response observed; upstream reason unknown.",
-        "evidence": "qa/apps-script-timer-backup.md"
+        "evidence": "qa/apps-script-timer-backup.md",
+        "ciRun": 37439175688,
+        "sourceCommit": "7ec04f9b4914e17f36b011f09c0f449290a471cc"
       }
     },
     {
