@@ -51,3 +51,16 @@ Owner can review the DEV behavior now:
 Owner Android feedback has been recorded. The earlier promise to provide final approval is not treated as a completed sign-off. No production deployment or merge is authorized by this packet.
 
 Repository release policy: [QA README](README.md), “Developer cannot close their own defect.” QA-64 cannot be waived. This packet does not modify those gates.
+
+## Evening verification update — 6 October 2026
+
+- [All-vendor WhatsApp source message](all-vendor-whatsapp-source-message.md): Hindi Rajasthan Wedding Guide attribution standardized for automatic profiles/fallback and four legacy profiles; owner confirmed it appeared.
+- [Fresh registration and publication](fresh-owner-qa-publication-result.md): owner saw category card and opened exact profile.
+- [Unpublication](fresh-owner-qa-unpublication-result.md): exact disposable record moved to Edit Required, category/public snapshot/sitemap removed it, old profile HTTP 404.
+- [Restoration](fresh-owner-qa-restoration-result.md): reapproval recovered after unreadable response through saved-status check; same persisted slug/profile and category card restored. Publisher 37468525858 and Pages 37468581967 succeeded. Current approved count 15.
+- [Empty approved list preservation](empty-approved-list-result.md): successful empty list removes managed output and preserves 48 pinned legacy paths; separate from failure preservation.
+- Owner legacy media observations are in [owner-legacy-review.md](owner-legacy-review.md). Madan Mohan Resort photo/video confirmation remains outstanding; no PASS inferred from generic next responses.
+
+Scheduler check at 18:43 IST: latest returned schedule-event run remains 37434340529, created 08:10:22 UTC (13:40:22 IST), successful publisher job 112172352202. No new schedule-event run in the returned collection since then; this does not establish five-minute cadence or fresh scheduled propagation. Dispatch/timer mitigations already have evidence. AUTO-001 remains open.
+
+Formal candidate, individual acceptance statuses, independent defect closure and signatures remain unchanged. Recent work is DEV developer verification plus the specifically recorded owner observations, not production approval.
