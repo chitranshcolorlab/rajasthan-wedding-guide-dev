@@ -31,3 +31,11 @@ At 19:26:51 owner reported no error after entering 12345 in Mobile and leaving f
 Private desktop Chrome screenshot at 19:36 shows exact pending ID RWG-f9ae20c0-5c82-43b8-b46e-b2640a411992, name DEV Owner QA 1930 — Not a real vendor, Mobile 9999999999 and expected disposable services. Owner was instructed to Approve this exact card. At 19:37 screenshot shows VERIFIED exact ID is now Approved by authorized owner and Publication requested; Pending list empty.
 
 Developer followed publisher run 37476335973 success, generated commit 6b9b8c56e3faeeb55190d0a06bc380f54627b280 approved snapshot includes target slug dev-owner-qa-1930-not-a-real-vendor-didwana; Pages 37476468359 success. Owner category/profile navigation confirmation remains to be collected. No vendor-specific code edit. Screenshots kept private. Formal frozen-candidate acceptance unchanged.
+
+## Owner profile navigation and unpublication
+
+19:41 private screenshot shows correct /vendors/dev-owner-qa-1930-not-a-real-vendor-didwana/ profile name/location/services. At 19:42 owner answered ha to explicit profile hard-refresh and category-backlink checks. Category-to-profile path requested previously, but screenshot alone proves final correct destination, not every click.
+
+19:43 screenshot shows only Edit Required filter, no status mutation. At 19:46 screenshot instead verified Shree Krishna submission RWG-7569d007-b2a7-49c1-b447-8f5bad3dbecc changed to Edit Required; owner was instructed to restore it. Restoration NOT yet verified. At 19:52 screenshot showed exact DEV Owner QA 1930 still Approved; owner was directed to lower exact card. At 19:54 screenshot verifies correct target RWG-f9ae20c0-5c82-43b8-b46e-b2640a411992 now Edit Required and Publication requested.
+
+Developer checked publisher 37478460689 success, Pages 37478514139 success, generated commit 512136dbbd0c55ef81cc93c6c5de9a95a5fb02f4 snapshot contains 14 records and excludes both target and Shree Krishna. Owner-observed category absence/old profile 404 still pending; Shree Krishna restoration remains a separate cleanup requirement. Screenshots private, no formal release gate changes.
