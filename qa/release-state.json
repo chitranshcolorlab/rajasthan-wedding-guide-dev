@@ -631,9 +631,10 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/live-smoke-2026-10-05.md"
+        "qa/live-smoke-2026-10-05.md",
+        "qa/optional-fields-live-result.md"
       ],
-      "remainingAcceptance": "Live optional-field acceptance on candidate."
+      "remainingAcceptance": "Independent frozen-candidate optional-field acceptance; live supplied-value and literal-tag smoke passed."
     },
     "QA-51": {
       "status": "NOT RUN",
@@ -1045,5 +1046,13 @@
       "RWG-f4289f8f-ff95-4a14-aeb4-47d9c647b5f1"
     ],
     "limits": "Action starts measured; backend arrival-time overlap not instrumented. Formal QA statuses and release blockers unchanged."
+  },
+  "developerOptionalFieldVerification": {
+    "date": "2026-10-06",
+    "result": "PASS developer live smoke",
+    "evidence": "qa/optional-fields-live-result.md",
+    "generatedCommit": "9eb8d7a35a0515f3b009cb108966f097b6de813c",
+    "publisherRun": 37415027756,
+    "pagesRun": 37415097753
   }
 }
