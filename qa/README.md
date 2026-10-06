@@ -52,3 +52,7 @@ Run `node scripts/check-release.js qa/release-state.json`. All required QA IDs r
 ## Scheduler update — 6 October 2026
 
 The earlier no-scheduled-run observation is superseded: actual schedule-event runs 37373609865 and 37400693805 completed successfully, checked out DEV commit 92f946a4ac06befb84cb3d9f3cd19d97ba374092, passed 26 tests, and synchronized six vendors. See [scheduler-observed-2026-10-06.md](scheduler-observed-2026-10-06.md). Both runs left generated output unchanged. Fresh approval-to-scheduled-generated-commit propagation and regular five-minute cadence are not established. AUTO-001 remains open for formal QA disposition; QA-64 and other acceptance gates remain incomplete. Statements above about no observed schedule describe the earlier evidence only.
+
+## Timer mitigation and preservation update — 6 October 2026
+
+Apps Script five-minute timer automatically published a fresh content change and cleanup; evidence is in [apps-script-timer-backup.md](apps-script-timer-backup.md). This produces workflow_dispatch and does not close GitHub cron-specific acceptance. Bounded transient API retry passed all 37 CI tests. Process-level CLI preservation cases now verify that failed health/list validation and exhausted HTML responses leave old generated data intact; see [publisher-preservation-result.md](publisher-preservation-result.md). Formal candidate records and ownership/sign-off rules remain unchanged.

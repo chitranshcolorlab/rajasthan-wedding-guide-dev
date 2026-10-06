@@ -36,3 +36,8 @@ Production release: BLOCKED. Live backend remains Version 4. This reconciles dev
 ## Interpretation
 
 Current approved count is thirteen at this verification. Historical documents retain their earlier counts. All 64 formal tests remain NOT RUN because individual candidate evidence is incomplete; group developer smoke passes do not make formal PASS. Three tracked blockers remain DATA-001 FIX READY, AUTO-001 NEW and UI-001 FIX READY. Run the unchanged check-release.js against release-state.json; it must remain blocked.
+
+
+## Later timer and API resilience evidence
+
+Five-minute Apps Script backup automatically published the marker and its cleanup; native saved trigger and real time-driven execution confirmed. See apps-script-timer-backup.md. Its GitHub event is workflow_dispatch; original cron-specific propagation and independent acceptance remain separate. Publisher retry source 7ec04f9b4914e17f36b011f09c0f449290a471cc passed 37 CI tests. Five process-level preservation/retry integration cases passed locally; see publisher-preservation-result.md. Earlier thirteen-profile catalog count is the count at that historical route verification, not a current live total. Release gate remains BLOCKED; no candidate/role/individual PASS inferred.
