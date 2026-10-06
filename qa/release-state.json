@@ -1,5 +1,5 @@
 {
-  "candidateCommit": "",
+  "candidateCommit": "b5219c1a4c54e84b062786868c21ff43d43ea284",
   "defects": [
     {
       "id": "DATA-001",
@@ -1195,5 +1195,16 @@
     "result": "User reports looks correct; screenshot verifies both expected compression-test gallery images visibly loaded",
     "evidence": "qa/android-user-gallery-observation.md",
     "limits": "Screenshot shows gallery only; URL, heading, device/browser metadata, refresh/orientation, touch navigation and contact flows not independently visible. No formal case PASS, candidate freeze or approval signature inferred."
+  },
+  "acceptanceAuthorization": {
+    "owner": "Sharad Mathur",
+    "dateTime": "2026-10-06T20:42:31+05:30",
+    "scope": "Start final DEV QA using proposed 64 criteria and prepared candidate; not production deployment or release signoff",
+    "criteria": "qa/qa-criteria-approved.csv",
+    "backendVersion": 4,
+    "backendSourceBlob": "76a2ba1866732128976191d5dc478ae597fdb451",
+    "timerSource": "Head verified identical to Version 4; one additional final newline vs repository",
+    "sourceEvidence": "qa/backend-candidate-source-comparison.md",
+    "dataPolicy": "Timer remains active. Record source row state, generated commit and live deployment for every mutable-data case. Any executable source change invalidates affected candidate acceptance."
   }
 }
