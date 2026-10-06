@@ -1169,5 +1169,21 @@
     "categoryCards": 13,
     "evidence": "qa/latest-catalog-route-live-result.md",
     "result": "PASS developer live smoke; independent frozen-candidate retest pending"
+  },
+  "developerMobileLayoutVerification": {
+    "date": "2026-10-06",
+    "result": "PASS nine embedded browser width cases; physical and independent QA pending",
+    "profiles": 3,
+    "widths": [
+      320,
+      390,
+      768
+    ],
+    "cases": 9,
+    "horizontalOverflowCases": 0,
+    "minimumContactHeight": 48,
+    "fixtureCommit": "1832b83600dc84aecbf0acca2cba672a1cd467d4",
+    "evidence": "qa/mobile-layout-matrix-result.md",
+    "limits": "Not actual Android/iOS, touchscreen or contact acceptance. Formal tests and signoffs unchanged."
   }
 }
