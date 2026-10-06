@@ -11,3 +11,9 @@ This is user-supplied physical Android evidence limited to gallery loading/visib
 After being asked to open the compression-test profile on mobile, refresh, rotate the phone and report whether both images loaded and anything overflowed, Sharad Mathur replied “ok hai”. Recorded as owner-reported success for those requested checks on the previously confirmed Android platform. No new screenshot, device/browser version or exact deployed candidate identification was supplied; this is a conversational owner result, not independently instrumented measurement. Existing gallery screenshot remains private.
 
 Reviewed repository head when recording: ebbbe86d5252493d273a7df53ba56069c5dd867e. This does not establish the precise phone-served build, a frozen candidate, iOS/contact coverage, formal per-ID PASS, defect closure or final release approval. Next requested owner check is category-card navigation and direct profile refresh.
+
+## Owner category navigation follow-up — 6 October 2026, 17:29 IST
+
+Sharad Mathur was asked to open the DEV Didwana Photographers & Films category, choose Shree Krishna Wedding Photography → View Profile and refresh, then report whether the correct business profile remained visible. Reply: “ha dikh rahi hai”. Recorded as owner-reported success for category-card navigation and profile refresh on the previously confirmed Android platform.
+
+Reviewed repository head when recording: 0665313b03282bbbb1be6cf721891eea3f458f28. No fresh screenshot, device/browser metadata or exact phone-served build was supplied. This evidence supports the requested owner check only; it does not set formal frozen-candidate PASS, close blockers or supply release approval. No contact action was requested.
