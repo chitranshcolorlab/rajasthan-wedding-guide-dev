@@ -39,3 +39,19 @@ Developer followed publisher run 37476335973 success, generated commit 6b9b8c56e
 19:43 screenshot shows only Edit Required filter, no status mutation. At 19:46 screenshot instead verified Shree Krishna submission RWG-7569d007-b2a7-49c1-b447-8f5bad3dbecc changed to Edit Required; owner was instructed to restore it. Restoration NOT yet verified. At 19:52 screenshot showed exact DEV Owner QA 1930 still Approved; owner was directed to lower exact card. At 19:54 screenshot verifies correct target RWG-f9ae20c0-5c82-43b8-b46e-b2640a411992 now Edit Required and Publication requested.
 
 Developer checked publisher 37478460689 success, Pages 37478514139 success, generated commit 512136dbbd0c55ef81cc93c6c5de9a95a5fb02f4 snapshot contains 14 records and excludes both target and Shree Krishna. Owner-observed category absence/old profile 404 still pending; Shree Krishna restoration remains a separate cleanup requirement. Screenshots private, no formal release gate changes.
+
+## Owner restoration, rejection and session checks (19:56–20:15 IST)
+
+- 19:56: owner confirmed the 1930 profile returned 404 after Edit Required.
+- 19:59: private screenshot verified Shree Krishna ID RWG-7569d007-b2a7-49c1-b447-8f5bad3dbecc restored to Approved. Developer HTTP check confirmed its original profile returned 200, while 1930 remained 404. This resolves the accidental DEV cleanup item above.
+- 20:02: private screenshot verified exact 1930 ID Approved again. 20:04 screenshot showed the original persisted profile URL, correct name, category/location and disposable services. Owner confirmed category card visibility at 20:04:50. Restoration Pages run 37479897488 succeeded for generated commit 236e9a1a10504e9e27156c8756ab3fce832b0286.
+- 20:06: private screenshot verified exact 1930 ID Rejected, with Shree Krishna still Approved. Owner confirmed old profile 404 at 20:07:36 and category card absent after hard refresh at 20:08:03. Publisher run 37480313906 and Pages run 37480371583 succeeded; deployed generated commit a8d64fa193f09ec8d343e3e1085bfcb8ad538c1e. Test vendor intentionally remains Rejected.
+- 20:09: private desktop screenshot showed Not signed in, Google sign-in button and Sign in to load private submissions; cards/action buttons absent. Owner confirmed the same after hard refresh at 20:09:35, then confirmed authorized re-login and Rejected card visible at 20:10:12.
+
+## Owner Android observations (20:12–20:15 IST)
+
+Owner followed Android Chrome instructions and explicitly confirmed registration form layout without horizontal scrolling at 20:12; changing Didwana-Kuchaman/Didwana to Nagaur cleared the old City and showed the new list at 20:13:07; authorized admin login and Rejected card/button layout at 20:15:11; sign-out followed by refresh hid records and required sign-in at 20:15:48. These are owner reports, without mobile screenshots, model or browser version. No mobile status mutation or placeholder-number contact was requested.
+
+## Remaining acceptance at 20:16 IST
+
+These observations support the owner-operated DEV lifecycle and desktop/Android session checks, but do not freeze a release candidate or approve individual QA criteria. Formal 64 case statuses, defect closure and signatures remain unchanged. iOS checks, full candidate-specific acceptance, independent DATA-001/UI-001 retests and cron-specific fresh-change/cadence acceptance remain outstanding. Read-only schedule check still lists latest actual schedule run 37434340529 at 08:10:22 UTC (13:40:22 IST); recent five-minute runs are workflow_dispatch timer events, not evidence of GitHub cron cadence. Production was not modified. Private screenshots are not copied into this public repository.
