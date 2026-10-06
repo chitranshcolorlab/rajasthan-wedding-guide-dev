@@ -1,0 +1,7 @@
+# DEV admin response recovery — 6 October 2026
+
+UI-001: FIX READY; independent live retest pending. User screenshot after second same-name approval showed Invalid response from Apps Script backend. Snapshot independently contained both Approved IDs with distinct slugs; publisher runs 37412420293 and 37412648624 succeeded. Both live profile URLs opened successfully. These were sequential approvals, not simultaneous approval acceptance.
+
+The client previously stopped on JSON parse failure before verifying saved status. New handling checks the authenticated private list up to three times after malformed/null/invalid-format acknowledgement. It never repeats the status POST. Exact matching ID and requested saved status are required for a verified message. Publication acknowledgement remains explicitly unknown when its response was unreadable. Failed or mismatched readback reports uncertainty and directs refresh before another action. Explicit backend authentication rejection remains a failure and clears the session; it cannot be converted into readback success. Private list responses must contain ok:true and an items array.
+
+Five node tests passed locally: unreadable response with saved state; invalid response with unchanged state; explicit auth rejection; failed readback; normal queued publication. Root cause of the upstream malformed response itself remains unknown. Production unchanged; no credentials captured.

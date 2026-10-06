@@ -49,6 +49,26 @@
         "evidence": "qa/scheduler-observed-2026-10-06.md",
         "remaining": "Both runs synchronized the existing six vendors without an output change. Fresh approval-to-scheduled-generated-commit propagation and cadence remain unmeasured. Original root cause unconfirmed."
       }
+    },
+    {
+      "id": "UI-001",
+      "area": "admin-status-feedback",
+      "severity": "S2",
+      "priority": "P1",
+      "releaseBlocker": true,
+      "status": "FIX READY",
+      "observed": "User screenshot showed Invalid response from Apps Script backend after second same-name vendor approval; approved snapshot and successful publisher independently confirmed saved Approved status.",
+      "expected": "Unreadable acknowledgement must be treated as uncertain; authenticated readback confirms saved status without repeating the mutation.",
+      "rootCause": "Client JSON parse failure exits before saved-status verification. Exact upstream malformed response cause remains unconfirmed.",
+      "changedFiles": [
+        "admin-review.html",
+        "tests/admin-status-response.test.js"
+      ],
+      "selfTest": "Five response-recovery tests PASS: confirmed saved status, unconfirmed state, explicit auth rejection, failed readback, normal queued response.",
+      "environment": "isolated DEV",
+      "qaOwner": "Unassigned",
+      "evidence": "qa/admin-response-recovery.md",
+      "remainingAcceptance": "Independent live DEV retest and candidate acceptance; simulated failure coverage is not live signoff."
     }
   ],
   "tests": {
