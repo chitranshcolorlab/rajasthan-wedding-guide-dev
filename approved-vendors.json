@@ -286,6 +286,32 @@
       "Portfolio Link": "",
       "Status": "Approved",
       "Slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana-2"
+    },
+    {
+      "Submission ID": "RWG-fd193925-9346-4a84-8139-2bfcfe6ec6ed",
+      "Business Name": "DEV Optional Fields 20261006 — Not a real vendor",
+      "Mobile": "9999999999",
+      "WhatsApp": "9999999999",
+      "Category": "Photographers & Films",
+      "District": "Didwana-Kuchaman",
+      "City": "Didwana",
+      "About Business": "DEV text <b>must remain literal</b> & safe",
+      "Services": "Disposable optional-fields QA. Do not contact.",
+      "Starting Price": "2999",
+      "Years in Business": "7",
+      "Service Areas": "Didwana, Ladnun",
+      "Languages": "Hindi, English",
+      "Specialities": "Candid & films <em>literal</em>",
+      "Full Address": "DEV test address & studio",
+      "Logo URL": "",
+      "Photo URLs": "",
+      "Website": "https://example.com/",
+      "Instagram": "https://www.instagram.com/",
+      "Facebook": "https://www.facebook.com/",
+      "Google Maps": "https://maps.google.com/",
+      "Portfolio Link": "https://example.com/portfolio",
+      "Status": "Approved",
+      "Slug": "dev-optional-fields-20261006-not-a-real-vendor-didwana"
     }
   ]
 }
