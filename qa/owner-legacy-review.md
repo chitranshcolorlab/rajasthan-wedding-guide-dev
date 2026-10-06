@@ -14,3 +14,7 @@ These conversational observations do not identify an exact served candidate or s
 ## Harshita first-video follow-up — 17:41 IST
 
 Owner was asked to open Hosting videos, press Play on the first video and report playback and sound. Sharad Mathur replied “aa rahi hai ok hai”. Recorded as owner-reported successful first-video playback with audible sound. This does not confirm all nine videos, all images, physical mobile coverage or an exact frozen candidate. Reviewed repository head: 69c755b6ca196129e53d6d1dfe5b80a761ab72ab. Formal statuses and release signatures unchanged.
+
+## Harshita remaining videos follow-up — 17:42 IST
+
+After the first-video playback/audio confirmation, owner was asked to pause it and play the remaining eight videos one at a time, reporting any playback/audio failure. Sharad Mathur replied “sab chalrahe hai”. Recorded as owner-reported playback success across all nine videos; no failures reported. First video's audio was explicitly confirmed earlier; no separate per-video audio measurement or recording was supplied. This does not confirm image counts, device/browser metadata, exact frozen-candidate build, formal case completion or release approval. Reviewed repository head: 63c3eb687b73a01d5cd5424125766f81c180b3bc.
