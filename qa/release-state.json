@@ -57,6 +57,17 @@
         ],
         "evidence": "qa/scheduler-observed-2026-10-06.md",
         "remaining": "Both runs synchronized the existing six vendors without an output change. Fresh approval-to-scheduled-generated-commit propagation and cadence remain unmeasured. Original root cause unconfirmed."
+      },
+      "freshScheduledProbe": {
+        "state": "PENDING",
+        "startedUtc": "2026-10-06T05:13:43.570Z",
+        "baselineUtc": "2026-10-06T05:15:02.666004Z",
+        "marker": "DEV-SCHEDULE-PROBE-20261006-01",
+        "sourceHasMarker": true,
+        "deployedSnapshotHasMarker": false,
+        "submissionId": "RWG-6dfbc3dc-c041-45d9-8ef4-503a90df44aa",
+        "evidence": "qa/scheduled-fresh-change-probe.md",
+        "limits": "Native owner content edit, not authenticated approval; actual future schedule event and publication remain unverified."
       }
     },
     {
