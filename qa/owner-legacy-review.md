@@ -18,3 +18,7 @@ Owner was asked to open Hosting videos, press Play on the first video and report
 ## Harshita remaining videos follow-up — 17:42 IST
 
 After the first-video playback/audio confirmation, owner was asked to pause it and play the remaining eight videos one at a time, reporting any playback/audio failure. Sharad Mathur replied “sab chalrahe hai”. Recorded as owner-reported playback success across all nine videos; no failures reported. First video's audio was explicitly confirmed earlier; no separate per-video audio measurement or recording was supplied. This does not confirm image counts, device/browser metadata, exact frozen-candidate build, formal case completion or release approval. Reviewed repository head: 63c3eb687b73a01d5cd5424125766f81c180b3bc.
+
+## Harshita images follow-up — 17:43 IST
+
+Asked whether hero photo plus eight gallery photos (nine total) displayed correctly, Sharad Mathur replied “ha”. Recorded as owner-reported nine-image display success. Combined owner coverage now includes nine photos and all nine video playbacks, with first-video audio explicitly confirmed. No exact served build/device metadata supplied; formal candidate acceptance/signatures remain unchanged. Reviewed repository head: de6a2a6a0dc656b29117ffec21d3b39abef63b8a. Madan Mohan Resort photo/video confirmation remains ambiguous: a request to clarify was followed by “next”, not an explicit result.
