@@ -590,7 +590,8 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
         "qa/registration-validation-live-result.md",
-        "qa/concurrent-registration-live-result.md"
+        "qa/concurrent-registration-live-result.md",
+        "qa/safe-links-live-result.md"
       ],
       "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
     },
@@ -603,7 +604,8 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
         "qa/registration-validation-live-result.md",
-        "qa/concurrent-registration-live-result.md"
+        "qa/concurrent-registration-live-result.md",
+        "qa/safe-links-live-result.md"
       ],
       "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
     },
@@ -616,7 +618,8 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
         "qa/registration-validation-live-result.md",
-        "qa/concurrent-registration-live-result.md"
+        "qa/concurrent-registration-live-result.md",
+        "qa/safe-links-live-result.md"
       ],
       "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
     },
@@ -629,7 +632,8 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
         "qa/registration-validation-live-result.md",
-        "qa/concurrent-registration-live-result.md"
+        "qa/concurrent-registration-live-result.md",
+        "qa/safe-links-live-result.md"
       ],
       "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; actual concurrent approval; DATA-001 live reorder retest."
     },
@@ -1063,5 +1067,12 @@
     "generatedCommit": "9eb8d7a35a0515f3b009cb108966f097b6de813c",
     "publisherRun": 37415027756,
     "pagesRun": 37415097753
+  },
+  "developerUnsafeUrlVerification": {
+    "date": "2026-10-06",
+    "result": "PASS render-time unsafe URL allow-list and literal markup smoke",
+    "evidence": "qa/safe-links-live-result.md",
+    "submissionId": "RWG-26384e44-2a2c-4ddf-a41e-8f6339ca8c17",
+    "limits": "Raw URL values retained in public API; no exploit execution or full XSS/auth permutation coverage."
   }
 }
