@@ -11,3 +11,7 @@ No status API mutation, manual publisher dispatch, publisher-code change or work
 Completion needs a post-baseline event:schedule run, its checked-out source/tests/publisher log, a generated commit containing marker, successful Pages deployment and live profile marker. Do not claim a five-minute delivery guarantee or substitute workflow_dispatch/push for event:schedule. Original approval-to-scheduled requirement and independent frozen-candidate QA remain separate; this probe alone will not close AUTO-001 or QA-64.
 
 Leave the disposable marker until the scheduled synchronization is observed. Then restore Services to Disposable controlled unreadable-acknowledgement test. Do not contact placeholder numbers. Production untouched.
+
+## Outcome and alternate timer mitigation
+
+GitHub cron-specific marker propagation was NOT OBSERVED before Apps Script five-minute backup installation. Original probe is superseded, not PASS. Automatically initiated workflow_dispatch 37419369915 published marker in generated commit 1be4876ff8dca607fb1ffb073981a959a1fc2bff, Pages 37419395416 succeeded and live marker verified. Native owner restored O16 original text, exact twenty-eight-cell row verified; next automatic timer run 37419782520 published cleanup commit 7c6fcffb086d2c34dd87242e3d1584fac4b9264b, Pages 37419809362 succeeded, public/live marker absent. See qa/apps-script-timer-backup.md. New later event:schedule 37434340529 is separate and does not establish original marker attribution. Production untouched.

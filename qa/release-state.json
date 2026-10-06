@@ -59,7 +59,7 @@
         "remaining": "Both runs synchronized the existing six vendors without an output change. Fresh approval-to-scheduled-generated-commit propagation and cadence remain unmeasured. Original root cause unconfirmed."
       },
       "freshScheduledProbe": {
-        "state": "PENDING",
+        "state": "NOT OBSERVED — SUPERSEDED BY APPS SCRIPT TIMER",
         "startedUtc": "2026-10-06T05:13:43.570Z",
         "baselineUtc": "2026-10-06T05:15:02.666004Z",
         "marker": "DEV-SCHEDULE-PROBE-20261006-01",
@@ -67,7 +67,29 @@
         "deployedSnapshotHasMarker": false,
         "submissionId": "RWG-6dfbc3dc-c041-45d9-8ef4-503a90df44aa",
         "evidence": "qa/scheduled-fresh-change-probe.md",
-        "limits": "Native owner content edit, not authenticated approval; actual future schedule event and publication remain unverified."
+        "limits": "The marker was published by automatically initiated workflow_dispatch, not GitHub event:schedule. Source Services restored exactly and automatic cleanup published; original cron-specific requirement remains open."
+      },
+      "timerBackup": {
+        "state": "PASS DEVELOPER AUTOMATIC TIMER-TO-LIVE CONTENT SYNC AND CLEANUP",
+        "date": "2026-10-06",
+        "handler": "retryDevPublication",
+        "deployment": "Head",
+        "intervalMinutes": 5,
+        "publisherRun": 37419369915,
+        "generatedCommit": "1be4876ff8dca607fb1ffb073981a959a1fc2bff",
+        "pagesRun": 37419395416,
+        "cleanupPublisherRun": 37419782520,
+        "cleanupCommit": "7c6fcffb086d2c34dd87242e3d1584fac4b9264b",
+        "cleanupPagesRun": 37419809362,
+        "evidence": "qa/apps-script-timer-backup.md",
+        "remaining": "Independent candidate QA, continued cadence observation, GitHub cron-specific acceptance and real approval-to-timer test."
+      },
+      "publisherResponseRetry": {
+        "state": "FIX READY — LOCAL SIX TESTS PASS; DEV CI PENDING",
+        "failureRun": 37435553117,
+        "observed": "Public API JSON parse received HTML; no generated output committed by failed run. Later timer runs succeeded.",
+        "rootCause": "HTML response observed; upstream reason unknown.",
+        "evidence": "qa/apps-script-timer-backup.md"
       }
     },
     {

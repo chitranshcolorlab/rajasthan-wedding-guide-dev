@@ -39,16 +39,37 @@ function publish(rows,dir,base){
  fs.writeFileSync(path.join(dir,'sitemap-vendors.xml'),'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+vendors.map(v=>'<url><loc>'+escape(base+'vendors/'+v.Slug+'/')+'</loc></url>').join('')+'</urlset>\n');
  return {vendors:vendors.length,mode:'DEV',indexing:'noindex',base};
 }
+async function fetchDevJson(url,{fetchImpl=fetch,sleep=ms=>new Promise(resolve=>setTimeout(resolve,ms))}={}){
+ const attempts=3;
+ for(let attempt=1;attempt<=attempts;attempt++){
+  let response;
+  try{response=await fetchImpl(url,{signal:AbortSignal.timeout(30000)});}
+  catch{
+   if(attempt===attempts)throw Error('DEV API transport failed after '+attempts+' attempts');
+   await sleep(attempt*1000);continue;
+  }
+  if(!response.ok){
+   const retryable=response.status===408||response.status===429||response.status>=500;
+   if(!retryable||attempt===attempts)throw Error('DEV API HTTP '+response.status);
+   await sleep(attempt*1000);continue;
+  }
+  try{return await response.json();}
+  catch{
+   if(attempt===attempts)throw Error('DEV API returned unreadable JSON after '+attempts+' attempts');
+   await sleep(attempt*1000);
+  }
+ }
+}
 async function main(){
  const api=process.env.DEV_API_URL,base=process.env.DEV_BASE_URL;
  if(!api||!base)throw Error('DEV_API_URL and DEV_BASE_URL required');
  const url=new URL(api);if(url.hostname!=='script.google.com'||!/^\/macros\/s\/[^/]+\/exec$/.test(url.pathname))throw Error('Apps Script DEV endpoint required');
- const health=await fetch(api+'?action=test',{signal:AbortSignal.timeout(30000)}).then(r=>r.json());
+ const health=await fetchDevJson(api+'?action=test');
  if(!health.ok||health.environment!=='dev'||health.version!=='automatic-vendor-v1')throw Error('Backend is not isolated automatic-vendor DEV');
- const data=await fetch(api+'?action=list',{signal:AbortSignal.timeout(30000)}).then(r=>r.json());
+ const data=await fetchDevJson(api+'?action=list');
  if(!data.ok||!Array.isArray(data.items))throw Error('Invalid public API response');
  if(data.items.some(v=>v.Status!=='Approved'))throw Error('Public API exposes unapproved data');
  console.log(JSON.stringify(publish(data.items,process.cwd(),base)));
 }
 if(require.main===module)main().catch(e=>{console.error(e.message);process.exitCode=1});
-module.exports={normalize,render,publish,categoryPath};
+module.exports={normalize,render,publish,categoryPath,fetchDevJson};
