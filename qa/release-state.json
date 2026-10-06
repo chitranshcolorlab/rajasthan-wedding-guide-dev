@@ -1034,5 +1034,16 @@
       "evidence": "qa/scheduler-observed-2026-10-06.md",
       "remaining": "Both runs synchronized the existing six vendors without an output change. Fresh approval-to-scheduled-generated-commit propagation and cadence remain unmeasured. Original root cause unconfirmed."
     }
+  },
+  "developerConcurrentApprovalVerification": {
+    "date": "2026-10-06",
+    "result": "PASS developer smoke; formal candidate retest pending",
+    "evidence": "qa/concurrent-approval-live-result.md",
+    "confirmationStartGapMs": 2,
+    "submissionIds": [
+      "RWG-e27ed2ce-fb00-444e-a7db-15814551ac50",
+      "RWG-f4289f8f-ff95-4a14-aeb4-47d9c647b5f1"
+    ],
+    "limits": "Action starts measured; backend arrival-time overlap not instrumented. Formal QA statuses and release blockers unchanged."
   }
 }

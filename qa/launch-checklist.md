@@ -27,7 +27,7 @@ Production release: BLOCKED. This is an evidence reconciliation, not a release a
 
 ## Launch gates
 
-1. Run two actual simultaneous authenticated approvals for the same-name pending vendors; verify separate stable slugs and correct rows. Overlapping registration requests already passed but do not prove approval concurrency. Google OAuth currently returns 502 / connection refused; login retry was stopped at the user's direction.
+1. Developer concurrent first-approval smoke completed in two authenticated tabs (2 ms confirmation-start gap); both saved Approved, received distinct slugs and loaded live. See [concurrent-approval-live-result.md](concurrent-approval-live-result.md). Independently retest the complete concurrency and slug cases on the frozen candidate.
 2. Independently retest DATA-001 with reordered columns on the frozen candidate, preserving before/after evidence. Developer automated regression is recorded; the defect remains FIX READY.
 3. Complete physical Android/iOS and contact behavior checks using appropriate test contacts, plus the remaining security, optional-field and profile edge cases. Placeholder vendor numbers must not be contacted.
 4. Demonstrate an actual scheduled publisher run for the existing requirement. Direct dispatch works and has recovery evidence, but AUTO-001 and the original QA-64 requirement remain unresolved. Any requirement change needs a separate documented decision; none is made here.
