@@ -10,3 +10,7 @@ Reporter: Sharad Mathur. DEV only. Reviewed repository head when recording: 5859
 | Chitransh Color Lab | No new owner legacy result. | Pending. |
 
 These conversational observations do not identify an exact served candidate or set formal legacy PASS, signatures or defect closure. Historical developer media checks remain separately documented in legacy-dev-live-result.md.
+
+## Harshita first-video follow-up — 17:41 IST
+
+Owner was asked to open Hosting videos, press Play on the first video and report playback and sound. Sharad Mathur replied “aa rahi hai ok hai”. Recorded as owner-reported successful first-video playback with audible sound. This does not confirm all nine videos, all images, physical mobile coverage or an exact frozen candidate. Reviewed repository head: 69c755b6ca196129e53d6d1dfe5b80a761ab72ab. Formal statuses and release signatures unchanged.
