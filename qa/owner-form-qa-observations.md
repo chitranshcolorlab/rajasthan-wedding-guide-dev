@@ -25,3 +25,9 @@ At 19:26:51 owner reported no error after entering 12345 in Mobile and leaving f
 19:33 private screenshot was inspected: DEV registration page visibly shows Submitted for review, submission ID RWG-f9ae20c0-5c82-43b8-b46e-b2640a411992, Status Pending Approval. Screenshot displays only lower form, so submitted name/phone values cannot be inferred. User screenshot is not copied into public repository.
 
 19:34 follow-up developer read-only live public API check returned ok true and 15 approved items; exact pending submission ID absent. This establishes live public API exclusion at observation time; authenticated pending record details, direct category and profile checks remain separate. No approval action taken in this check. Formal candidate acceptance remains unchanged.
+
+## Owner authenticated approval
+
+Private desktop Chrome screenshot at 19:36 shows exact pending ID RWG-f9ae20c0-5c82-43b8-b46e-b2640a411992, name DEV Owner QA 1930 — Not a real vendor, Mobile 9999999999 and expected disposable services. Owner was instructed to Approve this exact card. At 19:37 screenshot shows VERIFIED exact ID is now Approved by authorized owner and Publication requested; Pending list empty.
+
+Developer followed publisher run 37476335973 success, generated commit 6b9b8c56e3faeeb55190d0a06bc380f54627b280 approved snapshot includes target slug dev-owner-qa-1930-not-a-real-vendor-didwana; Pages 37476468359 success. Owner category/profile navigation confirmation remains to be collected. No vendor-specific code edit. Screenshots kept private. Formal frozen-candidate acceptance unchanged.
