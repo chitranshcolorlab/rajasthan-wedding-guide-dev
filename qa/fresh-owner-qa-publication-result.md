@@ -14,3 +14,7 @@ No vendor-specific source edit was needed for this record. This checks direct ap
 ## Owner category visibility — 6 October 2026, 18:29 IST
 
 Asked to refresh the new profile, follow its Photographers & Films in Didwana category link and check the new card and View Profile navigation, Sharad Mathur replied “dikh raha hai”. Recorded as owner-confirmed category visibility of DEV Owner QA 20261006 1755. Reply does not separately confirm the View Profile click target or refresh outcome; no additional PASS inferred. Formal candidate, blockers and signatures unchanged.
+
+## Owner new-card navigation — 6 October 2026, 18:30 IST
+
+Asked to press View Profile on DEV Owner QA 20261006 1755 and confirm the same named profile opened, Sharad Mathur replied “khul gay”. Recorded as owner-reported successful new category-card navigation to its profile, following earlier category visibility confirmation. No exact served build, metadata/sitemap verification, formal per-ID acceptance or release signature inferred.
