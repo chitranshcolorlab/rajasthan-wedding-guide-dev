@@ -1185,5 +1185,15 @@
     "fixtureCommit": "1832b83600dc84aecbf0acca2cba672a1cd467d4",
     "evidence": "qa/mobile-layout-matrix-result.md",
     "limits": "Not actual Android/iOS, touchscreen or contact acceptance. Formal tests and signoffs unchanged."
+  },
+  "userAndroidMobileObservation": {
+    "date": "2026-10-06",
+    "reportedBy": "Sharad Mathur",
+    "platform": "Android (user confirmed)",
+    "deviceModel": "Not supplied",
+    "browserVersion": "Not supplied",
+    "result": "User reports looks correct; screenshot verifies both expected compression-test gallery images visibly loaded",
+    "evidence": "qa/android-user-gallery-observation.md",
+    "limits": "Screenshot shows gallery only; URL, heading, device/browser metadata, refresh/orientation, touch navigation and contact flows not independently visible. No formal case PASS, candidate freeze or approval signature inferred."
   }
 }
