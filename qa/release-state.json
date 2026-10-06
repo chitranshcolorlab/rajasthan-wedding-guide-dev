@@ -20,9 +20,18 @@
       "qaOwner": "Unassigned",
       "targetFixVersion": "DEV backend deployment v2",
       "developerEvidence": [
-        "qa/live-smoke-2026-10-05.md"
+        "qa/live-smoke-2026-10-05.md",
+        "qa/data001-column-reorder-live-result.md"
       ],
-      "remainingAcceptance": "Independent live reordered-column regression on frozen candidate; developer regression does not close defect."
+      "remainingAcceptance": "Independent live reordered-column regression on frozen candidate; developer regression does not close defect.",
+      "latestDeveloperRetest": {
+        "date": "2026-10-06",
+        "result": "PASS live public and authenticated list with blank Email first column; exact restoration verified",
+        "evidence": "qa/data001-column-reorder-live-result.md",
+        "approvedRows": 12,
+        "rejectedRows": 1,
+        "restoredExactly": true
+      }
     },
     {
       "id": "AUTO-001",
