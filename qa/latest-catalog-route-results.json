@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-06",
+  "environment": "isolated DEV",
+  "sourceCommit": "3b1c4936023f9531f89c7fe70090ec6395962720",
+  "sitemap": {
+    "approvedCount": 13,
+    "urls": [
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/shree-krishna-wedding-photography-didwana/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-media-test-not-a-real-vendor-didwana/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-compression-test-not-a-real-vendor-didwana/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-ten-photo-test-not-a-real-vendor-didwana/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-version-3-upload-test-not-a-real-vendor-didwana/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-approval-publish-test-not-a-real-vendor-didwana/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-server-status-test-not-a-real-vendor-didwana/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-concurrent-same-name-not-a-real-vendor-didwana/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-concurrent-same-name-not-a-real-vendor-didwana-2/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-parallel-approval-20261006-not-a-real-vendor-didwana/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-parallel-approval-20261006-not-a-real-vendor-didwana-2/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-optional-fields-20261006-not-a-real-vendor-didwana/",
+      "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/vendors/dev-safe-links-20261006-not-a-real-vendor-didwana/"
+    ],
+    "exactMatch": true,
+    "duplicates": 0,
+    "rejectedAbsent": true
+  },
+  "profiles": [
+    {
+      "slug": "shree-krishna-wedding-photography-didwana",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-media-test-not-a-real-vendor-didwana",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-compression-test-not-a-real-vendor-didwana",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-ten-photo-test-not-a-real-vendor-didwana",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-version-3-upload-test-not-a-real-vendor-didwana",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-approval-publish-test-not-a-real-vendor-didwana",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-server-status-test-not-a-real-vendor-didwana",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-concurrent-same-name-not-a-real-vendor-didwana",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-concurrent-same-name-not-a-real-vendor-didwana-2",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana-2",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-optional-fields-20261006-not-a-real-vendor-didwana",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    },
+    {
+      "slug": "dev-safe-links-20261006-not-a-real-vendor-didwana",
+      "http": 200,
+      "singleH1": true,
+      "canonical": true,
+      "noindex": true,
+      "viewport": true,
+      "schema": true
+    }
+  ],
+  "category": {
+    "path": "rajasthan/didwana-kuchaman/didwana/photographers-films/",
+    "cards": 13,
+    "uniqueProfileUrls": 13,
+    "rejectedAbsent": true,
+    "robots": "noindex,nofollow",
+    "method": "live browser DOM and accessibility"
+  }
+}

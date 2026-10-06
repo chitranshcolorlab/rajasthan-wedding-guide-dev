@@ -313,7 +313,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Candidate-specific route/refresh acceptance."
     },
@@ -324,7 +325,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Candidate-specific route/refresh acceptance."
     },
@@ -335,7 +337,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Full category cases on candidate."
     },
@@ -346,7 +349,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Full category cases on candidate."
     },
@@ -357,7 +361,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Full category cases on candidate."
     },
@@ -368,7 +373,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Full category cases on candidate."
     },
@@ -379,7 +385,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Full category cases on candidate."
     },
@@ -390,7 +397,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Full category cases on candidate."
     },
@@ -401,7 +409,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/live-smoke-2026-10-05.md"
+        "qa/live-smoke-2026-10-05.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "All linking cases on frozen candidate."
     },
@@ -412,7 +421,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/live-smoke-2026-10-05.md"
+        "qa/live-smoke-2026-10-05.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "All linking cases on frozen candidate."
     },
@@ -423,7 +433,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/live-smoke-2026-10-05.md"
+        "qa/live-smoke-2026-10-05.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "All linking cases on frozen candidate."
     },
@@ -434,7 +445,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/live-smoke-2026-10-05.md"
+        "qa/live-smoke-2026-10-05.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "All linking cases on frozen candidate."
     },
@@ -445,7 +457,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Full candidate SEO cases."
     },
@@ -456,7 +469,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Full candidate SEO cases."
     },
@@ -467,7 +481,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Full candidate SEO cases."
     },
@@ -522,7 +537,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Candidate-specific complete schema acceptance."
     },
@@ -533,7 +549,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
     },
@@ -544,7 +561,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
     },
@@ -555,7 +573,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
     },
@@ -566,7 +585,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
     },
@@ -577,7 +597,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/latest-catalog-route-live-result.md"
       ],
       "remainingAcceptance": "Scheduled synchronization and full indexing cases; DEV remains noindex."
     },
@@ -1074,5 +1095,14 @@
     "evidence": "qa/safe-links-live-result.md",
     "submissionId": "RWG-26384e44-2a2c-4ddf-a41e-8f6339ca8c17",
     "limits": "Raw URL values retained in public API; no exploit execution or full XSS/auth permutation coverage."
+  },
+  "developerLatestCatalogVerification": {
+    "date": "2026-10-06",
+    "approvedCount": 13,
+    "profilesHttp200": 13,
+    "sitemapDuplicates": 0,
+    "categoryCards": 13,
+    "evidence": "qa/latest-catalog-route-live-result.md",
+    "result": "PASS developer live smoke; independent frozen-candidate retest pending"
   }
 }
