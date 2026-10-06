@@ -27,7 +27,7 @@ Production release: BLOCKED. Live backend remains Version 4. This reconciles dev
 
 ## Outstanding release gates
 
-1. UI-001: controlled live unreadable-status-response recovery retest and independent candidate acceptance. Five automated recovery cases pass; a successful normal approval is not this failure-path test.
+1. UI-001: controlled live-backend unreadable-acknowledgement recovery passed (one status update, one authenticated readback; no publication claim). See admin-response-recovery-live-result.md. Independent frozen-candidate acceptance remains required; original upstream failure cause is unconfirmed.
 2. AUTO-001 / QA-64: actual schedule runs exist, but fresh-change scheduled propagation and cadence remain unmeasured. Direct status-triggered publishing/recovery has live evidence. Original requirement is not waived.
 3. DATA-001: developer live reordered-column retest passed and sheet restored exactly. Independent frozen-candidate acceptance must close the defect; developer cannot self-close.
 4. Complete remaining auth permutations, slug/profile edge cases, physical Android/iOS and real test-contact behavior, social crawler checks and individual criterion mapping. Placeholder contacts must not be contacted.

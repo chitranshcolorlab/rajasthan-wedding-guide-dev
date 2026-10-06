@@ -77,7 +77,16 @@
       "environment": "isolated DEV",
       "qaOwner": "Unassigned",
       "evidence": "qa/admin-response-recovery.md",
-      "remainingAcceptance": "Independent live DEV retest and candidate acceptance; simulated failure coverage is not live signoff."
+      "remainingAcceptance": "Independent frozen-candidate acceptance; controlled live backend/client recovery smoke passed without resend. Original upstream response cause remains unconfirmed.",
+      "latestDeveloperRetest": {
+        "date": "2026-10-06",
+        "result": "PASS controlled live backend/client unreadable-acknowledgement recovery",
+        "evidence": "qa/admin-response-recovery-live-result.md",
+        "fixtureCommit": "89503a90e730c5c28917682babdf6818c91b66a3",
+        "statusUpdateRequests": 1,
+        "authenticatedReadbacksAfterDiscard": 1,
+        "remaining": "Independent frozen-candidate retest; unknown original upstream malformed-response cause not reproduced."
+      }
     }
   ],
   "tests": {
