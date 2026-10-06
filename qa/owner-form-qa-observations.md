@@ -17,3 +17,11 @@ These are owner-reported UI observations, without screenshots or exact browser/d
 Owner specified computer Chrome at 19:25:59 IST, applying to preceding five UI checks. OS/browser version not specified.
 
 At 19:26:51 owner reported no error after entering 12345 in Mobile and leaving field. Source review confirms there is no blur validation: phone validation occurs in backend at Submit. At 19:28:22 the initially incomplete form was blocked at Business Name by required-field validation; this was not a phone-validation failure. Owner was then instructed to fill all required fields with disposable DEV Phone QA values, Mobile 12345 and WhatsApp 9999999999, without photos. At 19:29:37 owner explicitly reported invalid phone number message after Submit. This supports owner-observed rejection of invalid Mobile. Exact error text, backend/database audit and absence of a saved row were not independently captured. No success or formal candidate PASS inferred.
+
+## WhatsApp rejection, successful submission and pending visibility
+
+19:30:42 IST: owner reported invalid phone message after instruction to use Mobile 9999999999 and WhatsApp 12345; exact error field wording not captured.
+
+19:33 private screenshot was inspected: DEV registration page visibly shows Submitted for review, submission ID RWG-f9ae20c0-5c82-43b8-b46e-b2640a411992, Status Pending Approval. Screenshot displays only lower form, so submitted name/phone values cannot be inferred. User screenshot is not copied into public repository.
+
+19:34 follow-up developer read-only live public API check returned ok true and 15 approved items; exact pending submission ID absent. This establishes live public API exclusion at observation time; authenticated pending record details, direct category and profile checks remain separate. No approval action taken in this check. Formal candidate acceptance remains unchanged.
