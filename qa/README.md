@@ -47,3 +47,8 @@ S0 clocks are elapsed during agreed incident coverage; others are working hours.
 ## Sign-off
 
 Run `node scripts/check-release.js qa/release-state.json`. All required QA IDs require PASS evidence on the frozen candidate, four legacy checks require PASS, and QA, Developer, Release Owner and Approver signatures must reference that candidate. S0/P0/security/data-integrity/linking/QA-64 blockers cannot be deferred. No untested code changes after sign-off. This script reports readiness only and never deploys production.
+
+
+## Scheduler update — 6 October 2026
+
+The earlier no-scheduled-run observation is superseded: actual schedule-event runs 37373609865 and 37400693805 completed successfully, checked out DEV commit 92f946a4ac06befb84cb3d9f3cd19d97ba374092, passed 26 tests, and synchronized six vendors. See [scheduler-observed-2026-10-06.md](scheduler-observed-2026-10-06.md). Both runs left generated output unchanged. Fresh approval-to-scheduled-generated-commit propagation and regular five-minute cadence are not established. AUTO-001 remains open for formal QA disposition; QA-64 and other acceptance gates remain incomplete. Statements above about no observed schedule describe the earlier evidence only.

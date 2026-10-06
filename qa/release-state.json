@@ -38,7 +38,17 @@
       "qaOwner": "Unassigned",
       "evidence": "qa/scheduler-live-result.md",
       "mitigation": "Status-triggered direct workflow dispatch, unpublish, forced dispatch failure and owner retry verified. This does not establish an actual schedule-event run or close the original scheduled requirement.",
-      "mitigationEvidence": "qa/direct-publisher-activation.md"
+      "mitigationEvidence": "qa/direct-publisher-activation.md",
+      "latestDeveloperRetest": {
+        "date": "2026-10-06",
+        "result": "Two successful actual schedule-event runs; formal QA closure pending",
+        "runs": [
+          37373609865,
+          37400693805
+        ],
+        "evidence": "qa/scheduler-observed-2026-10-06.md",
+        "remaining": "Both runs synchronized the existing six vendors without an output change. Fresh approval-to-scheduled-generated-commit propagation and cadence remain unmeasured. Original root cause unconfirmed."
+      }
     }
   ],
   "tests": {
@@ -993,6 +1003,16 @@
           "qa/direct-publisher-activation.md"
         ]
       }
-    ]
+    ],
+    "schedulerObservation": {
+      "date": "2026-10-06",
+      "result": "Two successful actual schedule-event runs; formal QA closure pending",
+      "runs": [
+        37373609865,
+        37400693805
+      ],
+      "evidence": "qa/scheduler-observed-2026-10-06.md",
+      "remaining": "Both runs synchronized the existing six vendors without an output change. Fresh approval-to-scheduled-generated-commit propagation and cadence remain unmeasured. Original root cause unconfirmed."
+    }
   }
 }

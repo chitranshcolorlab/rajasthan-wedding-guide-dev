@@ -36,3 +36,8 @@ Production release: BLOCKED. This is an evidence reconciliation, not a release a
 ## Interpretation
 
 `release-matrix.csv` describes partial developer coverage. `release-state.json` retains formal NOT RUN statuses until candidate-specific individual evidence exists, and adds developer coverage/evidence separately. Historical evidence spans multiple commits and deployment versions; it is not a single frozen-candidate result. Run `node scripts/check-release.js qa/release-state.json`: it must remain blocked while these gates are open.
+
+
+## Scheduler update — 6 October 2026
+
+The earlier no-scheduled-run observation is superseded: actual schedule-event runs 37373609865 and 37400693805 completed successfully, checked out DEV commit 92f946a4ac06befb84cb3d9f3cd19d97ba374092, passed 26 tests, and synchronized six vendors. See [scheduler-observed-2026-10-06.md](scheduler-observed-2026-10-06.md). Both runs left generated output unchanged. Fresh approval-to-scheduled-generated-commit propagation and regular five-minute cadence are not established. AUTO-001 remains open for formal QA disposition; QA-64 and other acceptance gates remain incomplete. Statements above about no observed schedule describe the earlier evidence only.
