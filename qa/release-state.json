@@ -750,11 +750,11 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-security-recovery-result.md"
+          "qa/catalog-schema-sitemap-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Current 16-profile DEV catalog; independent formal acceptance pending."
       }
     },
     "QA-31": {
@@ -965,11 +965,9 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-route-snapshot-result.md",
-          "qa/candidate-security-recovery-result.md",
-          "qa/candidate-publisher-regression-result.md"
+          "qa/catalog-schema-sitemap-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "All 16 live JSON-LD fields match generated approved source; malicious-name escaping permutations remain untested live."
       }
     },
     "QA-41": {
@@ -1011,9 +1009,9 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-route-snapshot-result.md"
+          "qa/catalog-schema-sitemap-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Current 16-profile DEV catalog; independent formal acceptance pending."
       }
     },
     "QA-43": {
@@ -1031,12 +1029,11 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-route-snapshot-result.md",
-          "qa/candidate-live-lifecycle-2026-10-07.md"
+          "qa/catalog-schema-sitemap-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Current 16-profile DEV catalog; independent formal acceptance pending."
       }
     },
     "QA-44": {
@@ -1779,8 +1776,8 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-07",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 21,
-    "partialProcedure": 38,
+    "fullDeveloperProcedure": 23,
+    "partialProcedure": 36,
     "formalPass": 0,
     "automatedTestsPassed": 47,
     "limits": "47 repository tests plus 4 supplemental local harness tests are not 51 acceptance criteria. No independent closures or signatures inferred.",

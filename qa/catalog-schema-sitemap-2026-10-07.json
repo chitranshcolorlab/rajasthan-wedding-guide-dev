@@ -1,0 +1,298 @@
+{
+  "observedUtc": "2026-10-07T05:25:41.631613+00:00",
+  "profiles": [
+    {
+      "id": "RWG-7569d007-b2a7-49c1-b447-8f5bad3dbecc",
+      "slug": "shree-krishna-wedding-photography-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-421694dc-516b-4f36-b87b-771c38b9c0f7",
+      "slug": "dev-media-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-132373df-cdd7-4774-96e9-bd716eb03080",
+      "slug": "dev-compression-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-8e559d57-72ed-4fd3-be8d-e6f1a278fb77",
+      "slug": "dev-ten-photo-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-cd5f666e-b66b-488d-bbbe-2b6abcc558af",
+      "slug": "dev-version-3-upload-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-12eb3b05-9f7f-4005-88fc-96450e2fb3f0",
+      "slug": "dev-approval-publish-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-46640310-db9c-48e1-94c4-0fd4f17a8ccd",
+      "slug": "dev-server-status-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-66ff7919-d6b6-4b0d-b0a9-9521987db9af",
+      "slug": "dev-concurrent-same-name-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-f3e09488-b709-4f0e-a8f5-5d56c19c7eff",
+      "slug": "dev-concurrent-same-name-not-a-real-vendor-didwana-2",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-e27ed2ce-fb00-444e-a7db-15814551ac50",
+      "slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-f4289f8f-ff95-4a14-aeb4-47d9c647b5f1",
+      "slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana-2",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-fd193925-9346-4a84-8139-2bfcfe6ec6ed",
+      "slug": "dev-optional-fields-20261006-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-26384e44-2a2c-4ddf-a41e-8f6339ca8c17",
+      "slug": "dev-safe-links-20261006-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-6dfbc3dc-c041-45d9-8ef4-503a90df44aa",
+      "slug": "dev-response-recovery-20261006-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-f4f1d955-f57e-4071-b3d4-4ac053a3369f",
+      "slug": "dev-owner-qa-20261006-1755-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    },
+    {
+      "id": "RWG-e6e1b53a-f3b1-4516-995d-154fc2cda380",
+      "slug": "dev-validation-qa-20261007-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "h1": true,
+        "jsonType": true,
+        "jsonName": true,
+        "jsonUrl": true,
+        "jsonPhone": true,
+        "jsonLocality": true,
+        "jsonStreet": true,
+        "jsonRegionCountry": true,
+        "canonical": true,
+        "noindex": true
+      },
+      "passed": true
+    }
+  ],
+  "uniqueIds": true,
+  "uniqueSlugs": true,
+  "sitemapExactApprovedSet": true,
+  "sitemapNoDuplicates": true,
+  "sitemapDevOnly": true
+}
