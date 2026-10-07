@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-07",
+  "id": "RWG-e27ed2ce-fb00-444e-a7db-15814551ac50",
+  "testName": "DEV हिन्दी \"QA\" & </script><b>literal</b> \\ नाम  20261007 — Not a real vendor",
+  "originalName": "DEV Parallel Approval 20261006 — Not a real vendor",
+  "sourceCell": "Vendor Registrations!B12",
+  "sourceRowRestoredExactly": true,
+  "publish": {
+    "run": 37641254587,
+    "commit": "8f7559b6916bae522239301a80a22372df71b280",
+    "pass": 47,
+    "fail": 0,
+    "pages": 37641309793,
+    "firstAttempt": "pre-build failure",
+    "secondAttempt": "success",
+    "recovery": "GitHub UI Re-run all jobs"
+  },
+  "live": {
+    "scriptCount": 1,
+    "totalScripts": 1,
+    "h1Children": 0,
+    "h1Exact": true,
+    "nameExact": true,
+    "noRawLessThanInJSON": true,
+    "urlExact": true,
+    "phoneExact": true,
+    "cityExact": true,
+    "addressExact": true,
+    "regionExact": true,
+    "countryExact": true
+  },
+  "restoration": {
+    "publisher": 37641837250,
+    "commit": "f8b44be4e2c02c3e81cd50c5754b1bfce46dbffc",
+    "pages": 37641939466,
+    "conclusion": "success",
+    "approvedCount": 16,
+    "originalNameLive": true,
+    "originalNameCatalog": true,
+    "profileHTTP": 200,
+    "slugUnchanged": true
+  },
+  "developerFull": 40,
+  "formalPassed": 0
+}
