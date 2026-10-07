@@ -145,7 +145,16 @@
       "developerEvidence": [
         "qa/direct-publisher-activation.md"
       ],
-      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance."
+      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-full-suite-2026-10-07.md"
+        ],
+        "limits": "Local mock regression does not replace live candidate acceptance."
+      }
     },
     "QA-03": {
       "status": "NOT RUN",
@@ -156,7 +165,16 @@
       "developerEvidence": [
         "qa/direct-publisher-activation.md"
       ],
-      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance."
+      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-full-suite-2026-10-07.md"
+        ],
+        "limits": "Local mock regression does not replace live candidate acceptance."
+      }
     },
     "QA-04": {
       "status": "NOT RUN",
@@ -373,7 +391,16 @@
         "qa/backend-kb-live-result.md",
         "qa/ten-photo-live-result.md"
       ],
-      "remainingAcceptance": "Full profile/media cases on candidate."
+      "remainingAcceptance": "Full profile/media cases on candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-full-suite-2026-10-07.md"
+        ],
+        "limits": "Local mock regression does not replace live candidate acceptance."
+      }
     },
     "QA-17": {
       "status": "NOT RUN",
@@ -385,7 +412,16 @@
         "qa/backend-kb-live-result.md",
         "qa/ten-photo-live-result.md"
       ],
-      "remainingAcceptance": "Full profile/media cases on candidate."
+      "remainingAcceptance": "Full profile/media cases on candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-full-suite-2026-10-07.md"
+        ],
+        "limits": "Local mock regression does not replace live candidate acceptance."
+      }
     },
     "QA-18": {
       "status": "NOT RUN",
@@ -403,7 +439,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md"
+          "qa/candidate-publisher-regression-result.md",
+          "qa/candidate-full-suite-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -1623,11 +1660,11 @@
   },
   "evidenceReconciliationSummary": {
     "date": "2026-10-07",
-    "mappedCriteria": 45,
+    "mappedCriteria": 49,
     "fullDeveloperProcedure": 5,
-    "partialProcedure": 40,
+    "partialProcedure": 44,
     "formalPass": 0,
-    "automatedTestsPassed": 35,
+    "automatedTestsPassed": 47,
     "limits": "35 automated tests are not 35 acceptance criteria. No independent closures or signatures inferred."
   }
 }
