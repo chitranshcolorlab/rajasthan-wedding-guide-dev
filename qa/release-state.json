@@ -128,7 +128,7 @@
       "area": "legacy-canonical",
       "severity": "S3",
       "priority": "P2",
-      "status": "IN PROGRESS",
+      "status": "FIX READY",
       "releaseBlocker": true,
       "observed": "Harshita DEV profile missing canonical tag; QA-55 fails",
       "expected": "One canonical URL equal to exact DEV Harshita profile URL",
@@ -140,7 +140,10 @@
       ],
       "qaOwner": "Unassigned",
       "evidence": "qa/legacy-metadata-2026-10-07.md",
-      "remainingAcceptance": "Live fix-build retest and independent acceptance; no developer closure"
+      "remainingAcceptance": "Independent affected-build QA and candidate freeze; no developer closure",
+      "fixCommit": "a17dc2e94d6c75ca0be481f20de2be4ebf43d65e",
+      "developerRetest": "Live canonical count1, exact DEV URL, noindex,nofollow;9 images9 videos DOM elements retained",
+      "pagesRun": 37577734201
     }
   ],
   "tests": {
@@ -1863,6 +1866,7 @@
       "QA-55",
       "QA-57"
     ],
-    "status": "Fix build pending live retest; owner release freeze remains unchanged"
+    "status": "Live canonical retest passed on fix build; prior frozen candidate unchanged; QA54/55/57 affected acceptance pending",
+    "fixBuild": "a17dc2e94d6c75ca0be481f20de2be4ebf43d65e"
   }
 }
