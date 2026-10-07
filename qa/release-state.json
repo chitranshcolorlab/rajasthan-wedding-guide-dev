@@ -475,7 +475,7 @@
         "evidence": [
           "qa/large-original-compression-2026-10-07.md"
         ],
-        "limits": "Live form compressed and submitted one 4,197,660-byte diagnostic JPEG; successful acknowledgement reported 171 KB. Exact persisted Drive byte count not separately inspected. Pending fixture cleanup blocked by Google sign-in 502; excluded from approved public catalog. Independent formal acceptance pending."
+        "limits": "Live form compressed and submitted one 4,197,660-byte diagnostic JPEG; successful acknowledgement reported 171 KB. Exact persisted Drive byte count not separately inspected. Fixture rejection authenticated and saved-status verified; public catalog remains 16 and target excluded from sitemap. Independent formal acceptance pending."
       }
     },
     "QA-17": {
