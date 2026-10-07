@@ -1224,12 +1224,13 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
+          "qa/live-long-multilingual-2026-10-07.md",
           "qa/optional-fields-followup-2026-10-07.md",
           "qa/optional-fields-live-result.md"
         ],
-        "limits": "Live populated/empty fields and safe links pass;8400-character multilingual renderer check passes locally. Live long/multilingual input acceptance remains pending."
+        "limits": "Live long/multilingual submit-to-sheet-to-profile and cleanup verified; populated/empty fields previously checked. Independent formal acceptance pending."
       }
     },
     "QA-51": {
@@ -1802,8 +1803,8 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-07",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 26,
-    "partialProcedure": 33,
+    "fullDeveloperProcedure": 27,
+    "partialProcedure": 32,
     "formalPass": 0,
     "automatedTestsPassed": 47,
     "limits": "47 repository tests plus 4 supplemental local harness tests are not 51 acceptance criteria. No independent closures or signatures inferred.",
@@ -1877,5 +1878,11 @@
       "result": "9 images loaded;9 posters/readyState4;native playback advanced on all9;no media errors;all stopped;only canonical tag differs from frozen HTML",
       "limits": "Brief playback smoke, not complete-duration playback or physical device test. Independent affected-build acceptance and release freeze pending."
     }
+  },
+  "liveLongTextFixture": {
+    "id": "RWG-698d3c05-bba9-4ba2-9038-e701180d83cd",
+    "status": "Rejected",
+    "publicCleanup": "HTTP404; catalog16; sitemap absent",
+    "evidence": "qa/live-long-multilingual-2026-10-07.md"
   }
 }
