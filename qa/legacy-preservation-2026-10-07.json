@@ -1,0 +1,190 @@
+{
+  "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+  "current": "473f28d8f7b82998f097775f0936b68f753a7e8f",
+  "allNonManagedBaselineFiles": 3609,
+  "changed": [],
+  "selected": [
+    {
+      "path": "anchor-harshita-shekhawat.html",
+      "sha": "c4dcd704f6b9436bb942cb7497af06863a76689b",
+      "unchanged": true
+    },
+    {
+      "path": "chitransh-color-lab.html",
+      "sha": "c4f1d43061bb3af5f6364439582c3254150f137b",
+      "unchanged": true
+    },
+    {
+      "path": "fashion-flavour-01.webp",
+      "sha": "b3460008123cfd1c19fbf00aa8ee5c3f4203f924",
+      "unchanged": true
+    },
+    {
+      "path": "fashion-flavour-02.webp",
+      "sha": "f45ed65b8315bec1d8b354bf1881e1151f8e003e",
+      "unchanged": true
+    },
+    {
+      "path": "fashion-flavour-03.webp",
+      "sha": "aa970f2ecf56572205642ec0f4c2b0ec5864d20d",
+      "unchanged": true
+    },
+    {
+      "path": "fashion-flavour-04.webp",
+      "sha": "3ed7b82ca406e0d2467f6e5d0ad10a300123126f",
+      "unchanged": true
+    },
+    {
+      "path": "fashion-flavour-05.webp",
+      "sha": "62a6c79f23119460c00b708a56b819de3d0019c0",
+      "unchanged": true
+    },
+    {
+      "path": "fashion-flavour-didwana.html",
+      "sha": "c4fb18fe1e5191877663c3d190bad15bd135f047",
+      "unchanged": true
+    },
+    {
+      "path": "harshita-01.webp",
+      "sha": "afdc22d781f2335d95c1fcc192fc5fb8483d3208",
+      "unchanged": true
+    },
+    {
+      "path": "harshita-02.webp",
+      "sha": "e5987261d336698a29e59b4875f915cadf481ea1",
+      "unchanged": true
+    },
+    {
+      "path": "harshita-03.webp",
+      "sha": "f5abdb6b9bcf980336920c50d1d6501b6a48c7c1",
+      "unchanged": true
+    },
+    {
+      "path": "harshita-04.webp",
+      "sha": "2dac544536a49cc25bed1cd4e905ebc386bd1cc0",
+      "unchanged": true
+    },
+    {
+      "path": "harshita-05.webp",
+      "sha": "9077bcc4b9183dbc37cc6070923cd5b215b9fd0e",
+      "unchanged": true
+    },
+    {
+      "path": "harshita-06.webp",
+      "sha": "b2922850a1c114a0fee694ac8712aa74f0881872",
+      "unchanged": true
+    },
+    {
+      "path": "harshita-07.webp",
+      "sha": "e053fac898f8dfdecd8f9de1a0fed061c55cec59",
+      "unchanged": true
+    },
+    {
+      "path": "harshita-08.webp",
+      "sha": "2a5b62003b815cdc29a87117322c9c4884131665",
+      "unchanged": true
+    },
+    {
+      "path": "madan-mohan-resort.html",
+      "sha": "7b7a563a07c5b0426906ae5af203aac0a50aa1b1",
+      "unchanged": true
+    },
+    {
+      "path": "madan_mohan_01.webp",
+      "sha": "af9663fadd4d7725d1b3e53a65dcf322a7b4b124",
+      "unchanged": true
+    },
+    {
+      "path": "madan_mohan_02.webp",
+      "sha": "f9487321c2b8e80d30cfd14d269e6174683b1e98",
+      "unchanged": true
+    },
+    {
+      "path": "madan_mohan_03.webp",
+      "sha": "ce0c04c77b358ab041e62a75586e8446a9567242",
+      "unchanged": true
+    },
+    {
+      "path": "madan_mohan_04.webp",
+      "sha": "9d3447242ca445174450941d67c49d0d7db9e3d0",
+      "unchanged": true
+    },
+    {
+      "path": "madan_mohan_05.webp",
+      "sha": "2a9389ef86c301e7f1c3957ee1d39163e2f140a4",
+      "unchanged": true
+    },
+    {
+      "path": "madan_mohan_06.webp",
+      "sha": "e7f3efe789beee9819339e5273a163d2045d451c",
+      "unchanged": true
+    },
+    {
+      "path": "madan_mohan_07.webp",
+      "sha": "9f4902cb25334bfa1c5cad520b88da2f4cb4399d",
+      "unchanged": true
+    },
+    {
+      "path": "madan_mohan_08.webp",
+      "sha": "771f9d3efa00178554076314ccce795b66d5e506",
+      "unchanged": true
+    },
+    {
+      "path": "madan_mohan_09.webp",
+      "sha": "d1b1cf1913559b87fbcf38f1574971dca808ca17",
+      "unchanged": true
+    },
+    {
+      "path": "rajasthan/didwana-kuchaman/didwana/photographers-films/chitransh-color-lab/index.html",
+      "sha": "e6eb876c2613e17b03585894bfc63070a2882781",
+      "unchanged": true
+    },
+    {
+      "path": "rajasthan/didwana-kuchaman/didwana/wedding-rental-dresses/fashion-flavour/index.html",
+      "sha": "b441f7c38b956392ab53129abc84cc2248e87cb4",
+      "unchanged": true
+    },
+    {
+      "path": "rajasthan/didwana-kuchaman/didwana/wedding-venues/madan-mohan-resort/index.html",
+      "sha": "e038b58e6f6e996f59dcd82106cd3b311db4faa0",
+      "unchanged": true
+    }
+  ],
+  "http": [
+    {
+      "path": "chitransh-color-lab.html",
+      "status": 200,
+      "url": "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/chitransh-color-lab.html"
+    },
+    {
+      "path": "fashion-flavour-didwana.html",
+      "status": 200,
+      "url": "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/fashion-flavour-didwana.html"
+    },
+    {
+      "path": "madan-mohan-resort.html",
+      "status": 200,
+      "url": "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/madan-mohan-resort.html"
+    },
+    {
+      "path": "anchor-harshita-shekhawat.html",
+      "status": 200,
+      "url": "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/anchor-harshita-shekhawat.html"
+    },
+    {
+      "path": "rajasthan/didwana-kuchaman/didwana/photographers-films/chitransh-color-lab/",
+      "status": 200,
+      "url": "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/rajasthan/didwana-kuchaman/didwana/photographers-films/chitransh-color-lab/"
+    },
+    {
+      "path": "rajasthan/didwana-kuchaman/didwana/wedding-rental-dresses/fashion-flavour/",
+      "status": 200,
+      "url": "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/rajasthan/didwana-kuchaman/didwana/wedding-rental-dresses/fashion-flavour/"
+    },
+    {
+      "path": "rajasthan/didwana-kuchaman/didwana/wedding-venues/madan-mohan-resort/",
+      "status": 200,
+      "url": "https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/rajasthan/didwana-kuchaman/didwana/wedding-venues/madan-mohan-resort/"
+    }
+  ]
+}
