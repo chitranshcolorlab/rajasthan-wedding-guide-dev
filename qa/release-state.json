@@ -1123,13 +1123,13 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-security-recovery-result.md",
-          "qa/candidate-publisher-regression-result.md",
+          "qa/public-privacy-followup-2026-10-07.md",
+          "qa/safe-links-live-result.md",
           "qa/candidate-live-validation-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Defined approved-only/private-key exclusion and inert markup/unsafe-link procedure verified; not exhaustive penetration testing. Independent formal acceptance pending."
       }
     },
     "QA-47": {
@@ -1803,8 +1803,8 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-07",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 27,
-    "partialProcedure": 32,
+    "fullDeveloperProcedure": 28,
+    "partialProcedure": 31,
     "formalPass": 0,
     "automatedTestsPassed": 47,
     "limits": "47 repository tests plus 4 supplemental local harness tests are not 51 acceptance criteria. No independent closures or signatures inferred.",

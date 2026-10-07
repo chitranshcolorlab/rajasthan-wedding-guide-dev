@@ -1,0 +1,78 @@
+{
+  "api": {
+    "utc": "2026-10-07T06:09:52.937724+00:00",
+    "http": 200,
+    "ok": true,
+    "count": 16,
+    "allApproved": true,
+    "privateFields": [],
+    "rejectedIdsAbsent": true,
+    "uniqueIds": true
+  },
+  "profiles": [
+    {
+      "slug": "shree-krishna-wedding-photography-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-media-test-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-compression-test-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-ten-photo-test-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-version-3-upload-test-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-approval-publish-test-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-server-status-test-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-concurrent-same-name-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-concurrent-same-name-not-a-real-vendor-didwana-2",
+      "passed": true
+    },
+    {
+      "slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana-2",
+      "passed": true
+    },
+    {
+      "slug": "dev-optional-fields-20261006-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-safe-links-20261006-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-response-recovery-20261006-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-owner-qa-20261006-1755-not-a-real-vendor-didwana",
+      "passed": true
+    },
+    {
+      "slug": "dev-validation-qa-20261007-not-a-real-vendor-didwana",
+      "passed": true
+    }
+  ]
+}
