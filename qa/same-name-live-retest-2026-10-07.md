@@ -1,0 +1,5 @@
+# Same-name live profile retest — 2026-10-07
+
+Read-only retest of two existing approved disposable DEV fixtures. Both remain separate in the current 16-item public catalog, with distinct IDs and slugs (base and -2 suffix). Both live profile URLs return HTTP 200. H1 and parsed JSON-LD names exactly match catalog names; schema URLs match each own slug. No records created or modified. Existing concurrent approval evidence is qa/concurrent-approval-live-result.md. This is a current live regression, not a fresh frozen-candidate approval experiment; QA-10 stays partial and developer full count remains 38/64. Formal statuses unchanged.
+
+Deployment follow-up: documentation-only Pages run 37637357781 failed before build steps (build conclusion null, empty steps, deploy skipped), like 37636916034. The intervening Pages 37637106449 succeeded and Unicode fixture cleanup was independently verified live. Automatic publisher 37637334865 succeeded. Therefore live profile behavior passes, but repeated pre-build Pages failure requires follow-up; no root cause or OAuth/token fix inferred. This evidence push requests a fresh Pages build without changing executable files.

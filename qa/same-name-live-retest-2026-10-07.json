@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-07",
+  "approvedCount": 16,
+  "sameName": true,
+  "distinctIDs": true,
+  "distinctSlugs": true,
+  "profiles": [
+    {
+      "id": "RWG-e27ed2ce-fb00-444e-a7db-15814551ac50",
+      "slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana",
+      "http": 200,
+      "h1Exact": true,
+      "schemaNameExact": true,
+      "schemaURLExact": true
+    },
+    {
+      "id": "RWG-f4289f8f-ff95-4a14-aeb4-47d9c647b5f1",
+      "slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana-2",
+      "http": 200,
+      "h1Exact": true,
+      "schemaNameExact": true,
+      "schemaURLExact": true
+    }
+  ]
+}
