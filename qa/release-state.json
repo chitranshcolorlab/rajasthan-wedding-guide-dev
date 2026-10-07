@@ -134,7 +134,16 @@
       "developerEvidence": [
         "qa/direct-publisher-activation.md"
       ],
-      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance."
+      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/candidate-live-lifecycle-2026-10-07.md"
+        ],
+        "limits": "Live developer procedure on candidate-compatible executable source; independent formal acceptance pending."
+      }
     },
     "QA-02": {
       "status": "NOT RUN",
@@ -243,12 +252,13 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
           "qa/candidate-publisher-regression-result.md",
-          "qa/candidate-slug-edge-2026-10-07.md"
+          "qa/candidate-slug-edge-2026-10-07.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Live developer procedure on candidate-compatible executable source; independent formal acceptance pending."
       }
     },
     "QA-08": {
@@ -354,7 +364,8 @@
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
           "qa/candidate-publisher-regression-result.md",
-          "qa/candidate-slug-edge-2026-10-07.md"
+          "qa/candidate-slug-edge-2026-10-07.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -391,7 +402,16 @@
         "qa/backend-kb-live-result.md",
         "qa/ten-photo-live-result.md"
       ],
-      "remainingAcceptance": "Full profile/media cases on candidate."
+      "remainingAcceptance": "Full profile/media cases on candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/candidate-live-lifecycle-2026-10-07.md"
+        ],
+        "limits": "Live developer procedure on candidate-compatible executable source; independent formal acceptance pending."
+      }
     },
     "QA-15": {
       "status": "NOT RUN",
@@ -535,11 +555,12 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-route-snapshot-result.md"
+          "qa/candidate-route-snapshot-result.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Live developer procedure on candidate-compatible executable source; independent formal acceptance pending."
       }
     },
     "QA-22": {
@@ -558,7 +579,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-route-snapshot-result.md"
+          "qa/candidate-route-snapshot-result.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -577,11 +599,12 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/owner-form-qa-observations.md"
+          "qa/owner-form-qa-observations.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Live developer procedure on candidate-compatible executable source; independent formal acceptance pending."
       }
     },
     "QA-24": {
@@ -594,7 +617,16 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/candidate-live-lifecycle-2026-10-07.md"
+        ],
+        "limits": "Live developer procedure on candidate-compatible executable source; independent formal acceptance pending."
+      }
     },
     "QA-25": {
       "status": "NOT RUN",
@@ -610,11 +642,12 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/owner-form-qa-observations.md"
+          "qa/owner-form-qa-observations.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Live developer procedure on candidate-compatible executable source; independent formal acceptance pending."
       }
     },
     "QA-26": {
@@ -631,11 +664,12 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/owner-form-qa-observations.md"
+          "qa/owner-form-qa-observations.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Live developer procedure on candidate-compatible executable source; independent formal acceptance pending."
       }
     },
     "QA-27": {
@@ -694,11 +728,12 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/owner-form-qa-observations.md"
+          "qa/owner-form-qa-observations.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Live developer procedure on candidate-compatible executable source; independent formal acceptance pending."
       }
     },
     "QA-30": {
@@ -736,12 +771,13 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
           "qa/owner-form-qa-observations.md",
-          "qa/candidate-metadata-2026-10-07.md"
+          "qa/candidate-metadata-2026-10-07.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Live developer procedure on candidate-compatible executable source; independent formal acceptance pending."
       }
     },
     "QA-32": {
@@ -760,7 +796,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/owner-form-qa-observations.md"
+          "qa/owner-form-qa-observations.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -996,7 +1033,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-route-snapshot-result.md"
+          "qa/candidate-route-snapshot-result.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -1016,11 +1054,12 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/owner-form-qa-observations.md"
+          "qa/owner-form-qa-observations.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Live developer procedure on candidate-compatible executable source; independent formal acceptance pending."
       }
     },
     "QA-45": {
@@ -1034,7 +1073,16 @@
         "qa/latest-catalog-route-live-result.md",
         "qa/scheduler-observed-2026-10-06.md"
       ],
-      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex."
+      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-live-lifecycle-2026-10-07.md"
+        ],
+        "limits": "Remaining compound steps and independent acceptance pending."
+      }
     },
     "QA-46": {
       "status": "NOT RUN",
@@ -1297,7 +1345,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md"
+          "qa/candidate-publisher-regression-result.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -1404,7 +1453,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md"
+          "qa/candidate-publisher-regression-result.md",
+          "qa/candidate-live-lifecycle-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -1728,12 +1778,20 @@
   },
   "evidenceReconciliationSummary": {
     "date": "2026-10-07",
-    "mappedCriteria": 55,
-    "fullDeveloperProcedure": 10,
-    "partialProcedure": 45,
+    "mappedCriteria": 59,
+    "fullDeveloperProcedure": 21,
+    "partialProcedure": 38,
     "formalPass": 0,
     "automatedTestsPassed": 47,
     "limits": "47 repository tests plus 4 supplemental local harness tests are not 51 acceptance criteria. No independent closures or signatures inferred.",
     "additionalCandidateHarnessTestsPassed": 4
+  },
+  "currentDisposableLifecycleFixture": {
+    "date": "2026-10-07",
+    "id": "RWG-e6e1b53a-f3b1-4516-995d-154fc2cda380",
+    "status": "Approved",
+    "slug": "dev-validation-qa-20261007-not-a-real-vendor-didwana",
+    "evidence": "qa/candidate-live-lifecycle-2026-10-07.md",
+    "cleanup": "Retained in isolated DEV for remaining QA. Exclude all disposable records from production."
   }
 }
