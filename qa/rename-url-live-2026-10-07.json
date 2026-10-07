@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-07",
+  "id": "RWG-e27ed2ce-fb00-444e-a7db-15814551ac50",
+  "sheetRange": "Vendor Registrations!B12",
+  "oldName": "DEV Parallel Approval 20261006 — Not a real vendor",
+  "testName": "DEV Renamed URL QA 20261007 — Not a real vendor",
+  "slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana",
+  "sourceChecks": {
+    "onlyB12Changed": true,
+    "A1AB20ExactRestored": true,
+    "approvedStatusUnchanged": true,
+    "slugUnchanged": true
+  },
+  "rename": {
+    "publisher": 37639452069,
+    "trigger": "existing Apps Script automatic timer via workflow_dispatch",
+    "commit": "ac11a60a52d73fdbc8d9801ea1b0e62875636088",
+    "pages": 37639542106,
+    "conclusion": "success",
+    "h1AndSchemaNewName": true,
+    "canonicalOldURL": true
+  },
+  "restore": {
+    "publisher": 37639860528,
+    "trigger": "agent manual GitHub workflow_dispatch",
+    "commit": "3c75728b9dc5acd328b6c30bac6de91c5405d005",
+    "pages": 37639920204,
+    "conclusion": "success",
+    "liveHTTP": 200,
+    "originalName": true,
+    "all16IDNameSlugPairsRestored": true,
+    "sitemapOldURLCount": 1,
+    "newDerivedURLAbsent": true
+  },
+  "developerFull": 39,
+  "formalPassed": 0
+}
