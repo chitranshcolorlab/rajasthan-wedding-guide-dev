@@ -1,0 +1,3 @@
+# Mixed-format ten-photo live QA — 7 October 2026
+
+IN PROGRESS. User authorized next verification at11:44:10IST. One public submit attempted for DEV Ten Mixed Media QA 20261007 — Not a real vendor, disposable9999999999, ten valid160x100 test images JPEG/PNG/WebP and JPEG logo, all below200KB. Response read timed out; mutation outcome initially unknown. Do not resubmit. Inspect existing DEV admin/Sheet for record. If found approve only exact ID, verify ten gallery images/logo load, then reject and verify completed public cleanup. Uploaded QA source/media retained for audit, never production. No existing vendor mutation intended.
