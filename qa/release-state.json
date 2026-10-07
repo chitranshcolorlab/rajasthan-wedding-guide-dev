@@ -244,7 +244,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md"
+          "qa/candidate-publisher-regression-result.md",
+          "qa/candidate-slug-edge-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -259,7 +260,16 @@
         "qa/direct-publisher-activation.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-slug-edge-2026-10-07.md"
+        ],
+        "limits": "Live exact-candidate approval acceptance remains pending."
+      }
     },
     "QA-09": {
       "status": "NOT RUN",
@@ -271,7 +281,16 @@
         "qa/direct-publisher-activation.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-slug-edge-2026-10-07.md"
+        ],
+        "limits": "Live exact-candidate approval acceptance remains pending."
+      }
     },
     "QA-10": {
       "status": "NOT RUN",
@@ -289,7 +308,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md"
+          "qa/candidate-publisher-regression-result.md",
+          "qa/candidate-slug-edge-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -310,7 +330,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md"
+          "qa/candidate-publisher-regression-result.md",
+          "qa/candidate-slug-edge-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -331,7 +352,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md"
+          "qa/candidate-publisher-regression-result.md",
+          "qa/candidate-slug-edge-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -352,7 +374,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md"
+          "qa/candidate-publisher-regression-result.md",
+          "qa/candidate-slug-edge-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -1690,11 +1713,12 @@
   },
   "evidenceReconciliationSummary": {
     "date": "2026-10-07",
-    "mappedCriteria": 52,
+    "mappedCriteria": 54,
     "fullDeveloperProcedure": 8,
-    "partialProcedure": 44,
+    "partialProcedure": 46,
     "formalPass": 0,
     "automatedTestsPassed": 47,
-    "limits": "35 automated tests are not 35 acceptance criteria. No independent closures or signatures inferred."
+    "limits": "47 repository tests plus 4 supplemental local harness tests are not 51 acceptance criteria. No independent closures or signatures inferred.",
+    "additionalCandidateHarnessTestsPassed": 4
   }
 }
