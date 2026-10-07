@@ -1,0 +1,17 @@
+{
+  "observedUtc": "2026-10-07T05:41:25.221497+00:00",
+  "cases": [
+    {
+      "slug": "dev-owner-qa-1930-not-a-real-vendor-didwana",
+      "status": 404,
+      "approvedContentPresent": false,
+      "passed": true
+    },
+    {
+      "slug": "qa-nonexistent-20261007-1112",
+      "status": 404,
+      "approvedContentPresent": false,
+      "passed": true
+    }
+  ]
+}
