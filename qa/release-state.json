@@ -1793,5 +1793,19 @@
     "slug": "dev-validation-qa-20261007-not-a-real-vendor-didwana",
     "evidence": "qa/candidate-live-lifecycle-2026-10-07.md",
     "cleanup": "Retained in isolated DEV for remaining QA. Exclude all disposable records from production."
+  },
+  "activeCronIsolationTest": {
+    "ownerAuthorization": "2026-10-07T10:13:53+05:30",
+    "id": "RWG-e6e1b53a-f3b1-4516-995d-154fc2cda380",
+    "sheet": "Vendor Registrations",
+    "cell": "O19",
+    "originalServices": "Disposable server-validation QA. Do not contact.",
+    "marker": "CRON-QA-20261007-ISOLATED-A",
+    "timerOriginal": "retryDevPublication / Head / Time-driven / Minutes timer / Every 5 minutes / Notify me daily",
+    "timerTemporary": "Specific date and time 2026-10-08 00:00 GMT-07:00; same function/deployment/notification",
+    "status": "IN PROGRESS — restore original cell and five-minute timer after bounded observation",
+    "baselineLastDispatch": 37573060464,
+    "baselineLastSchedule": 37549346498,
+    "evidence": "qa/cron-isolation-2026-10-07.md"
   }
 }
