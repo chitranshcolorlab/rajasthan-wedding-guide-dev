@@ -402,7 +402,16 @@
         "qa/backend-kb-live-result.md",
         "qa/ten-photo-live-result.md"
       ],
-      "remainingAcceptance": "Full profile/media cases on candidate."
+      "remainingAcceptance": "Full profile/media cases on candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-public-image-links-2026-10-07.md"
+        ],
+        "limits": "Live upload and compound acceptance steps remain."
+      }
     },
     "QA-16": {
       "status": "NOT RUN",
@@ -463,7 +472,8 @@
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
           "qa/candidate-publisher-regression-result.md",
-          "qa/candidate-full-suite-2026-10-07.md"
+          "qa/candidate-full-suite-2026-10-07.md",
+          "qa/candidate-public-image-links-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -872,11 +882,12 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-metadata-2026-10-07.md"
+          "qa/candidate-metadata-2026-10-07.md",
+          "qa/candidate-public-image-links-2026-10-07.md"
         ],
-        "limits": "Additional compound acceptance steps remain."
+        "limits": "Live og:image metadata plus HTTP/MIME/byte-signature checks passed; independent acceptance pending."
       }
     },
     "QA-39": {
@@ -894,7 +905,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-metadata-2026-10-07.md"
+          "qa/candidate-metadata-2026-10-07.md",
+          "qa/candidate-public-image-links-2026-10-07.md"
         ],
         "limits": "Additional compound acceptance steps remain."
       }
@@ -1713,8 +1725,8 @@
   },
   "evidenceReconciliationSummary": {
     "date": "2026-10-07",
-    "mappedCriteria": 54,
-    "fullDeveloperProcedure": 8,
+    "mappedCriteria": 55,
+    "fullDeveloperProcedure": 9,
     "partialProcedure": 46,
     "formalPass": 0,
     "automatedTestsPassed": 47,
