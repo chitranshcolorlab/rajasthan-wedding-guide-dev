@@ -1822,5 +1822,20 @@
     "publisherTests": "47 pass / 0 fail in both inspected jobs",
     "inference": "Schedule event delivery is intermittent; exact provider-side cause not established.",
     "evidence": "qa/cron-diagnostic-2026-10-07.md"
+  },
+  "backupFreshChangeQa": {
+    "status": "DEVELOPER VERIFIED — fresh publication and automatic cleanup",
+    "marker": "BACKUP-QA-20261007-B",
+    "publishRun": 37575051961,
+    "publishCommit": "5831af8a8867806c2167a53838d89adf73acc372",
+    "publishPages": 37575079578,
+    "cleanupRun": 37575451549,
+    "cleanupPages": 37575481467,
+    "cleanupCommit": "ea4d2bb74707624bc73396927cdb80bd75c030b7",
+    "originalFullRowRestored": true,
+    "liveMarkerAbsent": true,
+    "timerUnchanged": "Every 5 minutes",
+    "formalStatus": "unchanged; native schedule AUTO-001 still open",
+    "evidence": "qa/backup-fresh-change-2026-10-07.md"
   }
 }
