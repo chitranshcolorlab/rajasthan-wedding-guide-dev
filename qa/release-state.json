@@ -122,6 +122,25 @@
         "authenticatedReadbacksAfterDiscard": 1,
         "remaining": "Independent frozen-candidate retest; unknown original upstream malformed-response cause not reproduced."
       }
+    },
+    {
+      "id": "SEO-001",
+      "area": "legacy-canonical",
+      "severity": "S3",
+      "priority": "P2",
+      "status": "IN PROGRESS",
+      "releaseBlocker": true,
+      "observed": "Harshita DEV profile missing canonical tag; QA-55 fails",
+      "expected": "One canonical URL equal to exact DEV Harshita profile URL",
+      "rootCause": "Canonical link omitted from copied legacy HTML head",
+      "environment": "isolated DEV",
+      "build": "9a30cc7c04641db43d736cc6abcd771c94119cdf",
+      "changedFiles": [
+        "anchor-harshita-shekhawat.html"
+      ],
+      "qaOwner": "Unassigned",
+      "evidence": "qa/legacy-metadata-2026-10-07.md",
+      "remainingAcceptance": "Live fix-build retest and independent acceptance; no developer closure"
     }
   ],
   "tests": {
@@ -1300,11 +1319,11 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FAILED PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-security-recovery-result.md"
+          "qa/legacy-metadata-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Canonical missing on frozen candidate; fix changes legacy source and requires affected candidate retest."
       }
     },
     "QA-56": {
@@ -1835,5 +1854,15 @@
     "timerUnchanged": "Every 5 minutes",
     "formalStatus": "unchanged; native schedule AUTO-001 still open",
     "evidence": "qa/backup-fresh-change-2026-10-07.md"
+  },
+  "affectedCandidateRetest": {
+    "reason": "SEO-001 canonical-only legacy source patch",
+    "baseCandidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+    "affected": [
+      "QA-54",
+      "QA-55",
+      "QA-57"
+    ],
+    "status": "Fix build pending live retest; owner release freeze remains unchanged"
   }
 }
