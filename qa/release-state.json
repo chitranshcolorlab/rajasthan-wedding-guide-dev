@@ -1813,5 +1813,14 @@
     "timerRestoration": "Saved and reopened retryDevPublication / Head / Time-driven / Minutes timer / Every 5 minutes / Notify me daily",
     "liveRestoration": "2026-10-07T04:59:47.210393+00:00 HTTP 200; marker absent; original Services present",
     "proof": "cron-timer-restored-20261007.jpg"
+  },
+  "cronDiagnostic": {
+    "checkedAt": "2026-10-07 approximately 10:34 IST",
+    "status": "BLOCKED — fresh schedule publication and five-minute cadence unverified",
+    "lastSchedule": 37549346498,
+    "restoredBackupRun": 37574231812,
+    "publisherTests": "47 pass / 0 fail in both inspected jobs",
+    "inference": "Schedule event delivery is intermittent; exact provider-side cause not established.",
+    "evidence": "qa/cron-diagnostic-2026-10-07.md"
   }
 }
