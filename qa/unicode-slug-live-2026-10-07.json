@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-07",
+  "id": "RWG-7165e471-228e-442d-b589-0341dcde9ba6",
+  "slug": "dev-and-qa-20261007-not-a-real-vendor-didwana",
+  "live": {
+    "h1Exact": true,
+    "h1Children": 0,
+    "jsonLdNameExact": true,
+    "approvalPages": 37636211507
+  },
+  "cleanup": {
+    "savedStatus": "VERIFIED Rejected",
+    "publisher": 37636861826,
+    "tests": {
+      "pass": 47,
+      "fail": 0
+    },
+    "generatedCommit": "59d5f6418dee99f81e2305cbecfeb28022c6e691",
+    "failedPages": 37636916034,
+    "recoveryPages": 37637106449,
+    "recoveryConclusion": "success",
+    "profileHTTP": 404,
+    "approvedCount": 16,
+    "catalogTargetAbsent": true,
+    "sitemapTargetAbsent": true
+  },
+  "developerFull": 38,
+  "formalPassed": 0
+}

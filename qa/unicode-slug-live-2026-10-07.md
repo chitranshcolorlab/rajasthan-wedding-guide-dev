@@ -7,3 +7,7 @@ Slug `dev-and-qa-20261007-not-a-real-vendor-didwana` is nonempty and matches saf
 Admin independently read saved Rejected status. Automatic cleanup publisher 37636861826 succeeded, generated commit 59d5f6418dee99f81e2305cbecfeb28022c6e691. Pages 37636916034 failed before build steps; GitHub API refused failed-job rerun with 'This workflow run cannot be retried'. This evidence commit requests a fresh Pages build. Live removal still requires verification below.
 
 QA-08 and QA-09 developer procedure coverage complete; formal statuses NOT RUN and independent signatures unchanged. Pure-Hindi-only live fallback and hostile script-name live permutation not claimed. QA-40 stays partial. Production untouched.
+
+## Cleanup completed
+
+Fresh Pages run 37637106449 at evidence commit 72a8127bc62ec5b2585af6c6eaf26e10f789448d completed SUCCESS. After deployment: approved-vendors.json HTTP 200, exactly 16 items and target absent; sitemap-vendors.xml HTTP 200 and target absent; disposable profile HTTP 404. Cleanup fully verified. Automatic publisher tests: 47 pass, 0 fail; 16 vendors. Failed deployment was recovered by the new evidence commit, not by a configuration change. No token or OAuth changes made.
