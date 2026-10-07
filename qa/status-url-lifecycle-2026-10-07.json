@@ -1,0 +1,21 @@
+{
+  "id": "RWG-e27ed2ce-fb00-444e-a7db-15814551ac50",
+  "statesVerified": [
+    "Edit Required",
+    "Rejected",
+    "Approved"
+  ],
+  "slugUnchangedEach": true,
+  "sourceRowRestoredExactly": true,
+  "publicationQueued": false,
+  "manualWorkflowHTTP": 500,
+  "recoveryRerunAccepted": true,
+  "recoveryRun": 37642204343,
+  "recoveryAttempt": 2,
+  "recoveryFinalStatus": "queued",
+  "finalCatalogCount": 16,
+  "finalProfileHTTP": 200,
+  "liveRemovalVerified": false,
+  "developerFull": 41,
+  "formalPassed": 0
+}

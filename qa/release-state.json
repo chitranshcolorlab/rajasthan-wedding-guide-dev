@@ -92,6 +92,13 @@
         "evidence": "qa/apps-script-timer-backup.md",
         "ciRun": 37439175688,
         "sourceCommit": "7ec04f9b4914e17f36b011f09c0f449290a471cc"
+      },
+      "latestPublicationQueueObservation": {
+        "date": "2026-10-07",
+        "evidence": "qa/status-url-lifecycle-2026-10-07.md",
+        "observed": "Three authenticated status mutations saved successfully but publication request reported not queued. GitHub manual workflow submission rendered Server Error 500. No new publisher runs after last 15:05:57 UTC at checks through 15:16 UTC. Existing-job connector rerun accepted, attempt2 queued at final check.",
+        "rootCause": "Unconfirmed. GitHub official status reported operational and no Oct7 incident at observation; do not infer global outage or token failure.",
+        "cleanup": "Original Approved source row restored exactly; live catalog16 and original target URL HTTP200. No code/config/token changes."
       }
     },
     {
@@ -386,13 +393,11 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md",
-          "qa/candidate-slug-edge-2026-10-07.md",
-          "qa/candidate-live-lifecycle-2026-10-07.md"
+          "qa/status-url-lifecycle-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Authenticated Edit Required, Rejected and reapproved saved states and exact Sheet slug retention verified. Original source row exactly restored. Unpublish/republication live propagation blocked during this attempt; independent formal acceptance pending."
       }
     },
     "QA-13": {
@@ -823,9 +828,10 @@
         "evidence": [
           "qa/owner-form-qa-observations.md",
           "qa/candidate-live-lifecycle-2026-10-07.md",
-          "qa/rename-url-live-2026-10-07.md"
+          "qa/rename-url-live-2026-10-07.md",
+          "qa/status-url-lifecycle-2026-10-07.md"
         ],
-        "limits": "Current live rename keeps original URL, canonical and vendor ID. Earlier status lifecycle evidence retained; all combined same-record status permutations and independent formal acceptance remain pending."
+        "limits": "Rename and saved status transitions retain ID/slug and original final live URL. This status attempt did not verify live removal/reappearance because publication was not queued and manual dispatch returned GitHub 500."
       }
     },
     "QA-33": {
