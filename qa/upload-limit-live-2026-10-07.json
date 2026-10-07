@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-07T06:12:10.735728+00:00",
+  "cases": [
+    {
+      "case": "unsupported",
+      "response": {
+        "ok": false,
+        "error": "Error: Unsupported image type"
+      },
+      "passed": true
+    },
+    {
+      "case": "oversize",
+      "response": {
+        "ok": false,
+        "error": "Error: Image exceeds 200 KB limit"
+      },
+      "passed": true
+    },
+    {
+      "case": "eleven-photos",
+      "response": {
+        "ok": false,
+        "error": "Error: Maximum 10 photos allowed"
+      },
+      "passed": true
+    }
+  ],
+  "sourceIdsUnchanged": true,
+  "beforeAfterVendorIds": 19
+}

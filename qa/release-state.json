@@ -492,11 +492,12 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
+          "qa/upload-limit-live-2026-10-07.md",
           "qa/candidate-full-suite-2026-10-07.md"
         ],
-        "limits": "Local mock regression does not replace live candidate acceptance."
+        "limits": "Live unsupported and oversized encoded payload rejected; source validation ordering proves rejection precedes Drive creation. No separate Drive inventory observation; independent formal acceptance pending."
       }
     },
     "QA-18": {
@@ -517,7 +518,8 @@
         "evidence": [
           "qa/candidate-publisher-regression-result.md",
           "qa/candidate-full-suite-2026-10-07.md",
-          "qa/candidate-public-image-links-2026-10-07.md"
+          "qa/candidate-public-image-links-2026-10-07.md",
+          "qa/upload-limit-live-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -1803,8 +1805,8 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-07",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 28,
-    "partialProcedure": 31,
+    "fullDeveloperProcedure": 29,
+    "partialProcedure": 30,
     "formalPass": 0,
     "automatedTestsPassed": 47,
     "limits": "47 repository tests plus 4 supplemental local harness tests are not 51 acceptance criteria. No independent closures or signatures inferred.",
