@@ -1,0 +1,23 @@
+[
+  {
+    "input": "DEV \"Quoted\" & Wedding",
+    "jsonParse": true,
+    "fieldsExact": true,
+    "noRawLessThan": true,
+    "noInjectedScript": true
+  },
+  {
+    "input": "DEV </script><script>alert(1)</script>",
+    "jsonParse": true,
+    "fieldsExact": true,
+    "noRawLessThan": true,
+    "noInjectedScript": true
+  },
+  {
+    "input": "डीडवाना \\ Studio\nLine Separator",
+    "jsonParse": true,
+    "fieldsExact": true,
+    "noRawLessThan": true,
+    "noInjectedScript": true
+  }
+]
