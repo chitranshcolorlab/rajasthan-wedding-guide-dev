@@ -1,0 +1,89 @@
+{
+  "runs": [
+    {
+      "id": 37620346215,
+      "created": "2026-10-07T12:20:56Z",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37619760021,
+      "created": "2026-10-07T12:15:56Z",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37619189012,
+      "created": "2026-10-07T12:11:01Z",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37618603925,
+      "created": "2026-10-07T12:05:56Z",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37618012594,
+      "created": "2026-10-07T12:00:56Z",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37617438130,
+      "created": "2026-10-07T11:55:56Z",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37616874040,
+      "created": "2026-10-07T11:50:56Z",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37616302467,
+      "created": "2026-10-07T11:45:56Z",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37615725382,
+      "created": "2026-10-07T11:40:56Z",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37615161764,
+      "created": "2026-10-07T11:35:56Z",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37614596442,
+      "created": "2026-10-07T11:30:56Z",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 37614031303,
+      "created": "2026-10-07T11:25:58Z",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "intervalSeconds": [
+    300,
+    295,
+    305,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300,
+    300,
+    298
+  ]
+}
