@@ -450,11 +450,11 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-public-image-links-2026-10-07.md"
+          "qa/ten-mixed-media-2026-10-07.md"
         ],
-        "limits": "Live upload and compound acceptance steps remain."
+        "limits": "Live supported-format upload, ten-photo gallery and cleanup verified. WebP thumbnails served as JPEG. Independent formal acceptance pending; large-original frontend compression is not covered."
       }
     },
     "QA-16": {
@@ -514,14 +514,12 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md",
-          "qa/candidate-full-suite-2026-10-07.md",
-          "qa/candidate-public-image-links-2026-10-07.md",
+          "qa/ten-mixed-media-2026-10-07.md",
           "qa/upload-limit-live-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Live supported-format upload, ten-photo gallery and cleanup verified. WebP thumbnails served as JPEG. Independent formal acceptance pending; large-original frontend compression is not covered."
       }
     },
     "QA-19": {
