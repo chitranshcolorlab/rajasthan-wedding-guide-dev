@@ -178,7 +178,16 @@
       "developerEvidence": [
         "qa/registration-validation-live-result.md"
       ],
-      "remainingAcceptance": "Complete case mapping and candidate retest."
+      "remainingAcceptance": "Complete case mapping and candidate retest.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/owner-form-qa-observations.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-06": {
       "status": "NOT RUN",
@@ -190,7 +199,16 @@
         "qa/concurrent-registration-live-result.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "Complete individual double-approval cases and independent frozen-candidate retest."
+      "remainingAcceptance": "Complete individual double-approval cases and independent frozen-candidate retest.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-07": {
       "status": "NOT RUN",
@@ -202,7 +220,16 @@
         "qa/direct-publisher-activation.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-08": {
       "status": "NOT RUN",
@@ -238,7 +265,16 @@
         "qa/direct-publisher-activation.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-11": {
       "status": "NOT RUN",
@@ -250,7 +286,16 @@
         "qa/direct-publisher-activation.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-12": {
       "status": "NOT RUN",
@@ -262,7 +307,16 @@
         "qa/direct-publisher-activation.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-13": {
       "status": "NOT RUN",
@@ -274,7 +328,16 @@
         "qa/direct-publisher-activation.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance."
+      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-14": {
       "status": "NOT RUN",
@@ -334,7 +397,16 @@
         "qa/backend-kb-live-result.md",
         "qa/ten-photo-live-result.md"
       ],
-      "remainingAcceptance": "Full profile/media cases on candidate."
+      "remainingAcceptance": "Full profile/media cases on candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-19": {
       "status": "NOT RUN",
@@ -345,7 +417,17 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md"
       ],
-      "remainingAcceptance": "Actual device contact behavior not exercised with placeholder numbers."
+      "remainingAcceptance": "Actual device contact behavior not exercised with placeholder numbers.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/owner-form-qa-observations.md",
+          "qa/candidate-route-snapshot-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-20": {
       "status": "NOT RUN",
@@ -356,7 +438,17 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md"
       ],
-      "remainingAcceptance": "Actual device contact behavior not exercised with placeholder numbers."
+      "remainingAcceptance": "Actual device contact behavior not exercised with placeholder numbers.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/owner-form-qa-observations.md",
+          "qa/candidate-route-snapshot-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-21": {
       "status": "NOT RUN",
@@ -368,7 +460,16 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Independent candidate-specific direct URL/refresh/404 acceptance."
+      "remainingAcceptance": "Independent candidate-specific direct URL/refresh/404 acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-route-snapshot-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-22": {
       "status": "NOT RUN",
@@ -380,7 +481,16 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Independent candidate-specific direct URL/refresh/404 acceptance."
+      "remainingAcceptance": "Independent candidate-specific direct URL/refresh/404 acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-route-snapshot-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-23": {
       "status": "NOT RUN",
@@ -392,7 +502,16 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/owner-form-qa-observations.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-24": {
       "status": "NOT RUN",
@@ -416,7 +535,16 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/owner-form-qa-observations.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-26": {
       "status": "NOT RUN",
@@ -428,7 +556,16 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/owner-form-qa-observations.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-27": {
       "status": "NOT RUN",
@@ -440,7 +577,16 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-28": {
       "status": "NOT RUN",
@@ -452,7 +598,16 @@
         "qa/direct-publisher-activation.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate."
+      "remainingAcceptance": "Full category/filter/publishing cases on frozen candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-29": {
       "status": "NOT RUN",
@@ -464,7 +619,16 @@
         "qa/live-smoke-2026-10-05.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full individual linking acceptance on frozen candidate."
+      "remainingAcceptance": "Full individual linking acceptance on frozen candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/owner-form-qa-observations.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-30": {
       "status": "NOT RUN",
@@ -476,7 +640,16 @@
         "qa/live-smoke-2026-10-05.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full individual linking acceptance on frozen candidate."
+      "remainingAcceptance": "Full individual linking acceptance on frozen candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-security-recovery-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-31": {
       "status": "NOT RUN",
@@ -488,7 +661,16 @@
         "qa/live-smoke-2026-10-05.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full individual linking acceptance on frozen candidate."
+      "remainingAcceptance": "Full individual linking acceptance on frozen candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/owner-form-qa-observations.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-32": {
       "status": "NOT RUN",
@@ -500,7 +682,16 @@
         "qa/live-smoke-2026-10-05.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full individual linking acceptance on frozen candidate."
+      "remainingAcceptance": "Full individual linking acceptance on frozen candidate.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/owner-form-qa-observations.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-33": {
       "status": "NOT RUN",
@@ -512,7 +703,16 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full candidate SEO criteria and independent acceptance."
+      "remainingAcceptance": "Full candidate SEO criteria and independent acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/candidate-route-snapshot-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-34": {
       "status": "NOT RUN",
@@ -524,7 +724,16 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full candidate SEO criteria and independent acceptance."
+      "remainingAcceptance": "Full candidate SEO criteria and independent acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-35": {
       "status": "NOT RUN",
@@ -536,7 +745,16 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full candidate SEO criteria and independent acceptance."
+      "remainingAcceptance": "Full candidate SEO criteria and independent acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/candidate-route-snapshot-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-36": {
       "status": "NOT RUN",
@@ -558,7 +776,16 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md"
       ],
-      "remainingAcceptance": "Social crawler preview and candidate case mapping."
+      "remainingAcceptance": "Social crawler preview and candidate case mapping.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-route-snapshot-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-38": {
       "status": "NOT RUN",
@@ -592,7 +819,18 @@
         "qa/security-seo-mobile-live-result.md",
         "qa/latest-catalog-route-live-result.md"
       ],
-      "remainingAcceptance": "Full schema/candidate acceptance."
+      "remainingAcceptance": "Full schema/candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-route-snapshot-result.md",
+          "qa/candidate-security-recovery-result.md",
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-41": {
       "status": "NOT RUN",
@@ -605,7 +843,16 @@
         "qa/latest-catalog-route-live-result.md",
         "qa/scheduler-observed-2026-10-06.md"
       ],
-      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex."
+      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-route-snapshot-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-42": {
       "status": "NOT RUN",
@@ -618,7 +865,16 @@
         "qa/latest-catalog-route-live-result.md",
         "qa/scheduler-observed-2026-10-06.md"
       ],
-      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex."
+      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/candidate-route-snapshot-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-43": {
       "status": "NOT RUN",
@@ -631,7 +887,16 @@
         "qa/latest-catalog-route-live-result.md",
         "qa/scheduler-observed-2026-10-06.md"
       ],
-      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex."
+      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-route-snapshot-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-44": {
       "status": "NOT RUN",
@@ -644,7 +909,16 @@
         "qa/latest-catalog-route-live-result.md",
         "qa/scheduler-observed-2026-10-06.md"
       ],
-      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex."
+      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/owner-form-qa-observations.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-45": {
       "status": "NOT RUN",
@@ -673,7 +947,17 @@
         "qa/data001-column-reorder-live-result.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest."
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-security-recovery-result.md",
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-47": {
       "status": "NOT RUN",
@@ -689,7 +973,18 @@
         "qa/data001-column-reorder-live-result.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest."
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-security-recovery-result.md",
+          "qa/candidate-publisher-regression-result.md",
+          "qa/candidate-live-auth-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-48": {
       "status": "NOT RUN",
@@ -705,7 +1000,16 @@
         "qa/data001-column-reorder-live-result.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest."
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-49": {
       "status": "NOT RUN",
@@ -721,7 +1025,16 @@
         "qa/data001-column-reorder-live-result.md",
         "qa/concurrent-approval-live-result.md"
       ],
-      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest."
+      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-50": {
       "status": "NOT RUN",
@@ -733,7 +1046,16 @@
         "qa/live-smoke-2026-10-05.md",
         "qa/optional-fields-live-result.md"
       ],
-      "remainingAcceptance": "Complete optional-field cases and independent frozen-candidate acceptance."
+      "remainingAcceptance": "Complete optional-field cases and independent frozen-candidate acceptance.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-51": {
       "status": "NOT RUN",
@@ -744,7 +1066,16 @@
       "developerEvidence": [
         "qa/legacy-dev-live-result.md"
       ],
-      "remainingAcceptance": "Full independent candidate legacy regression."
+      "remainingAcceptance": "Full independent candidate legacy regression.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-security-recovery-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-52": {
       "status": "NOT RUN",
@@ -755,7 +1086,16 @@
       "developerEvidence": [
         "qa/legacy-dev-live-result.md"
       ],
-      "remainingAcceptance": "Full independent candidate legacy regression."
+      "remainingAcceptance": "Full independent candidate legacy regression.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-security-recovery-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-53": {
       "status": "NOT RUN",
@@ -766,7 +1106,16 @@
       "developerEvidence": [
         "qa/legacy-dev-live-result.md"
       ],
-      "remainingAcceptance": "Full independent candidate legacy regression."
+      "remainingAcceptance": "Full independent candidate legacy regression.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-security-recovery-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-54": {
       "status": "NOT RUN",
@@ -777,7 +1126,16 @@
       "developerEvidence": [
         "qa/legacy-dev-live-result.md"
       ],
-      "remainingAcceptance": "Full independent candidate legacy regression."
+      "remainingAcceptance": "Full independent candidate legacy regression.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-security-recovery-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-55": {
       "status": "NOT RUN",
@@ -788,7 +1146,16 @@
       "developerEvidence": [
         "qa/legacy-dev-live-result.md"
       ],
-      "remainingAcceptance": "Full independent candidate legacy regression."
+      "remainingAcceptance": "Full independent candidate legacy regression.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-security-recovery-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-56": {
       "status": "NOT RUN",
@@ -799,7 +1166,16 @@
       "developerEvidence": [
         "qa/legacy-dev-live-result.md"
       ],
-      "remainingAcceptance": "Full independent candidate legacy regression."
+      "remainingAcceptance": "Full independent candidate legacy regression.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-security-recovery-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-57": {
       "status": "NOT RUN",
@@ -810,7 +1186,16 @@
       "developerEvidence": [
         "qa/legacy-dev-live-result.md"
       ],
-      "remainingAcceptance": "Full independent candidate legacy regression."
+      "remainingAcceptance": "Full independent candidate legacy regression.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-58": {
       "status": "NOT RUN",
@@ -865,7 +1250,17 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md"
       ],
-      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-security-recovery-result.md",
+          "qa/owner-form-qa-observations.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-63": {
       "status": "NOT RUN",
@@ -876,7 +1271,17 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md"
       ],
-      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-security-recovery-result.md",
+          "qa/owner-form-qa-observations.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     },
     "QA-64": {
       "status": "NOT RUN",
@@ -888,7 +1293,16 @@
         "qa/live-smoke-2026-10-05.md",
         "qa/direct-publisher-activation.md"
       ],
-      "remainingAcceptance": "Original scheduled-publication requirement remains unverified; complete golden-vendor candidate evidence and independent signoff."
+      "remainingAcceptance": "Original scheduled-publication requirement remains unverified; complete golden-vendor candidate evidence and independent signoff.",
+      "evidenceReconciliation": {
+        "date": "2026-10-07",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "evidence": [
+          "qa/candidate-publisher-regression-result.md"
+        ],
+        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+      }
     }
   },
   "legacy": [
@@ -1206,5 +1620,14 @@
     "timerSource": "Head verified identical to Version 4; one additional final newline vs repository",
     "sourceEvidence": "qa/backend-candidate-source-comparison.md",
     "dataPolicy": "Timer remains active. Record source row state, generated commit and live deployment for every mutable-data case. Any executable source change invalidates affected candidate acceptance."
+  },
+  "evidenceReconciliationSummary": {
+    "date": "2026-10-07",
+    "mappedCriteria": 45,
+    "fullDeveloperProcedure": 5,
+    "partialProcedure": 40,
+    "formalPass": 0,
+    "automatedTestsPassed": 35,
+    "limits": "35 automated tests are not 35 acceptance criteria. No independent closures or signatures inferred."
   }
 }
