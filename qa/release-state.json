@@ -200,11 +200,12 @@
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/owner-form-qa-observations.md"
+          "qa/owner-form-qa-observations.md",
+          "qa/candidate-live-validation-2026-10-07.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Live invalid-input classes and forged-status response/public exclusion verified. Independent acceptance pending; no private sheet before/after audit inferred."
       }
     },
     "QA-06": {
@@ -1056,7 +1057,8 @@
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
           "qa/candidate-security-recovery-result.md",
-          "qa/candidate-publisher-regression-result.md"
+          "qa/candidate-publisher-regression-result.md",
+          "qa/candidate-live-validation-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -1133,7 +1135,8 @@
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md"
+          "qa/candidate-publisher-regression-result.md",
+          "qa/candidate-live-validation-2026-10-07.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
@@ -1726,8 +1729,8 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-07",
     "mappedCriteria": 55,
-    "fullDeveloperProcedure": 9,
-    "partialProcedure": 46,
+    "fullDeveloperProcedure": 10,
+    "partialProcedure": 45,
     "formalPass": 0,
     "automatedTestsPassed": 47,
     "limits": "47 repository tests plus 4 supplemental local harness tests are not 51 acceptance criteria. No independent closures or signatures inferred.",
