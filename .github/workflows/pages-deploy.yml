@@ -43,6 +43,9 @@ jobs:
                   shutil.copy2(path, target / path.name)
           for name in ('vendors', 'rajasthan'):
               shutil.copytree(root / name, target / name)
+          (target / 'scripts').mkdir()
+          shutil.copy2(root / 'scripts' / 'dev-config.js', target / 'scripts' / 'dev-config.js')
+          assert (target / 'scripts' / 'dev-config.js').is_file()
           catalog = (target / 'approved-vendors.json').read_bytes()
           json.loads(catalog)
           for name in ('index.html', 'vendors.html', 'admin-review.html', 'vendor-register.html', 'sitemap-vendors.xml'):
