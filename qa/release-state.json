@@ -2147,5 +2147,11 @@
     "evidence": "qa/all-category-links-2026-10-08.md",
     "result": "All exact selected category/heading pairs match; 16 photography cards and zero cards with empty state for other 14 categories.",
     "limits": "Approved dynamic catalog only. Historical manually authored profiles are outside this catalog; no approval/publication or formal acceptance inferred."
+  },
+  "directoryBreadcrumbDeveloperVerification": {
+    "date": "2026-10-08",
+    "verifiedHead": "47841502186e17df23b1ecbc99c513a7f1abde82",
+    "evidence": "qa/directory-breadcrumb-live-2026-10-08.md",
+    "scope": "Rajasthan → Didwana-Kuchaman → Didwana → Photographers & Films; reverse city/district/Rajasthan breadcrumb clicks. Not all districts."
   }
 }
