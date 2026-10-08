@@ -2130,5 +2130,14 @@
     "promptedProcedure": "Android Chrome: Call Now opens dialer with correct number; WhatsApp Enquiry opens same recipient with Rajasthan Wedding Guide attribution text; no call/message sent requested.",
     "evidence": "qa/android-owner-contact-2026-10-08.md",
     "limits": "Owner confirmation only. No device model/browser version/screenshot or explicit app choice supplied. No completed call/message transmission or independent PASS inferred."
+  },
+  "categoryNavigationDeveloperRepair": {
+    "date": "2026-10-08",
+    "categoryDirectoryCommit": "d76d2a680d60acd3be87b4e56a3c9fd5378496e6",
+    "emptyCategoryCommit": "b55026610dbccfc116081dd0f7f168aa847de170",
+    "pagesRun": 37766553722,
+    "evidence": "qa/category-navigation-repair-2026-10-08.md",
+    "developerResult": "Current live navigation, populated category, empty category and refresh verified",
+    "independentAcceptance": "PENDING; frozen candidate unchanged"
   }
 }
