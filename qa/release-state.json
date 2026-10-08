@@ -1187,13 +1187,14 @@
       ],
       "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest.",
       "evidenceReconciliation": {
-        "date": "2026-10-07",
+        "date": "2026-10-08",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "verifiedBuild": "630a6805b2d94973c2e98301aa71919fc23886a8",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-publisher-regression-result.md"
+          "qa/email-column-admin-live-2026-10-08.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Email-first native column move: public payload (16 approved vendors) identical; fresh authenticated admin-list approved16/rejected6 identical; complete bounded native CellData restored exactly. Developer evidence only; independent frozen-candidate acceptance and DATA-001 closure not inferred."
       }
     },
     "QA-49": {
@@ -1817,9 +1818,9 @@
     "dataPolicy": "Timer remains active. Record source row state, generated commit and live deployment for every mutable-data case. Any executable source change invalidates affected candidate acceptance."
   },
   "evidenceReconciliationSummary": {
-    "date": "2026-10-07",
+    "date": "2026-10-08",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 29,
+    "fullDeveloperProcedure": 43,
     "partialProcedure": 30,
     "formalPass": 0,
     "automatedTestsPassed": 47,
