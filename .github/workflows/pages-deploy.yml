@@ -34,6 +34,8 @@ jobs:
         run: |
           python3 - <<'PY'
           import hashlib, json, os, pathlib, shutil, subprocess
+          from html.parser import HTMLParser
+          from urllib.parse import urlsplit
           root = pathlib.Path('.')
           target = root / '_site'
           target.mkdir()
@@ -44,8 +46,27 @@ jobs:
           for name in ('vendors', 'rajasthan'):
               shutil.copytree(root / name, target / name)
           (target / 'scripts').mkdir()
-          shutil.copy2(root / 'scripts' / 'dev-config.js', target / 'scripts' / 'dev-config.js')
-          assert (target / 'scripts' / 'dev-config.js').is_file()
+          for name in ('dev-config.js', 'vendor-register.js', 'category-vendors.js'):
+              shutil.copy2(root / 'scripts' / name, target / 'scripts' / name)
+          class ScriptSources(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.sources = []
+              def handle_starttag(self, tag, attrs):
+                  if tag == 'script':
+                      src = dict(attrs).get('src')
+                      if src:
+                          self.sources.append(src)
+          site_root = target.resolve()
+          for page in target.rglob('*.html'):
+              parser = ScriptSources()
+              parser.feed(page.read_text())
+              for src in parser.sources:
+                  parsed = urlsplit(src)
+                  if parsed.scheme or parsed.netloc:
+                      continue
+                  asset = (page.parent / parsed.path).resolve()
+                  assert site_root in asset.parents and asset.is_file(), f'{page}: missing local script {src}'
           catalog = (target / 'approved-vendors.json').read_bytes()
           json.loads(catalog)
           for name in ('index.html', 'vendors.html', 'admin-review.html', 'vendor-register.html', 'sitemap-vendors.xml'):
