@@ -2315,5 +2315,44 @@
     "cleanupLiveProfile404": true,
     "cleanupCatalogCount": 18,
     "cleanupTargetCount": 0
+  },
+  "directPagesDeploymentRepair20261008": {
+    "scope": "DEV only",
+    "ownerApproval": "User yes, 2026-10-08 21:02:32 Asia/Calcutta",
+    "defaultBranchWorkflowCommit": "7cd6fecc2f1703b5d43dc2fa46fc4613e31535f2",
+    "devWorkflowCommit": "485d1c1abb9bba178b5ef29c97d9cd4a1de19f72",
+    "publishingSource": "GitHub Actions",
+    "initialPushRun": 37801708359,
+    "freshPublisherRun": 37802000855,
+    "freshGeneratedCommit": "7b8181dd9a014dd3e923bb996c205d20180a9510",
+    "automaticDeploymentRuns": [
+      37802085633,
+      37802172001
+    ],
+    "publisherTests": {
+      "pass": 49,
+      "fail": 0
+    },
+    "liveEvidence": "Observed dev-build.json sourceCommit 7b8181d and catalog hash 0532ede906f5a08bffb01f11a58bd7f161a7ad5acd92585f5d8cce45f3cb7e49; catalog contained temporary name once. Later route and evidence responses still served an older version. Full source-to-profile propagation remains unverified.",
+    "fixture": {
+      "id": "RWG-12eb3b05-9f7f-4005-88fc-96450e2fb3f0",
+      "changedCell": "B8 only",
+      "nativeRows": 26,
+      "exactBaselineRestored": true
+    },
+    "cleanupPublisherRun": 37802592885,
+    "cleanupGeneratedCommit": "c5e91e5a0505e08bdd94f989cb5cda7e6bbf5a33",
+    "cleanupAutomaticDeploymentRun": 37802682342,
+    "qaConclusion": "No additional QA promoted to full; QA03 and QA04 remain partial. Native schedule run has not been demonstrated for this repair. Formal results, candidate freeze and defect signoffs unchanged.",
+    "evidenceDocument": "qa/direct-pages-deployment-2026-10-08.md",
+    "cleanupAutomaticDeploymentConclusion": "success",
+    "cleanupLiveVerification": {
+      "sourceCommit": "c5e91e5a0505e08bdd94f989cb5cda7e6bbf5a33",
+      "deploymentRun": 37802682342,
+      "catalogCount": 18,
+      "profileHttpStatus": 200,
+      "originalNameRestored": true,
+      "catalogHash": "a5c746857c748cd5971bf639434d41a0a8f307bf817e01fe3fc9f59c0780c33f"
+    }
   }
 }
