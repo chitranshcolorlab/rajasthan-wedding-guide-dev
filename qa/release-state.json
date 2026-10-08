@@ -1896,11 +1896,23 @@
     "date": "2026-10-08",
     "mappedCriteria": 59,
     "fullDeveloperProcedure": 54,
-    "partialProcedure": 30,
+    "partialProcedure": 10,
     "formalPass": 0,
     "automatedTestsPassed": 49,
     "limits": "49 repository tests and 4 supplemental local harness tests are distinct from acceptance criteria. Developer coverage does not infer independent closures or signatures.",
-    "additionalCandidateHarnessTestsPassed": 4
+    "additionalCandidateHarnessTestsPassed": 4,
+    "remainingDeveloperCriteria": [
+      "QA-02",
+      "QA-03",
+      "QA-04",
+      "QA-19",
+      "QA-20",
+      "QA-47",
+      "QA-56",
+      "QA-62",
+      "QA-63",
+      "QA-64"
+    ]
   },
   "currentDisposableLifecycleFixture": {
     "date": "2026-10-07",
@@ -2243,5 +2255,27 @@
     "cleanupPublisher": 37790358240,
     "cleanupPages": 37790431472,
     "evidence": "qa/persisted-url-rename-status-2026-10-08.md"
+  },
+  "eveningQaReconciliation20261008": {
+    "observedAtUtc": "2026-10-08T14:46:07.483Z",
+    "fullDeveloperProcedures": 54,
+    "partialDeveloperProcedures": 10,
+    "formalPass": 0,
+    "lastNativeSchedule": {
+      "run": 37759426685,
+      "createdAt": "2026-10-08T09:50:27Z",
+      "conclusion": "success"
+    },
+    "latestBackupPublisher": {
+      "run": 37794456043,
+      "createdAt": "2026-10-08T14:40:56Z",
+      "conclusion": "success"
+    },
+    "latestPages": {
+      "run": 37790809923,
+      "conclusion": "success"
+    },
+    "limits": "Latest five sampled timer workflow_dispatch runs successful. This is read-only health evidence, not fresh-change schedule attribution or guaranteed five-minute publication. QA-04/AUTO-001 remain unresolved.",
+    "evidence": "qa/evening-remaining-reconciliation-2026-10-08.md"
   }
 }
