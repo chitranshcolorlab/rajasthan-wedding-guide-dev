@@ -831,23 +831,25 @@
       "commit": "",
       "environment": "DEV",
       "evidence": "",
-      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerCoverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/live-smoke-2026-10-05.md",
-        "qa/latest-catalog-route-live-result.md"
+        "qa/latest-catalog-route-live-result.md",
+        "qa/persisted-url-rename-status-2026-10-08.md"
       ],
-      "remainingAcceptance": "Full individual linking acceptance on frozen candidate.",
+      "remainingAcceptance": "Independent frozen-candidate formal acceptance remains pending. Intermittent Pages pre-build failure remains an operational follow-up.",
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
           "qa/owner-form-qa-observations.md",
           "qa/candidate-live-lifecycle-2026-10-07.md",
           "qa/rename-url-live-2026-10-07.md",
-          "qa/status-url-lifecycle-2026-10-07.md"
+          "qa/status-url-lifecycle-2026-10-07.md",
+          "qa/persisted-url-rename-status-2026-10-08.md"
         ],
-        "limits": "Rename and saved status transitions retain ID/slug and original final live URL. This status attempt did not verify live removal/reappearance because publication was not queued and manual dispatch returned GitHub 500."
+        "limits": "Fresh Edit Required removal HTTP 404, renamed reapproval same persisted slug, same URL live with new name, then exact native and original live cleanup verified. Pages transient build failure recovered by documentation-triggered new build; root cause not resolved. Formal acceptance unchanged."
       }
     },
     "QA-33": {
@@ -1893,7 +1895,7 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-08",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 53,
+    "fullDeveloperProcedure": 54,
     "partialProcedure": 30,
     "formalPass": 0,
     "automatedTestsPassed": 49,
@@ -2225,8 +2227,8 @@
     "id": "RWG-12eb3b05-9f7f-4005-88fc-96450e2fb3f0",
     "row": 8,
     "originalName": "DEV Approval Publish Test — Not a real vendor",
-    "temporaryName": "DEV URL Rename QA 20261008 — Not a real vendor",
-    "status": "Approved",
+    "temporaryName": null,
+    "status": "COMPLETED — DEVELOPER VERIFIED",
     "originalNote": "Approved by authorized admin",
     "slug": "dev-approval-publish-test-not-a-real-vendor-didwana",
     "removalPublisher": 37789377056,
@@ -2234,6 +2236,12 @@
     "removalConfirmedHttp": 404,
     "renamedPublisher": 37789683364,
     "failedPages": 37789749668,
-    "limits": "Live rename restoration pending. Must restore B8 and confirm native baseline and live original name before completion."
+    "limits": "Original name/status/note/source restored; live original profile same URL. Formal NOT RUN unchanged.",
+    "nativeBaselineRestored": true,
+    "nativeRowsExact": 26,
+    "renamedRecoveryPages": 37789954000,
+    "cleanupPublisher": 37790358240,
+    "cleanupPages": 37790431472,
+    "evidence": "qa/persisted-url-rename-status-2026-10-08.md"
   }
 }
