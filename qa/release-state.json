@@ -2181,5 +2181,22 @@
     "slugUnchanged": "dev-validation-qa-20261007-not-a-real-vendor-didwana",
     "evidence": "qa/repeated-approval-live-2026-10-08.md",
     "limits": "Supplementary single-vendor idempotency verified. Fresh frozen-candidate concurrent approval and independent formal acceptance remain pending; no coverage count increase."
+  },
+  "currentConcurrentApprovalFixture20261008": {
+    "date": "2026-10-08",
+    "business": "DEV Concurrent Approval 20261008 1855 — Not a real vendor",
+    "ids": [
+      "RWG-3068d595-369f-4ae6-b930-af80b0777dc1",
+      "RWG-b6aa4bea-bd9b-4dfc-bd6e-3609c8d6797b"
+    ],
+    "rows": [
+      25,
+      26
+    ],
+    "status": "Pending Approval",
+    "slugsBlank": true,
+    "preexistingNativeRowsUnchanged": 24,
+    "next": "Second admin tab requires authorized Google sign-in before simultaneous confirmations.",
+    "cleanup": "Retain isolated DEV disposable fixtures for concurrent approval QA. Never copy to PROD."
   }
 }
