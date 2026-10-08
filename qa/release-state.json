@@ -555,7 +555,8 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
-        "qa/android-owner-contact-2026-10-08.md"
+        "qa/android-owner-contact-2026-10-08.md",
+        "qa/owner-two-device-touch-contact-2026-10-08.md"
       ],
       "remainingAcceptance": "Owner confirmed prompted Android contact launch on Chitransh profile. Exact device/browser and independent frozen-candidate acceptance remain pending; call/message transmission not tested.",
       "evidenceReconciliation": {
@@ -568,7 +569,8 @@
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       },
-      "ownerDeviceObservation": "qa/android-owner-contact-2026-10-08.md"
+      "ownerDeviceObservation": "qa/android-owner-contact-2026-10-08.md",
+      "ownerTwoDeviceTouchContactObservation": "qa/owner-two-device-touch-contact-2026-10-08.md"
     },
     "QA-20": {
       "status": "NOT RUN",
@@ -578,7 +580,8 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
-        "qa/android-owner-contact-2026-10-08.md"
+        "qa/android-owner-contact-2026-10-08.md",
+        "qa/owner-two-device-touch-contact-2026-10-08.md"
       ],
       "remainingAcceptance": "Owner confirmed prompted Android contact launch on Chitransh profile. Exact device/browser and independent frozen-candidate acceptance remain pending; call/message transmission not tested.",
       "evidenceReconciliation": {
@@ -591,7 +594,8 @@
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       },
-      "ownerDeviceObservation": "qa/android-owner-contact-2026-10-08.md"
+      "ownerDeviceObservation": "qa/android-owner-contact-2026-10-08.md",
+      "ownerTwoDeviceTouchContactObservation": "qa/owner-two-device-touch-contact-2026-10-08.md"
     },
     "QA-21": {
       "status": "NOT RUN",
@@ -1526,7 +1530,8 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
         "qa/android-owner-layout-2026-10-08.md",
-        "qa/owner-two-device-layout-2026-10-08.md"
+        "qa/owner-two-device-layout-2026-10-08.md",
+        "qa/owner-two-device-touch-contact-2026-10-08.md"
       ],
       "remainingAcceptance": "Physical Android/iOS touch and all responsive cases.",
       "evidenceReconciliation": {
@@ -1539,7 +1544,8 @@
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       },
-      "ownerTwoDeviceObservation": "qa/owner-two-device-layout-2026-10-08.md"
+      "ownerTwoDeviceObservation": "qa/owner-two-device-layout-2026-10-08.md",
+      "ownerTwoDeviceTouchContactObservation": "qa/owner-two-device-touch-contact-2026-10-08.md"
     },
     "QA-63": {
       "status": "NOT RUN",
@@ -1549,7 +1555,8 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
-        "qa/owner-two-device-layout-2026-10-08.md"
+        "qa/owner-two-device-layout-2026-10-08.md",
+        "qa/owner-two-device-touch-contact-2026-10-08.md"
       ],
       "remainingAcceptance": "Physical Android/iOS touch and all responsive cases.",
       "evidenceReconciliation": {
@@ -1562,7 +1569,8 @@
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       },
-      "ownerTwoDeviceObservation": "qa/owner-two-device-layout-2026-10-08.md"
+      "ownerTwoDeviceObservation": "qa/owner-two-device-layout-2026-10-08.md",
+      "ownerTwoDeviceTouchContactObservation": "qa/owner-two-device-touch-contact-2026-10-08.md"
     },
     "QA-64": {
       "status": "NOT RUN",
@@ -2426,5 +2434,22 @@
     "ownerConfirmed": "DEV vendor directory/profile horizontal and vertical layout and buttons correct on both devices",
     "evidence": "qa/owner-two-device-layout-2026-10-08.md",
     "limits": "Owner observation only. OS/browser versions, exact profile/build served, complete touch matrix, legacy pages and independent frozen-candidate acceptance not established."
+  },
+  "ownerTwoDeviceTouchContactObservation20261008": {
+    "reportedAt": "2026-10-08T22:24:44+05:30",
+    "devices": [
+      {
+        "model": "Samsung A37",
+        "browser": "Chrome"
+      },
+      {
+        "model": "iPhone 16",
+        "browser": "Safari"
+      }
+    ],
+    "ownerReportedTouch": "Touch ok hai",
+    "ownerConfirmedContact": "Both phones open the correct number in Call and correct number plus Rajasthan Wedding Guide enquiry message in WhatsApp",
+    "evidence": "qa/owner-two-device-touch-contact-2026-10-08.md",
+    "limits": "Owner report; exact selected profile, OS/browser versions and served build not captured. No call/message transmission. Full legacy/mobile matrix and independent candidate acceptance remain pending."
   }
 }
