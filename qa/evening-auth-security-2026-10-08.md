@@ -1,0 +1,9 @@
+# Evening authentication/security checkpoint — 8 October 2026
+
+DEV Apps Script editor opened under Sharad account. Manage deployments positively identified exact expected DEV deployment AKfycbwd2VnMXDxSHO_7dm992VZVX8wz1wUXs04lJ84ZeOMFDtYAB530DxtJN6ns6pr3B6gP6g active Version 4, existing execution account/access unchanged. Version dropdown contains historical controlled-failure Version 5. Edit dialog cancelled without selecting/deploying another version; active deployment remains Version 4.
+
+Admin browser Refresh after prior Google token lifetime elapsed returned Sign in to load private submissions. Local sign-out cleared stale badge, then rendered Not signed in and Google sign-in button. This is an ordinary token-lifetime blocker; not claimed as current 502 or a Google outage. Handoff prepared for authorized sign-in before any controlled failure.
+
+Four real DEV POST negative cases: admin-list and status, each with missing token and literal noncredential DEV-QA-invalid-not-a-real-token-20261008. Missing cases returned ok false Google ID token missing; invalid cases returned ok false Invalid or expired Google ID token. No private items returned. Target disposable Pending ID RWG-daff7fe3-a050-4b62-b903-ca505caa2754 was never approved. Bounded native A1:AB40 all 26 rowData entries matched pretest baseline exactly, including entered/effective values, validation, format and chipRuns.
+
+QA-47 still partial: valid authorized negative audience/issuer/expiry/email/subject cases not claimed. QA-02/03 await authorized sign-in before safely forcing only isolated DEV dispatch-ref failure, restoring exact deployment and retrying publication. 54/64 developer procedures full; formal PASS 0 and signoffs/candidate/defect dispositions unchanged. No credential values read/copied, permission widening, PROD write or deployment mutation.

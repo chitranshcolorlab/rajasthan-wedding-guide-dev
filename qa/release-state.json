@@ -1177,7 +1177,8 @@
         "qa/concurrent-registration-live-result.md",
         "qa/safe-links-live-result.md",
         "qa/data001-column-reorder-live-result.md",
-        "qa/concurrent-approval-live-result.md"
+        "qa/concurrent-approval-live-result.md",
+        "qa/evening-auth-security-2026-10-08.md"
       ],
       "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest.",
       "evidenceReconciliation": {
@@ -2277,5 +2278,14 @@
     },
     "limits": "Latest five sampled timer workflow_dispatch runs successful. This is read-only health evidence, not fresh-change schedule attribution or guaranteed five-minute publication. QA-04/AUTO-001 remain unresolved.",
     "evidence": "qa/evening-remaining-reconciliation-2026-10-08.md"
+  },
+  "eveningSecurityLoginCheckpoint": {
+    "date": "2026-10-08",
+    "currentDevDeploymentVersion": 4,
+    "controlledFailureVersionAvailable": 5,
+    "missingAndInvalidTokensRejected": true,
+    "nativeRowsUnchanged": 26,
+    "requires": "Refresh authorized admin sign-in, then controlled failure/recovery QA-02/03. No deployment change made yet.",
+    "evidence": "qa/evening-auth-security-2026-10-08.md"
   }
 }
