@@ -2002,5 +2002,96 @@
     "backendCodeExact": true,
     "evidence": "qa/publication-failure-retry-parity-2026-10-08.md",
     "liveRetest": "BLOCKED — Google sign-in 502; no status/configuration mutation attempted."
+  },
+  "publisherHealthAfter404": {
+    "date": "2026-10-08",
+    "observedThroughUtc": "2026-10-08T10:36:00Z",
+    "automaticTimerRuns": [
+      {
+        "id": 37764525741,
+        "event": "workflow_dispatch",
+        "created_at": "2026-10-08T10:35:57Z",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "4d348889bfc5434a717a74c12db01b6678f58f19"
+      },
+      {
+        "id": 37763970794,
+        "event": "workflow_dispatch",
+        "created_at": "2026-10-08T10:30:56Z",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "4d348889bfc5434a717a74c12db01b6678f58f19"
+      },
+      {
+        "id": 37763419791,
+        "event": "workflow_dispatch",
+        "created_at": "2026-10-08T10:25:56Z",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "4d348889bfc5434a717a74c12db01b6678f58f19"
+      },
+      {
+        "id": 37762874694,
+        "event": "workflow_dispatch",
+        "created_at": "2026-10-08T10:20:57Z",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "4d348889bfc5434a717a74c12db01b6678f58f19"
+      },
+      {
+        "id": 37762326124,
+        "event": "workflow_dispatch",
+        "created_at": "2026-10-08T10:15:56Z",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "4d348889bfc5434a717a74c12db01b6678f58f19"
+      },
+      {
+        "id": 37761771614,
+        "event": "workflow_dispatch",
+        "created_at": "2026-10-08T10:10:56Z",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "4d348889bfc5434a717a74c12db01b6678f58f19"
+      },
+      {
+        "id": 37761208231,
+        "event": "workflow_dispatch",
+        "created_at": "2026-10-08T10:05:56Z",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "4d348889bfc5434a717a74c12db01b6678f58f19"
+      },
+      {
+        "id": 37760629789,
+        "event": "workflow_dispatch",
+        "created_at": "2026-10-08T10:00:56Z",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "4d348889bfc5434a717a74c12db01b6678f58f19"
+      },
+      {
+        "id": 37760052429,
+        "event": "workflow_dispatch",
+        "created_at": "2026-10-08T09:55:56Z",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "4d348889bfc5434a717a74c12db01b6678f58f19"
+      }
+    ],
+    "completedSuccesses": 9,
+    "completedFailures": 0,
+    "latestSampledLogRun": 37763970794,
+    "testsPassed": 49,
+    "testsFailed": 0,
+    "vendors": 16,
+    "lastObservedNativeSchedule": {
+      "run": 37759426685,
+      "created_at": "2026-10-08T09:50:27Z",
+      "conclusion": "success"
+    },
+    "evidence": "qa/publisher-health-after-404-2026-10-08.md",
+    "limits": "Nine observations do not establish an SLA, upstream reliability, or native schedule fresh-change acceptance. QA-04 and AUTO-001 remain open."
   }
 }
