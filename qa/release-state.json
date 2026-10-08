@@ -259,7 +259,8 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/concurrent-registration-live-result.md",
-        "qa/concurrent-approval-live-result.md"
+        "qa/concurrent-approval-live-result.md",
+        "qa/repeated-approval-live-2026-10-08.md"
       ],
       "remainingAcceptance": "Complete individual double-approval cases and independent frozen-candidate retest.",
       "evidenceReconciliation": {
@@ -412,7 +413,8 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/direct-publisher-activation.md",
-        "qa/concurrent-approval-live-result.md"
+        "qa/concurrent-approval-live-result.md",
+        "qa/repeated-approval-live-2026-10-08.md"
       ],
       "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance.",
       "evidenceReconciliation": {
@@ -2169,5 +2171,15 @@
     "auditLogRetained": true,
     "evidence": "qa/header-reorder-status-live-2026-10-08.md",
     "limits": "Formal NOT RUN and candidate/signoffs/defect dispositions unchanged."
+  },
+  "repeatedApprovalDeveloperVerification": {
+    "date": "2026-10-08",
+    "id": "RWG-e6e1b53a-f3b1-4516-995d-154fc2cda380",
+    "realAuthenticatedRepeats": 2,
+    "nativeRowsExact": 24,
+    "duplicateIdCount": 1,
+    "slugUnchanged": "dev-validation-qa-20261007-not-a-real-vendor-didwana",
+    "evidence": "qa/repeated-approval-live-2026-10-08.md",
+    "limits": "Supplementary single-vendor idempotency verified. Fresh frozen-candidate concurrent approval and independent formal acceptance remain pending; no coverage count increase."
   }
 }
