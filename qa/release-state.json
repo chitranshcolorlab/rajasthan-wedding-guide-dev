@@ -1341,13 +1341,15 @@
       ],
       "remainingAcceptance": "Full independent candidate legacy regression.",
       "evidenceReconciliation": {
-        "date": "2026-10-07",
+        "date": "2026-10-08",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "FAILED PROCEDURE — DEVELOPER VERIFIED",
+        "verifiedBuild": "a8e64a77af5a05e2fa688eb934b6b5159161afc7",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/legacy-metadata-2026-10-07.md"
+          "qa/legacy-canonical-navigation-2026-10-08.md",
+          "qa/legacy-home-final-2026-10-08.md"
         ],
-        "limits": "Canonical missing on frozen candidate; fix changes legacy source and requires affected candidate retest."
+        "limits": "Current DEV patch build full metadata and available navigation checks complete. Frozen-candidate Harshita failure is not erased; SEO-001 remains FIX READY and independent acceptance pending. No formal PASS."
       }
     },
     "QA-56": {
@@ -1865,7 +1867,7 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-08",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 47,
+    "fullDeveloperProcedure": 48,
     "partialProcedure": 30,
     "formalPass": 0,
     "automatedTestsPassed": 47,
