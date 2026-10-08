@@ -2220,5 +2220,20 @@
     "targetCount": 1,
     "slug": "dev-approval-publish-test-not-a-real-vendor-didwana",
     "evidence": "qa/reapproval-after-retry-2026-10-08.md"
+  },
+  "activePersistedUrlQa": {
+    "id": "RWG-12eb3b05-9f7f-4005-88fc-96450e2fb3f0",
+    "row": 8,
+    "originalName": "DEV Approval Publish Test — Not a real vendor",
+    "temporaryName": "DEV URL Rename QA 20261008 — Not a real vendor",
+    "status": "Approved",
+    "originalNote": "Approved by authorized admin",
+    "slug": "dev-approval-publish-test-not-a-real-vendor-didwana",
+    "removalPublisher": 37789377056,
+    "removalPages": 37789477004,
+    "removalConfirmedHttp": 404,
+    "renamedPublisher": 37789683364,
+    "failedPages": 37789749668,
+    "limits": "Live rename restoration pending. Must restore B8 and confirm native baseline and live original name before completion."
   }
 }
