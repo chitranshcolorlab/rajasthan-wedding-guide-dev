@@ -540,9 +540,10 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/android-owner-contact-2026-10-08.md"
       ],
-      "remainingAcceptance": "Actual device contact behavior not exercised with placeholder numbers.",
+      "remainingAcceptance": "Owner confirmed prompted Android contact launch on Chitransh profile. Exact device/browser and independent frozen-candidate acceptance remain pending; call/message transmission not tested.",
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
@@ -552,7 +553,8 @@
           "qa/candidate-route-snapshot-result.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
-      }
+      },
+      "ownerDeviceObservation": "qa/android-owner-contact-2026-10-08.md"
     },
     "QA-20": {
       "status": "NOT RUN",
@@ -561,9 +563,10 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/android-owner-contact-2026-10-08.md"
       ],
-      "remainingAcceptance": "Actual device contact behavior not exercised with placeholder numbers.",
+      "remainingAcceptance": "Owner confirmed prompted Android contact launch on Chitransh profile. Exact device/browser and independent frozen-candidate acceptance remain pending; call/message transmission not tested.",
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
@@ -573,7 +576,8 @@
           "qa/candidate-route-snapshot-result.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
-      }
+      },
+      "ownerDeviceObservation": "qa/android-owner-contact-2026-10-08.md"
     },
     "QA-21": {
       "status": "NOT RUN",
@@ -2117,5 +2121,14 @@
     "reportedAt": "2026-10-08T16:14:54+05:30",
     "report": "Sahi h; only one category/district currently present",
     "scope": "Owner confirms prompted refresh/filter controls/profile scroll/photo visibility. Exact selected profile/device version not captured; multi-category real-device acceptance not inferred."
+  },
+  "androidOwnerContactObservation20261008": {
+    "reportedAt": "2026-10-08T16:21:53+05:30",
+    "report": "Sahi hai",
+    "profile": "Chitransh Color Lab & Studio",
+    "phone": "9828783400",
+    "promptedProcedure": "Android Chrome: Call Now opens dialer with correct number; WhatsApp Enquiry opens same recipient with Rajasthan Wedding Guide attribution text; no call/message sent requested.",
+    "evidence": "qa/android-owner-contact-2026-10-08.md",
+    "limits": "Owner confirmation only. No device model/browser version/screenshot or explicit app choice supplied. No completed call/message transmission or independent PASS inferred."
   }
 }
