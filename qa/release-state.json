@@ -1188,7 +1188,8 @@
         "qa/safe-links-live-result.md",
         "qa/data001-column-reorder-live-result.md",
         "qa/concurrent-approval-live-result.md",
-        "qa/evening-auth-security-2026-10-08.md"
+        "qa/evening-auth-security-2026-10-08.md",
+        "qa/owner-unauthorized-account-ui-2026-10-08.md"
       ],
       "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest.",
       "evidenceReconciliation": {
@@ -2481,5 +2482,15 @@
     "response": "Ok",
     "prompt": "Both phones open photos and play video",
     "limits": "Owner confirmation only; selected profile and served commit unspecified"
+  },
+  "ownerUnauthorizedGoogleAccountUi20261008": {
+    "reportedAt": "2026-10-08T22:41:02+05:30",
+    "screenshot": "Screenshot_20261008_224032_Chrome.jpg",
+    "libraryFileId": "libfile_4d53198614d881919446945da4779c67",
+    "observedMessage": "This Google account is not authorized for vendor approvals.",
+    "observedAuthState": "Not signed in",
+    "evidence": "qa/owner-unauthorized-account-ui-2026-10-08.md",
+    "scope": "Frontend unauthorized-email rejection after owner alternate-account test",
+    "limits": "Screenshot does not show account identifier, network request or backend rejection. Backend valid-token negative matrix remains pending."
   }
 }
