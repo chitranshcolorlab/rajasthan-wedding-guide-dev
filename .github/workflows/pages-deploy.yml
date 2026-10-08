@@ -1,0 +1,75 @@
+name: Deploy DEV Pages directly
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev/automatic-vendor-system]
+  workflow_run:
+    workflows: [Publish approved DEV vendors]
+    types: [completed]
+permissions:
+  contents: read
+concurrency:
+  group: dev-pages-direct
+  cancel-in-progress: false
+jobs:
+  build:
+    if: >-
+      github.repository == 'chitranshcolorlab/rajasthan-wedding-guide-dev' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.head_repository.full_name == github.repository &&
+        (github.event.workflow_run.head_branch == 'main' ||
+         github.event.workflow_run.head_branch == 'dev/automatic-vendor-system') &&
+        (github.event.workflow_run.event == 'schedule' ||
+         github.event.workflow_run.event == 'workflow_dispatch' ||
+         github.event.workflow_run.event == 'push')))
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev/automatic-vendor-system
+          persist-credentials: false
+      - name: Stage public DEV site and source evidence
+        run: |
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, shutil, subprocess
+          root = pathlib.Path('.')
+          target = root / '_site'
+          target.mkdir()
+          extensions = {'.html', '.json', '.xml', '.txt', '.webp', '.png', '.jpg', '.jpeg', '.gif', '.svg', '.mp4', '.webm', '.css', '.js', '.ico', '.woff', '.woff2'}
+          for path in root.iterdir():
+              if path.is_file() and path.suffix.lower() in extensions:
+                  shutil.copy2(path, target / path.name)
+          for name in ('vendors', 'rajasthan'):
+              shutil.copytree(root / name, target / name)
+          catalog = (target / 'approved-vendors.json').read_bytes()
+          json.loads(catalog)
+          for name in ('index.html', 'vendors.html', 'admin-review.html', 'vendor-register.html', 'sitemap-vendors.xml'):
+              assert (target / name).is_file(), name
+          evidence = {
+              'repository': os.environ['GITHUB_REPOSITORY'],
+              'sourceBranch': 'dev/automatic-vendor-system',
+              'sourceCommit': subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip(),
+              'deploymentRun': os.environ['GITHUB_RUN_ID'],
+              'approvedCatalogSha256': hashlib.sha256(catalog).hexdigest()
+          }
+          (target / 'dev-build.json').write_text(json.dumps(evidence, indent=2) + '\n')
+          PY
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy DEV site
+        id: deployment
+        uses: actions/deploy-pages@v4
