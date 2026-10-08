@@ -1160,15 +1160,16 @@
       ],
       "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest.",
       "evidenceReconciliation": {
-        "date": "2026-10-07",
+        "date": "2026-10-08",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
           "qa/candidate-security-recovery-result.md",
           "qa/candidate-publisher-regression-result.md",
-          "qa/candidate-live-auth-result.md"
+          "qa/candidate-live-auth-result.md",
+          "qa/no-login-security-publisher-2026-10-08.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Four live missing/malformed-token requests rejected; native24 rows unchanged. Real valid-token negative permutations remain pending; formal acceptance unchanged."
       }
     },
     "QA-48": {
@@ -1956,5 +1957,21 @@
     "row": 24,
     "evidence": "qa/formula-storage-live-2026-10-08.md",
     "purpose": "Disposable DEV formula-safety record; never contact or publish."
+  },
+  "latestAutomaticRecoveryObservation": {
+    "date": "2026-10-08",
+    "failedRuns": [
+      37756017916,
+      37756603794,
+      37757182006
+    ],
+    "firstRecoveryRun": 37757764974,
+    "nextSuccessfulRuns": [
+      37758336247,
+      37758911822
+    ],
+    "failure": "DEV API HTTP404; commit step skipped",
+    "event": "workflow_dispatch",
+    "evidence": "qa/no-login-security-publisher-2026-10-08.md"
   }
 }
