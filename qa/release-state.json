@@ -1401,7 +1401,18 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md"
       ],
-      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases.",
+      "evidenceReconciliation": {
+        "date": "2026-10-08",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "verifiedBuild": "a28d23c98e0bd6fe0c77f473af210982ff651ab9",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/responsive-width-retest-2026-10-08.md",
+          "qa/mobile-layout-matrix-result.md"
+        ],
+        "limits": "Current live embedded browser layout: exact expected profile headings verified, no horizontal overflow at 320/390/768 widths; contact controls remain 48px high and fit. Gallery boxes fit. This is developer browser layout evidence only, not physical-device, touch or independent acceptance. Fresh lazy-loaded image completion not claimed."
+      }
     },
     "QA-59": {
       "status": "NOT RUN",
@@ -1412,7 +1423,18 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md"
       ],
-      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases.",
+      "evidenceReconciliation": {
+        "date": "2026-10-08",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "verifiedBuild": "a28d23c98e0bd6fe0c77f473af210982ff651ab9",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/responsive-width-retest-2026-10-08.md",
+          "qa/mobile-layout-matrix-result.md"
+        ],
+        "limits": "Current live embedded browser layout: exact expected profile headings verified, no horizontal overflow at 320/390/768 widths; contact controls remain 48px high and fit. Gallery boxes fit. This is developer browser layout evidence only, not physical-device, touch or independent acceptance. Fresh lazy-loaded image completion not claimed."
+      }
     },
     "QA-60": {
       "status": "NOT RUN",
@@ -1423,7 +1445,18 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md"
       ],
-      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases.",
+      "evidenceReconciliation": {
+        "date": "2026-10-08",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "verifiedBuild": "a28d23c98e0bd6fe0c77f473af210982ff651ab9",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/responsive-width-retest-2026-10-08.md",
+          "qa/mobile-layout-matrix-result.md"
+        ],
+        "limits": "Current live embedded browser layout: exact expected profile headings verified, no horizontal overflow at 320/390/768 widths; contact controls remain 48px high and fit. Gallery boxes fit. This is developer browser layout evidence only, not physical-device, touch or independent acceptance. Fresh lazy-loaded image completion not claimed."
+      }
     },
     "QA-61": {
       "status": "NOT RUN",
@@ -1820,7 +1853,7 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-08",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 43,
+    "fullDeveloperProcedure": 46,
     "partialProcedure": 30,
     "formalPass": 0,
     "automatedTestsPassed": 47,
