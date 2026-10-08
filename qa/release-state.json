@@ -1501,7 +1501,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/android-owner-layout-2026-10-08.md"
       ],
       "remainingAcceptance": "Physical Android/iOS touch and all responsive cases.",
       "evidenceReconciliation": {
@@ -2093,5 +2094,13 @@
     },
     "evidence": "qa/publisher-health-after-404-2026-10-08.md",
     "limits": "Nine observations do not establish an SLA, upstream reliability, or native schedule fresh-change acceptance. QA-04 and AUTO-001 remain open."
+  },
+  "androidOwnerLayoutObservation20261008": {
+    "reportedAt": "2026-10-08T16:12:06+05:30",
+    "device": "Android; model/browser version not captured",
+    "report": "Sahi h",
+    "promptedProcedure": "DEV listing and a profile, portrait/landscape, clipping/horizontal scrolling",
+    "evidence": "qa/android-owner-layout-2026-10-08.md",
+    "scope": "Owner confirmation only; chosen profile not identified, no fresh screenshot, no touch/refresh proof, no formal PASS."
   }
 }
