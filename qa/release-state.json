@@ -204,22 +204,25 @@
       "commit": "",
       "environment": "DEV",
       "evidence": "",
-      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerCoverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/direct-publisher-activation.md",
         "qa/publication-failure-retry-parity-2026-10-08.md",
-        "qa/fresh-publication-failure-retry-2026-10-08.md"
+        "qa/fresh-publication-failure-retry-2026-10-08.md",
+        "qa/isolated-retry-recovery-2026-10-08.md"
       ],
-      "remainingAcceptance": "Clean owner retry-to-live recovery on candidate: current retry queued and succeeded with no duplicate, but intervening backup generation and additional Pages build confound exclusive recovery attribution. Intermittent pre-build Pages failure must be addressed/retested.",
+      "remainingAcceptance": "Independent formal acceptance on the frozen candidate remains pending. Fresh isolated owner-account retry-to-live developer procedure completed on repaired DEV Pages pipeline outside the freeze.",
       "evidenceReconciliation": {
-        "date": "2026-10-07",
+        "date": "2026-10-08",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
           "qa/candidate-full-suite-2026-10-07.md",
-          "qa/publication-failure-retry-parity-2026-10-08.md"
+          "qa/publication-failure-retry-parity-2026-10-08.md",
+          "qa/isolated-retry-recovery-2026-10-08.md"
         ],
-        "limits": "Local mock regression does not replace live candidate acceptance."
+        "limits": "Full fresh developer procedure: backup trigger temporarily read-only; failed approval dispatch left head and run list unchanged; Version 4 restored; authorized owner-account retry generated the first profile commit and its workflow_run Pages deployment; exact live commit/hash, profile HTTP 200, one ID/slug and unchanged native approved snapshot verified. Outside frozen candidate; formal acceptance and independent signoffs unchanged.",
+        "sourceCommit": "358b54905b3de28c75a63ee77374aa4ff4bfaf6c"
       }
     },
     "QA-04": {
@@ -1899,14 +1902,13 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-08",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 55,
-    "partialProcedure": 9,
+    "fullDeveloperProcedure": 56,
+    "partialProcedure": 8,
     "formalPass": 0,
     "automatedTestsPassed": 49,
     "limits": "49 repository tests and 4 supplemental local harness tests are distinct from acceptance criteria. Developer coverage does not infer independent closures or signatures.",
     "additionalCandidateHarnessTestsPassed": 4,
     "remainingDeveloperCriteria": [
-      "QA-03",
       "QA-04",
       "QA-19",
       "QA-20",
@@ -2354,5 +2356,55 @@
       "originalNameRestored": true,
       "catalogHash": "a5c746857c748cd5971bf639434d41a0a8f307bf817e01fe3fc9f59c0780c33f"
     }
+  },
+  "isolatedRetryRecoveryQa20261008": {
+    "status": "completed, restored",
+    "fixtureId": "RWG-daff7fe3-a050-4b62-b903-ca505caa2754",
+    "baselineHead": "afb9d91d0cae35e5b21a700dd461714b41d06bef",
+    "failure": {
+      "actualApprovalPersisted": true,
+      "uiPublicationNotQueued": true,
+      "changedCells": [
+        "Z24",
+        "AA24",
+        "AB24"
+      ],
+      "newDispatch": false,
+      "headUnchanged": true
+    },
+    "backupIsolation": "Existing trigger temporarily read-only doGet; original retryDevPublication restored, Head / every 5 minutes / notify daily unchanged",
+    "backendRestored": "Version 4, exact existing DEV endpoint",
+    "ownerAccountRetryRun": 37804626736,
+    "recoveryCommit": "358b54905b3de28c75a63ee77374aa4ff4bfaf6c",
+    "automaticPagesRun": 37804708488,
+    "repositoryTests": {
+      "pass": 49,
+      "fail": 0
+    },
+    "nativeApprovedSnapshotUnchangedAfterRetry": true,
+    "duplicateIdCount": 1,
+    "liveProfileHttpStatus": 200,
+    "liveCatalogCount": 19,
+    "liveCatalogHash": "ab26fbdb12e654ed2b4adb1403d326b7d74d3524d1371ba7e41e24569c8be712",
+    "cleanup": {
+      "nativeRows": 26,
+      "exactBaselineRestored": true,
+      "commit": "39caa52276b8cb4571584030745de396255d4154",
+      "publisherRuns": [
+        37805538516,
+        37805564971
+      ],
+      "pagesRuns": [
+        37805712654,
+        37805763261
+      ],
+      "liveSourceCommit": "39caa52276b8cb4571584030745de396255d4154",
+      "liveCatalogCount": 18,
+      "fixtureAbsent": true,
+      "liveProfileHttpStatus": 404
+    },
+    "evidence": "qa/isolated-retry-recovery-2026-10-08.md",
+    "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+    "limits": "Outside frozen candidate; independent formal acceptance unchanged; no instant publication guarantee"
   }
 }
