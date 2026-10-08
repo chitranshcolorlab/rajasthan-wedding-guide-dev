@@ -1,5 +1,5 @@
 {
-  "candidateCommit": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+  "candidateCommit": "e6f922c2cc3c033487df2808ee049e0d8a49af72",
   "defects": [
     {
       "id": "DATA-001",
@@ -1906,14 +1906,14 @@
   },
   "acceptanceAuthorization": {
     "owner": "Sharad Mathur",
-    "dateTime": "2026-10-06T20:42:31+05:30",
-    "scope": "Start final DEV QA using proposed 64 criteria and prepared candidate; not production deployment or release signoff",
+    "dateTime": "2026-10-08T22:50:43+05:30",
+    "scope": "Final DEV QA on proposed e6f922c candidate only; no production release or formal signoff",
     "criteria": "qa/qa-criteria-approved.csv",
+    "proposal": "qa/proposed-acceptance-candidate-2026-10-08.md",
     "backendVersion": 4,
     "backendSourceBlob": "76a2ba1866732128976191d5dc478ae597fdb451",
-    "timerSource": "Head verified identical to Version 4; one additional final newline vs repository",
-    "sourceEvidence": "qa/backend-candidate-source-comparison.md",
-    "dataPolicy": "Timer remains active. Record source row state, generated commit and live deployment for every mutable-data case. Any executable source change invalidates affected candidate acceptance."
+    "preflightStatus": "PENDING fresh live executable-source parity and deployment/Head verification",
+    "dataPolicy": "Existing timer remains active; record source rows, generated commit, event, deployment and live output per mutable case. Source designation does not immobilize live data."
   },
   "evidenceReconciliationSummary": {
     "date": "2026-10-08",
@@ -2509,5 +2509,22 @@
     "createdAt": "2026-10-08T17:05:25Z",
     "conclusion": "success",
     "limits": "Native execution observed; no isolated fresh source-change propagation attributed to this run."
-  }
+  },
+  "previousCandidateAuthorizations": [
+    {
+      "candidateCommit": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+      "acceptanceAuthorization": {
+        "owner": "Sharad Mathur",
+        "dateTime": "2026-10-06T20:42:31+05:30",
+        "scope": "Start final DEV QA using proposed 64 criteria and prepared candidate; not production deployment or release signoff",
+        "criteria": "qa/qa-criteria-approved.csv",
+        "backendVersion": 4,
+        "backendSourceBlob": "76a2ba1866732128976191d5dc478ae597fdb451",
+        "timerSource": "Head verified identical to Version 4; one additional final newline vs repository",
+        "sourceEvidence": "qa/backend-candidate-source-comparison.md",
+        "dataPolicy": "Timer remains active. Record source row state, generated commit and live deployment for every mutable-data case. Any executable source change invalidates affected candidate acceptance."
+      },
+      "supersededAt": "2026-10-08T22:50:43+05:30"
+    }
+  ]
 }
