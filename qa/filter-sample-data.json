@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "items": [
+    {
+      "id": "F1",
+      "slug": "filter-sample-f1",
+      "businessName": "DEV Filter Sample F1 — Not a real vendor",
+      "category": "Photographers & Films",
+      "district": "Didwana-Kuchaman",
+      "city": "Didwana",
+      "status": "Approved",
+      "about": "Synthetic browser filter fixture only. Not registered or published."
+    },
+    {
+      "id": "F2",
+      "slug": "filter-sample-f2",
+      "businessName": "DEV Filter Sample F2 — Not a real vendor",
+      "category": "Wedding Venues",
+      "district": "Didwana-Kuchaman",
+      "city": "Didwana",
+      "status": "Approved",
+      "about": "Synthetic browser filter fixture only. Not registered or published."
+    },
+    {
+      "id": "F3",
+      "slug": "filter-sample-f3",
+      "businessName": "DEV Filter Sample F3 — Not a real vendor",
+      "category": "Photographers & Films",
+      "district": "Nagaur",
+      "city": "Nagaur",
+      "status": "Approved",
+      "about": "Synthetic browser filter fixture only. Not registered or published."
+    },
+    {
+      "id": "F4",
+      "slug": "filter-sample-f4",
+      "businessName": "DEV Filter Sample F4 — Not a real vendor",
+      "category": "Caterers",
+      "district": "Jaipur",
+      "city": "Jaipur",
+      "status": "Approved",
+      "about": "Synthetic browser filter fixture only. Not registered or published."
+    },
+    {
+      "id": "F5",
+      "slug": "filter-sample-f5",
+      "businessName": "DEV Filter Sample F5 — Not a real vendor",
+      "category": "Wedding Venues",
+      "district": "Jaipur",
+      "city": "Jaipur",
+      "status": "Approved",
+      "about": "Synthetic browser filter fixture only. Not registered or published."
+    },
+    {
+      "id": "F6",
+      "slug": "filter-sample-f6",
+      "businessName": "DEV Filter Sample F6 — Not a real vendor",
+      "category": "Caterers",
+      "district": "Didwana-Kuchaman",
+      "city": "Kuchaman",
+      "status": "Approved",
+      "about": "Synthetic browser filter fixture only. Not registered or published."
+    }
+  ]
+}
