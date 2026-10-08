@@ -1,0 +1,5 @@
+# QA-49 authenticated continuation blocker — 8 October 2026
+
+Approximately 15:13 IST. Opened current isolated DEV admin, observed Not signed in. Used rendered Google Sign in button within its iframe. Google OAuth popup displayed 502 Bad Gateway and [Errno 111] Connection refused. One reload produced the same response. No credential fields appeared, no credentials requested, no token inspected. This is a connection failure, not inferred bot detection or bad password.
+
+Stopped this authentication attempt. No Sheet columns moved and no vendor statuses changed. Formula-safety disposable UUID RWG-daff7fe3-a050-4b62-b903-ca505caa2754 remains Pending Approval; prior formula storage evidence and public exclusion remain valid. QA-49 reordered authenticated status mutation remains pending. Full developer count48/64; no formal PASS or defect closure. Resume from fresh authorized admin login, snapshot native cells, reorder, mutate only disposable status, restore order and compare all unrelated rows.
