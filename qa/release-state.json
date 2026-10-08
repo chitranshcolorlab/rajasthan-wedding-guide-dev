@@ -1189,7 +1189,8 @@
         "qa/data001-column-reorder-live-result.md",
         "qa/concurrent-approval-live-result.md",
         "qa/evening-auth-security-2026-10-08.md",
-        "qa/owner-unauthorized-account-ui-2026-10-08.md"
+        "qa/owner-unauthorized-account-ui-2026-10-08.md",
+        "qa/owner-authorized-login-logout-2026-10-08.md"
       ],
       "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest.",
       "evidenceReconciliation": {
@@ -2492,5 +2493,21 @@
     "evidence": "qa/owner-unauthorized-account-ui-2026-10-08.md",
     "scope": "Frontend unauthorized-email rejection after owner alternate-account test",
     "limits": "Screenshot does not show account identifier, network request or backend rejection. Backend valid-token negative matrix remains pending."
+  },
+  "ownerAuthorizedLoginLogout20261008": {
+    "authorizedAccount": "sharadmn29@gmail.com",
+    "listConfirmationAt": "2026-10-08T22:43:40+05:30",
+    "logoutConfirmationAt": "2026-10-08T22:44:25+05:30",
+    "listConfirmation": "Ha next",
+    "logoutConfirmation": "Ha hat gayi",
+    "evidence": "qa/owner-authorized-login-logout-2026-10-08.md",
+    "limits": "Owner-reported authorized vendor list and logout/refresh removal, no served-build or network trace captured"
+  },
+  "nativeCronObservationLate20261008": {
+    "runId": 37813855660,
+    "event": "schedule",
+    "createdAt": "2026-10-08T17:05:25Z",
+    "conclusion": "success",
+    "limits": "Native execution observed; no isolated fresh source-change propagation attributed to this run."
   }
 }
