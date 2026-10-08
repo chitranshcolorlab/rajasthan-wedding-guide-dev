@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Wedding Venues",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Wedding Venues",
+    "selected": "Wedding Venues"
+  },
+  {
+    "name": "Photographers & Films",
+    "cards": 16,
+    "heading": "Photographers & Films",
+    "selected": "Photographers & Films"
+  },
+  {
+    "name": "Makeup Artists",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Makeup Artists",
+    "selected": "Makeup Artists"
+  },
+  {
+    "name": "Decorators & Tent House",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Decorators & Tent House",
+    "selected": "Decorators & Tent House"
+  },
+  {
+    "name": "Wedding Planners",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Wedding Planners",
+    "selected": "Wedding Planners"
+  },
+  {
+    "name": "Caterers",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Caterers",
+    "selected": "Caterers"
+  },
+  {
+    "name": "Mehendi Artists",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Mehendi Artists",
+    "selected": "Mehendi Artists"
+  },
+  {
+    "name": "DJ & Entertainment",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "DJ & Entertainment",
+    "selected": "DJ & Entertainment"
+  },
+  {
+    "name": "Anchors & Emcees",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Anchors & Emcees",
+    "selected": "Anchors & Emcees"
+  },
+  {
+    "name": "Wedding Rental Dresses",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Wedding Rental Dresses",
+    "selected": "Wedding Rental Dresses"
+  },
+  {
+    "name": "Bridal Wear",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Bridal Wear",
+    "selected": "Bridal Wear"
+  },
+  {
+    "name": "Groom Wear",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Groom Wear",
+    "selected": "Groom Wear"
+  },
+  {
+    "name": "Band, Dhol & Ghodi",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Band, Dhol & Ghodi",
+    "selected": "Band, Dhol & Ghodi"
+  },
+  {
+    "name": "Pandit & Wedding Priest",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Pandit & Wedding Priest",
+    "selected": "Pandit & Wedding Priest"
+  },
+  {
+    "name": "Other Wedding Service",
+    "cards": 0,
+    "empty": "No approved vendors found for this category and city.",
+    "heading": "Other Wedding Service",
+    "selected": "Other Wedding Service"
+  }
+]

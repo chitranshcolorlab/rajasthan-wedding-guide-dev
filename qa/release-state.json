@@ -2139,5 +2139,13 @@
     "evidence": "qa/category-navigation-repair-2026-10-08.md",
     "developerResult": "Current live navigation, populated category, empty category and refresh verified",
     "independentAcceptance": "PENDING; frozen candidate unchanged"
+  },
+  "allCategoryLinkDeveloperVerification": {
+    "date": "2026-10-08",
+    "verifiedHead": "3417d194b8c0f26a3a0e4ab154ef706bcf942466",
+    "casesPassed": 15,
+    "evidence": "qa/all-category-links-2026-10-08.md",
+    "result": "All exact selected category/heading pairs match; 16 photography cards and zero cards with empty state for other 14 categories.",
+    "limits": "Approved dynamic catalog only. Historical manually authored profiles are outside this catalog; no approval/publication or formal acceptance inferred."
   }
 }
