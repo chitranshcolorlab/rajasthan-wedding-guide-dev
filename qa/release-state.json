@@ -2287,5 +2287,21 @@
     "nativeRowsUnchanged": 26,
     "requires": "Refresh authorized admin sign-in, then controlled failure/recovery QA-02/03. No deployment change made yet.",
     "evidence": "qa/evening-auth-security-2026-10-08.md"
+  },
+  "activeFailureRecoveryQa": {
+    "date": "2026-10-08",
+    "id": "RWG-daff7fe3-a050-4b62-b903-ca505caa2754",
+    "row": 24,
+    "baselineStatus": "Pending Approval",
+    "baselineSlug": "",
+    "baselineNote": "",
+    "activeDeploymentRestoredTo": 4,
+    "approvalUtc": "2026-10-08T15:10:06.122Z",
+    "failureVerified": true,
+    "retryQueuedUtc": "2026-10-08T15:13:25Z",
+    "backupPublisher": 37798607803,
+    "failedPages": 37798669238,
+    "cleanupRequired": "Restore Z24/AA24/AB24 baseline after recovery evidence; compare all 26 native rowData and remove profile from live catalog.",
+    "limits": "Backup timer ran between dispatch failure and owner-account retry. Distinguish source generation from retry attribution. Independent final acceptance not claimed."
   }
 }
