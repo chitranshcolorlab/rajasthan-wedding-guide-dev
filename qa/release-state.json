@@ -1525,7 +1525,8 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
-        "qa/android-owner-layout-2026-10-08.md"
+        "qa/android-owner-layout-2026-10-08.md",
+        "qa/owner-two-device-layout-2026-10-08.md"
       ],
       "remainingAcceptance": "Physical Android/iOS touch and all responsive cases.",
       "evidenceReconciliation": {
@@ -1537,7 +1538,8 @@
           "qa/owner-form-qa-observations.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
-      }
+      },
+      "ownerTwoDeviceObservation": "qa/owner-two-device-layout-2026-10-08.md"
     },
     "QA-63": {
       "status": "NOT RUN",
@@ -1546,7 +1548,8 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/security-seo-mobile-live-result.md"
+        "qa/security-seo-mobile-live-result.md",
+        "qa/owner-two-device-layout-2026-10-08.md"
       ],
       "remainingAcceptance": "Physical Android/iOS touch and all responsive cases.",
       "evidenceReconciliation": {
@@ -1558,7 +1561,8 @@
           "qa/owner-form-qa-observations.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
-      }
+      },
+      "ownerTwoDeviceObservation": "qa/owner-two-device-layout-2026-10-08.md"
     },
     "QA-64": {
       "status": "NOT RUN",
@@ -2406,5 +2410,21 @@
     "evidence": "qa/isolated-retry-recovery-2026-10-08.md",
     "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
     "limits": "Outside frozen candidate; independent formal acceptance unchanged; no instant publication guarantee"
+  },
+  "ownerTwoDeviceLayoutObservation20261008": {
+    "reportedAt": "2026-10-08T22:16:03+05:30",
+    "devices": [
+      {
+        "model": "Samsung A37",
+        "browser": "Chrome"
+      },
+      {
+        "model": "iPhone 16",
+        "browser": "Safari"
+      }
+    ],
+    "ownerConfirmed": "DEV vendor directory/profile horizontal and vertical layout and buttons correct on both devices",
+    "evidence": "qa/owner-two-device-layout-2026-10-08.md",
+    "limits": "Owner observation only. OS/browser versions, exact profile/build served, complete touch matrix, legacy pages and independent frozen-candidate acceptance not established."
   }
 }
