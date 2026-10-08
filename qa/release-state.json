@@ -2526,5 +2526,34 @@
       },
       "supersededAt": "2026-10-08T22:50:43+05:30"
     }
-  ]
+  ],
+  "finalCandidateReadonlyRetest20261008": {
+    "candidate": "e6f922c2cc3c033487df2808ee049e0d8a49af72",
+    "automatedTests": {
+      "pass": 49,
+      "fail": 0,
+      "source": "Pinned candidate files; local node --test tests/*.test.js"
+    },
+    "liveProfiles": {
+      "pass": 18,
+      "total": 18
+    },
+    "sitemapExact": true,
+    "privateFieldsAbsent": true,
+    "legacyCanonicalNoindex": 4,
+    "negativeRoutes404": 2,
+    "liveSource": "7319bdf412c3d0d678f6ba3e0f7102fe609f1092",
+    "deploymentRun": 37816007319,
+    "sourceParity": "Git tree comparison: only qa/release-state.json changed and candidate proposal added; executable/public output blobs unchanged",
+    "evidence": "qa/final-candidate-readonly-retest-2026-10-08.md",
+    "limits": "Read-only regression, not full independent formal acceptance; backend deployment/Head fresh identity blocked by editor redirect, native fresh-change propagation and real-token negative matrix incomplete."
+  },
+  "ownerQaReviewDelegation20261008": {
+    "requestedAt": "2026-10-08T22:54:36+05:30",
+    "owner": "Sharad Mathur",
+    "request": "Ab baki ke test kar do aap hi approve",
+    "scope": "Run remaining DEV checks and review evidence; unsupported outcomes are pending",
+    "decision": "RELEASE REMAINS BLOCKED",
+    "reason": "Required live-only procedures and independent exact-candidate evidence/signoffs incomplete; no third-party signatures supplied."
+  }
 }

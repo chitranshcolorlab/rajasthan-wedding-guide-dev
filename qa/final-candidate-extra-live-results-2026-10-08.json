@@ -1,0 +1,48 @@
+[
+  {
+    "path": "rajasthan/didwana-kuchaman/didwana/photographers-films/chitransh-color-lab/",
+    "status": 200,
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/rajasthan/didwana-kuchaman/didwana/photographers-films/chitransh-color-lab/\">"
+    ],
+    "noindex": true
+  },
+  {
+    "path": "rajasthan/didwana-kuchaman/didwana/wedding-rental-dresses/fashion-flavour/",
+    "status": 200,
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/rajasthan/didwana-kuchaman/didwana/wedding-rental-dresses/fashion-flavour/\">"
+    ],
+    "noindex": true
+  },
+  {
+    "path": "rajasthan/didwana-kuchaman/didwana/wedding-venues/madan-mohan-resort/",
+    "status": 200,
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/rajasthan/didwana-kuchaman/didwana/wedding-venues/madan-mohan-resort/\">"
+    ],
+    "noindex": true
+  },
+  {
+    "path": "anchor-harshita-shekhawat.html",
+    "status": 200,
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/anchor-harshita-shekhawat.html\">"
+    ],
+    "noindex": true
+  },
+  {
+    "path": "scripts/dev-config.js",
+    "status": 200,
+    "canonical": [],
+    "noindex": false
+  },
+  {
+    "path": "vendors/dev-formula-safety-20261008-not-a-real-vendor-didwana/",
+    "status": 404
+  },
+  {
+    "path": "vendors/nonexistent-final-qa-20261008/",
+    "status": 404
+  }
+]

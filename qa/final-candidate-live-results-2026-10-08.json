@@ -1,0 +1,303 @@
+{
+  "build": {
+    "repository": "chitranshcolorlab/rajasthan-wedding-guide-dev",
+    "sourceBranch": "dev/automatic-vendor-system",
+    "sourceCommit": "7319bdf412c3d0d678f6ba3e0f7102fe609f1092",
+    "deploymentRun": "37816007319",
+    "approvedCatalogSha256": "a5c746857c748cd5971bf639434d41a0a8f307bf817e01fe3fc9f59c0780c33f"
+  },
+  "approvedCount": 18,
+  "catalogSha256": "a5c746857c748cd5971bf639434d41a0a8f307bf817e01fe3fc9f59c0780c33f",
+  "sitemapExact": true,
+  "privateFieldsAbsent": true,
+  "profiles": [
+    {
+      "slug": "shree-krishna-wedding-photography-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-media-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-compression-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-ten-photo-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-version-3-upload-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-approval-publish-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-server-status-test-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-concurrent-same-name-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-concurrent-same-name-not-a-real-vendor-didwana-2",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-parallel-approval-20261006-not-a-real-vendor-didwana-2",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-optional-fields-20261006-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-safe-links-20261006-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-response-recovery-20261006-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-owner-qa-20261006-1755-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-validation-qa-20261007-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-concurrent-approval-20261008-1855-not-a-real-vendor-didwana-2",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    },
+    {
+      "slug": "dev-concurrent-approval-20261008-1855-not-a-real-vendor-didwana",
+      "checks": {
+        "http200": true,
+        "oneH1": true,
+        "canonical": true,
+        "noindex": true,
+        "nofollow": true,
+        "description": true,
+        "ogTitle": true,
+        "ogDescription": true,
+        "ogUrl": true,
+        "jsonLd": true
+      },
+      "passed": true
+    }
+  ]
+}
