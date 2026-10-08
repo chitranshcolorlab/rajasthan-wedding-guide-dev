@@ -182,15 +182,17 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/publication-failure-retry-parity-2026-10-08.md"
       ],
-      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance.",
+      "remainingAcceptance": "Fresh authenticated forced-dispatch-failure and owner retry on the frozen candidate, with persisted approval, UI feedback, run/commit/live attribution and no duplicate ID/slug. Google sign-in currently blocked by 502; prior live smoke retained.",
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-full-suite-2026-10-07.md"
+          "qa/candidate-full-suite-2026-10-07.md",
+          "qa/publication-failure-retry-parity-2026-10-08.md"
         ],
         "limits": "Local mock regression does not replace live candidate acceptance."
       }
@@ -202,15 +204,17 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/publication-failure-retry-parity-2026-10-08.md"
       ],
-      "remainingAcceptance": "Scheduled execution and frozen-candidate acceptance.",
+      "remainingAcceptance": "Fresh authenticated forced-dispatch-failure and owner retry on the frozen candidate, with persisted approval, UI feedback, run/commit/live attribution and no duplicate ID/slug. Google sign-in currently blocked by 502; prior live smoke retained.",
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-full-suite-2026-10-07.md"
+          "qa/candidate-full-suite-2026-10-07.md",
+          "qa/publication-failure-retry-parity-2026-10-08.md"
         ],
         "limits": "Local mock regression does not replace live candidate acceptance."
       }
@@ -1989,5 +1993,14 @@
     "cleanupRun": 37760629789,
     "evidence": "qa/automatic-publication-after-404-2026-10-08.md",
     "independentAcceptance": "PENDING"
+  },
+  "publicationFailureRetrySourceParity": {
+    "date": "2026-10-08",
+    "verifiedHead": "f4bf35fe04fab182268b179f57079cfa6db48b6f",
+    "comparisonCandidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+    "adminReviewExact": true,
+    "backendCodeExact": true,
+    "evidence": "qa/publication-failure-retry-parity-2026-10-08.md",
+    "liveRetest": "BLOCKED — Google sign-in 502; no status/configuration mutation attempted."
   }
 }
