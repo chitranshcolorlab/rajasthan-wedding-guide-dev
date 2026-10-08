@@ -1214,26 +1214,28 @@
       "commit": "",
       "environment": "DEV",
       "evidence": "",
-      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerCoverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
         "qa/registration-validation-live-result.md",
         "qa/concurrent-registration-live-result.md",
         "qa/safe-links-live-result.md",
         "qa/data001-column-reorder-live-result.md",
-        "qa/concurrent-approval-live-result.md"
+        "qa/concurrent-approval-live-result.md",
+        "qa/header-reorder-status-live-2026-10-08.md"
       ],
-      "remainingAcceptance": "Valid-token audience/issuer/expiry/subject permutations; full security matrix; independent DATA-001 candidate retest.",
+      "remainingAcceptance": "Independent DATA-001 candidate retest and formal acceptance remain pending; QA-47 valid-token negative permutations are separate.",
       "evidenceReconciliation": {
         "date": "2026-10-08",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
           "qa/candidate-publisher-regression-result.md",
           "qa/candidate-live-validation-2026-10-07.md",
-          "qa/formula-storage-live-2026-10-08.md"
+          "qa/formula-storage-live-2026-10-08.md",
+          "qa/header-reorder-status-live-2026-10-08.md"
         ],
-        "limits": "Server-controlled status, distinct UUIDs, four formula-prefix native literal storage and preexisting rows unchanged verified live. Header-reordered authenticated status mutation still required for complete developer procedure; independent acceptance unchanged."
+        "limits": "Fresh authenticated Edit Required mutation after Email F→A changed only target Z/AA. Four prefix strings stayed literal; all 24 native rowData restored exactly after inverse reorder and scoped cleanup. Independent acceptance unchanged."
       }
     },
     "QA-50": {
@@ -1883,7 +1885,7 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-08",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 49,
+    "fullDeveloperProcedure": 50,
     "partialProcedure": 30,
     "formalPass": 0,
     "automatedTestsPassed": 49,
@@ -2153,5 +2155,19 @@
     "verifiedHead": "47841502186e17df23b1ecbc99c513a7f1abde82",
     "evidence": "qa/directory-breadcrumb-live-2026-10-08.md",
     "scope": "Rajasthan → Didwana-Kuchaman → Didwana → Photographers & Films; reverse city/district/Rajasthan breadcrumb clicks. Not all districts."
+  },
+  "headerReorderStatusDeveloperVerification": {
+    "date": "2026-10-08",
+    "submissionId": "RWG-daff7fe3-a050-4b62-b903-ca505caa2754",
+    "status": "DEVELOPER VERIFIED",
+    "nativeRowsExactAfterCleanup": 24,
+    "changedCellsDuringTest": [
+      "Z24",
+      "AA24"
+    ],
+    "columnOrderRestored": true,
+    "auditLogRetained": true,
+    "evidence": "qa/header-reorder-status-live-2026-10-08.md",
+    "limits": "Formal NOT RUN and candidate/signoffs/defect dispositions unchanged."
   }
 }
