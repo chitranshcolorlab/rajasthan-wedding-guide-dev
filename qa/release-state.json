@@ -180,21 +180,23 @@
       "commit": "",
       "environment": "DEV",
       "evidence": "",
-      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerCoverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/direct-publisher-activation.md",
-        "qa/publication-failure-retry-parity-2026-10-08.md"
+        "qa/publication-failure-retry-parity-2026-10-08.md",
+        "qa/fresh-publication-failure-retry-2026-10-08.md"
       ],
-      "remainingAcceptance": "Fresh authenticated forced-dispatch-failure and owner retry on the frozen candidate, with persisted approval, UI feedback, run/commit/live attribution and no duplicate ID/slug. Google sign-in currently blocked by 502; prior live smoke retained.",
+      "remainingAcceptance": "Independent formal acceptance remains pending; QA-03 clean retry-to-live recovery is separate.",
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
           "qa/candidate-full-suite-2026-10-07.md",
-          "qa/publication-failure-retry-parity-2026-10-08.md"
+          "qa/publication-failure-retry-parity-2026-10-08.md",
+          "qa/fresh-publication-failure-retry-2026-10-08.md"
         ],
-        "limits": "Local mock regression does not replace live candidate acceptance."
+        "limits": "Fresh actual controlled dispatch failure persisted approval with explicit not-queued UI and no immediate new dispatch. Historical controlled-failure Version 5 used temporarily, exact Version 4 restored. Independent acceptance and clean QA-03 recovery not claimed."
       }
     },
     "QA-03": {
@@ -205,9 +207,10 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/direct-publisher-activation.md",
-        "qa/publication-failure-retry-parity-2026-10-08.md"
+        "qa/publication-failure-retry-parity-2026-10-08.md",
+        "qa/fresh-publication-failure-retry-2026-10-08.md"
       ],
-      "remainingAcceptance": "Fresh authenticated forced-dispatch-failure and owner retry on the frozen candidate, with persisted approval, UI feedback, run/commit/live attribution and no duplicate ID/slug. Google sign-in currently blocked by 502; prior live smoke retained.",
+      "remainingAcceptance": "Clean owner retry-to-live recovery on candidate: current retry queued and succeeded with no duplicate, but intervening backup generation and additional Pages build confound exclusive recovery attribution. Intermittent pre-build Pages failure must be addressed/retested.",
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
@@ -1896,14 +1899,13 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-08",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 54,
-    "partialProcedure": 10,
+    "fullDeveloperProcedure": 55,
+    "partialProcedure": 9,
     "formalPass": 0,
     "automatedTestsPassed": 49,
     "limits": "49 repository tests and 4 supplemental local harness tests are distinct from acceptance criteria. Developer coverage does not infer independent closures or signatures.",
     "additionalCandidateHarnessTestsPassed": 4,
     "remainingDeveloperCriteria": [
-      "QA-02",
       "QA-03",
       "QA-04",
       "QA-19",
@@ -2301,13 +2303,17 @@
     "retryQueuedUtc": "2026-10-08T15:13:25Z",
     "backupPublisher": 37798607803,
     "failedPages": 37798669238,
-    "cleanupRequired": "Restore Z24/AA24/AB24 baseline after recovery evidence; compare all 26 native rowData and remove profile from live catalog.",
+    "cleanupRequired": null,
     "limits": "Owner-account retry succeeded and preserved ID/slug. Backup timer generated first; Pages required additional documentation-triggered build. QA-03 pure retry recovery remains partial.",
-    "status": "Native cleanup complete, Pages cleanup pending",
+    "status": "Completed and restored; QA-02 developer full, QA-03 partial",
     "retryRun": 37798942409,
     "recoveryPages": 37799106945,
     "cleanupNativeRowsExact": 26,
     "cleanupPublisher": 37799302976,
-    "failedCleanupPages": 37799371598
+    "failedCleanupPages": 37799371598,
+    "cleanupPages": 37799538687,
+    "cleanupLiveProfile404": true,
+    "cleanupCatalogCount": 18,
+    "cleanupTargetCount": 0
   }
 }
