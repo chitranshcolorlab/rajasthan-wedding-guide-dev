@@ -1,0 +1,5 @@
+# QA-61 long, empty and ten-photo width coverage
+
+8 October 2026, isolated DEV. Archived generated HTML copied unchanged from bb341a7a1438cb44ac3749edd9b58ceff3081faf into qa/long-content-archived-profile.html. Profile CSS exactly equals current ten-photo live profile CSS. Fixture commit 5b2906ae2f11be92a4dc0071cbe8e77638c3ba04; Pages 37754273859 completed success. This is a layout-only archive, not vendor republication or navigation acceptance; original relative navigation remains archive content.
+
+Browser measured exact expected H1 in all three frames. About text length 8400 each. At 320/390/768 frame widths, clientWidth equals scrollWidth 305/375/753. All section left/right bounds 25–280/25–350/25–728. Contact controls 96.03125x48 and 168.796875x48. No overflow or truncation. Combined with qa/responsive-width-retest-2026-10-08.md and qa/mobile-layout-matrix-result.md for empty optional sections and ten-photo gallery at all widths, QA-61 developer width procedure is complete. Formal NOT RUN and physical-device gates unchanged. Sheet/vendor statuses untouched; original rejected profile stays unpublished.

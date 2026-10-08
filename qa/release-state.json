@@ -1467,7 +1467,19 @@
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md"
       ],
-      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases."
+      "remainingAcceptance": "Physical Android/iOS touch and all responsive cases.",
+      "evidenceReconciliation": {
+        "date": "2026-10-08",
+        "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
+        "verifiedBuild": "5b2906ae2f11be92a4dc0071cbe8e77638c3ba04",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
+        "evidence": [
+          "qa/long-content-width-result-2026-10-08.md",
+          "qa/responsive-width-retest-2026-10-08.md",
+          "qa/mobile-layout-matrix-result.md"
+        ],
+        "limits": "Browser width procedure verified using archived exact 8400-character generated profile with CSS identical to current live profile, plus existing empty optional and ten-photo width evidence. Physical devices and independent candidate acceptance not inferred."
+      }
     },
     "QA-62": {
       "status": "NOT RUN",
@@ -1853,7 +1865,7 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-08",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 46,
+    "fullDeveloperProcedure": 47,
     "partialProcedure": 30,
     "formalPass": 0,
     "automatedTestsPassed": 47,
