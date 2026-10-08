@@ -1100,21 +1100,24 @@
       "commit": "",
       "environment": "DEV",
       "evidence": "",
-      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerCoverage": "FULL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/security-seo-mobile-live-result.md",
         "qa/latest-catalog-route-live-result.md",
-        "qa/scheduler-observed-2026-10-06.md"
+        "qa/scheduler-observed-2026-10-06.md",
+        "qa/automatic-publication-after-404-2026-10-08.md"
       ],
-      "remainingAcceptance": "Fresh scheduled change propagation/cadence and complete indexing cases; DEV remains noindex.",
+      "remainingAcceptance": "Independent acceptance on the frozen candidate pending. Native GitHub schedule attribution/cadence remains QA-04, not established by this timer workflow_dispatch probe.",
       "evidenceReconciliation": {
-        "date": "2026-10-07",
+        "date": "2026-10-08",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "verifiedBuild": "756ae5a8b90cb04baa21ce889394434e5dc2c61d",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
-          "qa/candidate-live-lifecycle-2026-10-07.md"
+          "qa/candidate-live-lifecycle-2026-10-07.md",
+          "qa/automatic-publication-after-404-2026-10-08.md"
         ],
-        "limits": "Remaining compound steps and independent acceptance pending."
+        "limits": "Current DEV automatic timer synchronization verified; formal acceptance NOT RUN. Native cron QA-04 and AUTO-001 remain open."
       }
     },
     "QA-46": {
@@ -1869,11 +1872,11 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-08",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 48,
+    "fullDeveloperProcedure": 49,
     "partialProcedure": 30,
     "formalPass": 0,
-    "automatedTestsPassed": 47,
-    "limits": "47 repository tests plus 4 supplemental local harness tests are not 51 acceptance criteria. No independent closures or signatures inferred.",
+    "automatedTestsPassed": 49,
+    "limits": "49 repository tests and 4 supplemental local harness tests are distinct from acceptance criteria. Developer coverage does not infer independent closures or signatures.",
     "additionalCandidateHarnessTestsPassed": 4
   },
   "currentDisposableLifecycleFixture": {
@@ -1973,5 +1976,16 @@
     "failure": "DEV API HTTP404; commit step skipped",
     "event": "workflow_dispatch",
     "evidence": "qa/no-login-security-publisher-2026-10-08.md"
+  },
+  "publisher404RetryDeveloperVerification": {
+    "date": "2026-10-08",
+    "fixCommit": "756ae5a8b90cb04baa21ce889394434e5dc2c61d",
+    "ciRun": 37759737860,
+    "testsPassed": 49,
+    "testsFailed": 0,
+    "publicationRun": 37760052429,
+    "cleanupRun": 37760629789,
+    "evidence": "qa/automatic-publication-after-404-2026-10-08.md",
+    "independentAcceptance": "PENDING"
   }
 }
