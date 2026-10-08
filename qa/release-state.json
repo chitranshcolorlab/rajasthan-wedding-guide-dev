@@ -2102,5 +2102,20 @@
     "promptedProcedure": "DEV listing and a profile, portrait/landscape, clipping/horizontal scrolling",
     "evidence": "qa/android-owner-layout-2026-10-08.md",
     "scope": "Owner confirmation only; chosen profile not identified, no fresh screenshot, no touch/refresh proof, no formal PASS."
+  },
+  "multipleFilterDeveloperVerification": {
+    "date": "2026-10-08",
+    "fixtureBuild": "2e15936597cf310d8a678bf0148698d4cb7846f0",
+    "casesPassed": 12,
+    "categories": 3,
+    "districts": 3,
+    "cities": 4,
+    "evidence": "qa/multiple-filter-result-2026-10-08.md",
+    "scope": "Synthetic isolated fixture using current listing filter code; no registered/approved records or profile publication. Formal acceptance unchanged."
+  },
+  "androidOwnerRefreshObservation20261008": {
+    "reportedAt": "2026-10-08T16:14:54+05:30",
+    "report": "Sahi h; only one category/district currently present",
+    "scope": "Owner confirms prompted refresh/filter controls/profile scroll/photo visibility. Exact selected profile/device version not captured; multi-category real-device acceptance not inferred."
   }
 }

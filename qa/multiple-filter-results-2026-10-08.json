@@ -1,0 +1,191 @@
+[
+  {
+    "label": "all",
+    "cards": [
+      "DEV Filter Sample F1 — Not a real vendor",
+      "DEV Filter Sample F2 — Not a real vendor",
+      "DEV Filter Sample F3 — Not a real vendor",
+      "DEV Filter Sample F4 — Not a real vendor",
+      "DEV Filter Sample F5 — Not a real vendor",
+      "DEV Filter Sample F6 — Not a real vendor"
+    ],
+    "category": "",
+    "cities": [
+      "",
+      "Didwana",
+      "Jaipur",
+      "Kuchaman",
+      "Nagaur"
+    ],
+    "city": "",
+    "district": "",
+    "summary": "6 approved vendors"
+  },
+  {
+    "label": "photographers",
+    "cards": [
+      "DEV Filter Sample F1 — Not a real vendor",
+      "DEV Filter Sample F3 — Not a real vendor"
+    ],
+    "category": "Photographers & Films",
+    "cities": [
+      "",
+      "Didwana",
+      "Jaipur",
+      "Kuchaman",
+      "Nagaur"
+    ],
+    "city": "",
+    "district": "",
+    "summary": "2 approved vendors • Photographers & Films"
+  },
+  {
+    "label": "photographers Nagaur",
+    "cards": [
+      "DEV Filter Sample F3 — Not a real vendor"
+    ],
+    "category": "Photographers & Films",
+    "cities": [
+      "",
+      "Nagaur"
+    ],
+    "city": "",
+    "district": "Nagaur",
+    "summary": "1 approved vendor • Photographers & Films • Nagaur"
+  },
+  {
+    "label": "city Nagaur",
+    "cards": [
+      "DEV Filter Sample F3 — Not a real vendor"
+    ],
+    "category": "Photographers & Films",
+    "cities": [
+      "",
+      "Nagaur"
+    ],
+    "city": "Nagaur",
+    "district": "Nagaur",
+    "summary": "1 approved vendor • Photographers & Films • Nagaur • Nagaur"
+  },
+  {
+    "label": "district switch clears Nagaur city and empty photographers Jaipur",
+    "cards": [],
+    "category": "Photographers & Films",
+    "cities": [
+      "",
+      "Jaipur"
+    ],
+    "city": "",
+    "district": "Jaipur",
+    "empty": "No approved vendors found for this category and city.",
+    "summary": "0 approved vendors • Photographers & Films • Jaipur"
+  },
+  {
+    "label": "venue Jaipur",
+    "cards": [
+      "DEV Filter Sample F5 — Not a real vendor"
+    ],
+    "category": "Wedding Venues",
+    "cities": [
+      "",
+      "Jaipur"
+    ],
+    "city": "",
+    "district": "Jaipur",
+    "summary": "1 approved vendor • Wedding Venues • Jaipur"
+  },
+  {
+    "label": "venue Didwana district",
+    "cards": [
+      "DEV Filter Sample F2 — Not a real vendor"
+    ],
+    "category": "Wedding Venues",
+    "cities": [
+      "",
+      "Didwana",
+      "Kuchaman"
+    ],
+    "city": "",
+    "district": "Didwana-Kuchaman",
+    "summary": "1 approved vendor • Wedding Venues • Didwana-Kuchaman"
+  },
+  {
+    "label": "empty venue Kuchaman",
+    "cards": [],
+    "category": "Wedding Venues",
+    "cities": [
+      "",
+      "Didwana",
+      "Kuchaman"
+    ],
+    "city": "Kuchaman",
+    "district": "Didwana-Kuchaman",
+    "empty": "No approved vendors found for this category and city.",
+    "summary": "0 approved vendors • Wedding Venues • Didwana-Kuchaman • Kuchaman"
+  },
+  {
+    "label": "caterer Kuchaman",
+    "cards": [
+      "DEV Filter Sample F6 — Not a real vendor"
+    ],
+    "category": "Caterers",
+    "cities": [
+      "",
+      "Didwana",
+      "Kuchaman"
+    ],
+    "city": "Kuchaman",
+    "district": "Didwana-Kuchaman",
+    "summary": "1 approved vendor • Caterers • Didwana-Kuchaman • Kuchaman"
+  },
+  {
+    "label": "reset all",
+    "cards": [
+      "DEV Filter Sample F1 — Not a real vendor",
+      "DEV Filter Sample F2 — Not a real vendor",
+      "DEV Filter Sample F3 — Not a real vendor",
+      "DEV Filter Sample F4 — Not a real vendor",
+      "DEV Filter Sample F5 — Not a real vendor",
+      "DEV Filter Sample F6 — Not a real vendor"
+    ],
+    "category": "",
+    "cities": [
+      "",
+      "Didwana",
+      "Jaipur",
+      "Kuchaman",
+      "Nagaur"
+    ],
+    "city": "",
+    "district": "",
+    "summary": "6 approved vendors"
+  },
+  {
+    "label": "deep link Caterers Jaipur",
+    "cards": [
+      "DEV Filter Sample F4 — Not a real vendor"
+    ],
+    "category": "Caterers",
+    "cities": [
+      "",
+      "Jaipur"
+    ],
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "summary": "1 approved vendor • Caterers • Jaipur • Jaipur"
+  },
+  {
+    "label": "refreshed deep link",
+    "cards": [
+      "DEV Filter Sample F4 — Not a real vendor"
+    ],
+    "category": "Caterers",
+    "cities": [
+      "",
+      "Jaipur"
+    ],
+    "city": "Jaipur",
+    "district": "Jaipur",
+    "summary": "1 approved vendor • Caterers • Jaipur • Jaipur"
+  }
+]
