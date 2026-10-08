@@ -19,6 +19,7 @@ function run(scenario){
  const listCalls=calls.filter(x=>x==='list').length;
  if(scenario==='health-retry-success'&&calls.length===1)return {ok:true,status:200,json:async()=>{throw Error('PRIVATE HTML BODY')}};
  if(scenario==='list-unreadable'&&action==='list')return {ok:true,status:200,json:async()=>{throw Error('PRIVATE HTML BODY')}};
+ if(scenario==='list-404'&&action==='list')return {ok:false,status:404};
  const health={ok:true,environment:scenario==='wrong-environment'?'production':'dev',version:'automatic-vendor-v1'};
  let data={ok:true,items:[vendor]};
  if(scenario==='empty-approved')data={ok:true,items:[]};
@@ -31,6 +32,9 @@ function run(scenario){
  return {dir,before,legacyBefore,result,calls,cleanup:()=>fs.rmSync(dir,{recursive:true,force:true})};
 }
 function unchanged(run){for(const [name,value] of Object.entries(run.before))assert.equal(fs.readFileSync(path.join(run.dir,name),'utf8'),value,name);assert.equal(fs.existsSync(path.join(run.dir,'.vendors-next')),false);}
+test('exhausted Apps Script 404 retries preserve old profile, catalog and sitemap',()=>{
+ const r=run('list-404');try{assert.equal(r.result.status,1);assert.deepEqual(r.calls,['test','list','list','list']);assert.match(r.result.stderr,/HTTP 404/);unchanged(r);}finally{r.cleanup();}
+});
 test('wrong environment fails before list and preserves all generated files',()=>{
  const r=run('wrong-environment');try{assert.equal(r.result.status,1);assert.deepEqual(r.calls,['test']);unchanged(r);}finally{r.cleanup();}
 });
@@ -63,3 +67,4 @@ test('valid empty approved list removes managed profiles while preserving every 
   assert.equal(fs.existsSync(path.join(r.dir,'.vendors-next')),false);
  }finally{r.cleanup();}
 });
+

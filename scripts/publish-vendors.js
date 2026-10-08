@@ -49,7 +49,10 @@ async function fetchDevJson(url,{fetchImpl=fetch,sleep=ms=>new Promise(resolve=>
    await sleep(attempt*1000);continue;
   }
   if(!response.ok){
-   const retryable=response.status===408||response.status===429||response.status>=500;
+   // Apps Script can intermittently return 404 for a valid deployed exec URL.
+   // Retry only this read endpoint; an exhausted failure still prevents publication.
+   const appsScript404=response.status===404&&/^https:\/\/script\.google\.com\/macros\/s\/[^/?#]+\/exec(?:\?|$)/.test(String(url));
+   const retryable=appsScript404||response.status===408||response.status===429||response.status>=500;
    if(!retryable||attempt===attempts)throw Error('DEV API HTTP '+response.status);
    await sleep(attempt*1000);continue;
   }
@@ -73,3 +76,4 @@ async function main(){
 }
 if(require.main===module)main().catch(e=>{console.error(e.message);process.exitCode=1});
 module.exports={normalize,render,publish,categoryPath,fetchDevJson};
+
