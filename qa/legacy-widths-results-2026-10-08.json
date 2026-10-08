@@ -1,0 +1,299 @@
+[
+  {
+    "profile": 1,
+    "width": 320,
+    "bodyScroll": 305,
+    "buttons": [
+      {
+        "height": 49,
+        "text": "WhatsApp Enquiry",
+        "width": 208.40625
+      },
+      {
+        "height": 49,
+        "text": "Call Now",
+        "width": 208.40625
+      }
+    ],
+    "client": 305,
+    "heading": "Chitransh Color Lab & Studio",
+    "mediaMaxRight": 0,
+    "scroll": 305
+  },
+  {
+    "profile": 1,
+    "width": 390,
+    "bodyScroll": 375,
+    "buttons": [
+      {
+        "height": 49,
+        "text": "WhatsApp Enquiry",
+        "width": 270
+      },
+      {
+        "height": 49,
+        "text": "Call Now",
+        "width": 270
+      }
+    ],
+    "client": 375,
+    "heading": "Chitransh Color Lab & Studio",
+    "mediaMaxRight": 0,
+    "scroll": 375
+  },
+  {
+    "profile": 1,
+    "width": 768,
+    "bodyScroll": 753,
+    "buttons": [
+      {
+        "height": 70,
+        "text": "WhatsApp Enquiry",
+        "width": 166.671875
+      },
+      {
+        "height": 49,
+        "text": "Call Now",
+        "width": 166.671875
+      }
+    ],
+    "client": 753,
+    "heading": "Chitransh Color Lab & Studio",
+    "mediaMaxRight": 0,
+    "scroll": 753
+  },
+  {
+    "profile": 2,
+    "width": 320,
+    "bodyScroll": 305,
+    "buttons": [
+      {
+        "height": 47,
+        "text": "📞 Call",
+        "width": 93.46875
+      },
+      {
+        "height": 47,
+        "text": "💬 WhatsApp",
+        "width": 146.90625
+      }
+    ],
+    "client": 305,
+    "heading": "Fashion Flavour",
+    "mediaMaxRight": 289.75,
+    "scroll": 305
+  },
+  {
+    "profile": 2,
+    "width": 390,
+    "bodyScroll": 375,
+    "buttons": [
+      {
+        "height": 47,
+        "text": "📞 Call",
+        "width": 93.46875
+      },
+      {
+        "height": 47,
+        "text": "💬 WhatsApp",
+        "width": 146.90625
+      }
+    ],
+    "client": 375,
+    "heading": "Fashion Flavour",
+    "mediaMaxRight": 356.25,
+    "scroll": 375
+  },
+  {
+    "profile": 2,
+    "width": 768,
+    "bodyScroll": 753,
+    "buttons": [
+      {
+        "height": 47,
+        "text": "📞 Call",
+        "width": 93.46875
+      },
+      {
+        "height": 47,
+        "text": "💬 WhatsApp",
+        "width": 146.90625
+      }
+    ],
+    "client": 753,
+    "heading": "Fashion Flavour",
+    "mediaMaxRight": 707.8125,
+    "scroll": 753
+  },
+  {
+    "profile": 3,
+    "width": 320,
+    "bodyScroll": 305,
+    "buttons": [
+      {
+        "height": 49,
+        "text": "Call 9166933648",
+        "width": 208.40625
+      },
+      {
+        "height": 49,
+        "text": "WhatsApp Venue",
+        "width": 208.40625
+      },
+      {
+        "height": 49,
+        "text": "Check Availability",
+        "width": 208.40625
+      }
+    ],
+    "client": 305,
+    "heading": "Madan Mohan Resort",
+    "mediaMaxRight": 305,
+    "scroll": 305
+  },
+  {
+    "profile": 3,
+    "width": 390,
+    "bodyScroll": 375,
+    "buttons": [
+      {
+        "height": 49,
+        "text": "Call 9166933648",
+        "width": 270
+      },
+      {
+        "height": 49,
+        "text": "WhatsApp Venue",
+        "width": 270
+      },
+      {
+        "height": 49,
+        "text": "Check Availability",
+        "width": 270
+      }
+    ],
+    "client": 375,
+    "heading": "Madan Mohan Resort",
+    "mediaMaxRight": 375,
+    "scroll": 375
+  },
+  {
+    "profile": 3,
+    "width": 768,
+    "bodyScroll": 753,
+    "buttons": [
+      {
+        "height": 49,
+        "text": "Call 9166933648",
+        "width": 170.78125
+      },
+      {
+        "height": 49,
+        "text": "WhatsApp Venue",
+        "width": 170.78125
+      },
+      {
+        "height": 49,
+        "text": "Check Availability",
+        "width": 170.78125
+      }
+    ],
+    "client": 753,
+    "heading": "Madan Mohan Resort",
+    "mediaMaxRight": 753,
+    "scroll": 753
+  },
+  {
+    "profile": 4,
+    "width": 320,
+    "bodyScroll": 305,
+    "buttons": [
+      {
+        "height": 52.796875,
+        "text": "Check Availability",
+        "width": 173.765625
+      },
+      {
+        "height": 52.796875,
+        "text": "Call",
+        "width": 69.34375
+      },
+      {
+        "height": 50.796875,
+        "text": "WhatsApp Enquiry",
+        "width": 181.109375
+      },
+      {
+        "height": 52.796875,
+        "text": "Call 6353458835",
+        "width": 162.78125
+      }
+    ],
+    "client": 305,
+    "heading": "HarshitaShekhawat",
+    "mediaMaxRight": 283,
+    "scroll": 305
+  },
+  {
+    "profile": 4,
+    "width": 390,
+    "bodyScroll": 375,
+    "buttons": [
+      {
+        "height": 52.796875,
+        "text": "Check Availability",
+        "width": 173.765625
+      },
+      {
+        "height": 52.796875,
+        "text": "Call",
+        "width": 69.34375
+      },
+      {
+        "height": 50.796875,
+        "text": "WhatsApp Enquiry",
+        "width": 181.109375
+      },
+      {
+        "height": 52.796875,
+        "text": "Call 6353458835",
+        "width": 162.78125
+      }
+    ],
+    "client": 375,
+    "heading": "HarshitaShekhawat",
+    "mediaMaxRight": 353,
+    "scroll": 375
+  },
+  {
+    "profile": 4,
+    "width": 768,
+    "bodyScroll": 753,
+    "buttons": [
+      {
+        "height": 52.796875,
+        "text": "Check Availability",
+        "width": 173.765625
+      },
+      {
+        "height": 52.796875,
+        "text": "Call",
+        "width": 69.34375
+      },
+      {
+        "height": 52.796875,
+        "text": "WhatsApp Enquiry",
+        "width": 181.109375
+      },
+      {
+        "height": 52.796875,
+        "text": "Call 6353458835",
+        "width": 162.78125
+      }
+    ],
+    "client": 753,
+    "heading": "HarshitaShekhawat",
+    "mediaMaxRight": 731,
+    "scroll": 753
+  }
+]

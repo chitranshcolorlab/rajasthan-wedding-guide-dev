@@ -1364,15 +1364,17 @@
       "evidence": "",
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
-        "qa/legacy-dev-live-result.md"
+        "qa/legacy-dev-live-result.md",
+        "qa/legacy-widths-result-2026-10-08.md"
       ],
-      "remainingAcceptance": "Full independent candidate legacy regression.",
+      "remainingAcceptance": "Physical Android/iOS portrait/landscape, touch and independent frozen-candidate regression remain pending. Current 12 embedded widths verified; measured Fashion Flavour contact buttons 47px high.",
       "evidenceReconciliation": {
-        "date": "2026-10-07",
+        "date": "2026-10-08",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
         "coverage": "PARTIAL PROCEDURE EVIDENCE",
         "evidence": [
-          "qa/candidate-security-recovery-result.md"
+          "qa/candidate-security-recovery-result.md",
+          "qa/legacy-widths-result-2026-10-08.md"
         ],
         "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
       }
