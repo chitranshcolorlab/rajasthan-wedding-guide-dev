@@ -2302,6 +2302,12 @@
     "backupPublisher": 37798607803,
     "failedPages": 37798669238,
     "cleanupRequired": "Restore Z24/AA24/AB24 baseline after recovery evidence; compare all 26 native rowData and remove profile from live catalog.",
-    "limits": "Backup timer ran between dispatch failure and owner-account retry. Distinguish source generation from retry attribution. Independent final acceptance not claimed."
+    "limits": "Owner-account retry succeeded and preserved ID/slug. Backup timer generated first; Pages required additional documentation-triggered build. QA-03 pure retry recovery remains partial.",
+    "status": "Native cleanup complete, Pages cleanup pending",
+    "retryRun": 37798942409,
+    "recoveryPages": 37799106945,
+    "cleanupNativeRowsExact": 26,
+    "cleanupPublisher": 37799302976,
+    "failedCleanupPages": 37799371598
   }
 }
