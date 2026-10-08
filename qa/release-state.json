@@ -152,6 +152,29 @@
       "developerRetest": "Live canonical count1, exact DEV URL, noindex,nofollow;9 images9 videos DOM elements retained",
       "pagesRun": 37577734201,
       "developerRegressionEvidence": "qa/harshita-canonical-regression-2026-10-07.md"
+    },
+    {
+      "id": "ASSET-001",
+      "area": "site-artifact-dependencies",
+      "severity": "S1",
+      "priority": "P1",
+      "releaseBlocker": true,
+      "status": "FIX READY",
+      "observed": "Direct Pages staging omitted scripts/vendor-register.js and scripts/category-vendors.js; both returned 404 despite HTML references.",
+      "expected": "Registration and category pages load required public scripts; missing local script dependency must fail build.",
+      "rootCause": "Public-script allowlist only restored dev-config.js and did not include other browser scripts.",
+      "environment": "isolated DEV",
+      "build": "e6f922c2cc3c033487df2808ee049e0d8a49af72",
+      "changedFiles": [
+        ".github/workflows/pages-deploy.yml"
+      ],
+      "fixCommit": "ae21d7b86d26736cee6b6f91fe02ecc3804bbbde",
+      "defaultBranchFix": "120e6f802ae48096a934a1fc397fe28475749c94",
+      "pagesRun": 37817234467,
+      "developerRetest": "Build guard passed across staged HTML; all three browser scripts HTTP200; real invalid-phone form rejected; category rendered18 cards; Shree Krishna card navigation and refresh correct.",
+      "evidence": "qa/public-script-artifact-repair-2026-10-08.md",
+      "qaOwner": "Unassigned",
+      "remainingAcceptance": "Affected candidate artifact/publishing acceptance, full QA-64 and required independent closure remain pending."
     }
   ],
   "tests": {
@@ -1912,7 +1935,7 @@
     "proposal": "qa/proposed-acceptance-candidate-2026-10-08.md",
     "backendVersion": 4,
     "backendSourceBlob": "76a2ba1866732128976191d5dc478ae597fdb451",
-    "preflightStatus": "PENDING fresh live executable-source parity and deployment/Head verification",
+    "preflightStatus": "PENDING backend identity and affected candidate artifact revalidation after ASSET-001 staging repair",
     "dataPolicy": "Existing timer remains active; record source rows, generated commit, event, deployment and live output per mutable case. Source designation does not immobilize live data."
   },
   "evidenceReconciliationSummary": {
@@ -2002,6 +2025,12 @@
       "evidence": "qa/harshita-canonical-regression-2026-10-07.md",
       "result": "9 images loaded;9 posters/readyState4;native playback advanced on all9;no media errors;all stopped;only canonical tag differs from frozen HTML",
       "limits": "Brief playback smoke, not complete-duration playback or physical device test. Independent affected-build acceptance and release freeze pending."
+    },
+    "publicScriptArtifactRepair": {
+      "candidate": "e6f922c2cc3c033487df2808ee049e0d8a49af72",
+      "fixCommit": "ae21d7b86d26736cee6b6f91fe02ecc3804bbbde",
+      "evidence": "qa/public-script-artifact-repair-2026-10-08.md",
+      "status": "DEVELOPER VERIFIED — FORMAL ACCEPTANCE PENDING"
     }
   },
   "liveLongTextFixture": {
@@ -2555,5 +2584,30 @@
     "scope": "Run remaining DEV checks and review evidence; unsupported outcomes are pending",
     "decision": "RELEASE REMAINS BLOCKED",
     "reason": "Required live-only procedures and independent exact-candidate evidence/signoffs incomplete; no third-party signatures supplied."
+  },
+  "publicScriptArtifactRepair20261008": {
+    "id": "ASSET-001",
+    "area": "site-artifact-dependencies",
+    "severity": "S1",
+    "priority": "P1",
+    "releaseBlocker": true,
+    "status": "FIX READY",
+    "observed": "Direct Pages staging omitted scripts/vendor-register.js and scripts/category-vendors.js; both returned 404 despite HTML references.",
+    "expected": "Registration and category pages load required public scripts; missing local script dependency must fail build.",
+    "rootCause": "Public-script allowlist only restored dev-config.js and did not include other browser scripts.",
+    "environment": "isolated DEV",
+    "build": "e6f922c2cc3c033487df2808ee049e0d8a49af72",
+    "changedFiles": [
+      ".github/workflows/pages-deploy.yml"
+    ],
+    "fixCommit": "ae21d7b86d26736cee6b6f91fe02ecc3804bbbde",
+    "defaultBranchFix": "120e6f802ae48096a934a1fc397fe28475749c94",
+    "pagesRun": 37817234467,
+    "developerRetest": "Build guard passed across staged HTML; all three browser scripts HTTP200; real invalid-phone form rejected; category rendered18 cards; Shree Krishna card navigation and refresh correct.",
+    "evidence": "qa/public-script-artifact-repair-2026-10-08.md",
+    "qaOwner": "Unassigned",
+    "remainingAcceptance": "Affected candidate artifact/publishing acceptance, full QA-64 and required independent closure remain pending.",
+    "catalogSha256": "a5c746857c748cd5971bf639434d41a0a8f307bf817e01fe3fc9f59c0780c33f",
+    "proof": "dev-category-link-restored-20261008.jpg"
   }
 }
