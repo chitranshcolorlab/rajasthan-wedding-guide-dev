@@ -414,22 +414,24 @@
       "commit": "",
       "environment": "DEV",
       "evidence": "",
-      "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
+      "developerCoverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/direct-publisher-activation.md",
         "qa/concurrent-approval-live-result.md",
-        "qa/repeated-approval-live-2026-10-08.md"
+        "qa/repeated-approval-live-2026-10-08.md",
+        "qa/reapproval-after-retry-2026-10-08.md"
       ],
-      "remainingAcceptance": "All rename/normalization/slug edge cases and independent frozen-candidate acceptance.",
+      "remainingAcceptance": "Independent frozen-candidate acceptance remains pending. Historical dispatch-failure/retry was not recreated today; fresh QA-02/03 remain separate.",
       "evidenceReconciliation": {
         "date": "2026-10-07",
         "candidate": "b5219c1a4c54e84b062786868c21ff43d43ea284",
-        "coverage": "PARTIAL PROCEDURE EVIDENCE",
+        "coverage": "FULL PROCEDURE — DEVELOPER VERIFIED",
         "evidence": [
           "qa/candidate-publisher-regression-result.md",
-          "qa/candidate-slug-edge-2026-10-07.md"
+          "qa/candidate-slug-edge-2026-10-07.md",
+          "qa/reapproval-after-retry-2026-10-08.md"
         ],
-        "limits": "Evidence is not independent formal PASS. Owner reports predating freeze retained without exact served-build inference; missing compound steps remain pending."
+        "limits": "Same exact fixture recovered from actual 5 October publication failure/retry was reapproved live 8 October. All 26 native rows exact, same slug, catalog 18 with target once, current publisher success and same live profile. Cross-date evidence is explicit; not a fresh failure/retry experiment or independent formal PASS."
       }
     },
     "QA-14": {
@@ -1891,7 +1893,7 @@
   "evidenceReconciliationSummary": {
     "date": "2026-10-08",
     "mappedCriteria": 59,
-    "fullDeveloperProcedure": 52,
+    "fullDeveloperProcedure": 53,
     "partialProcedure": 30,
     "formalPass": 0,
     "automatedTestsPassed": 49,
@@ -2207,5 +2209,16 @@
       "dev-concurrent-approval-20261008-1855-not-a-real-vendor-didwana"
     ],
     "evidence": "qa/concurrent-approval-live-2026-10-08.md"
+  },
+  "reapprovalAfterRetryDeveloperVerification": {
+    "date": "2026-10-08",
+    "id": "RWG-12eb3b05-9f7f-4005-88fc-96450e2fb3f0",
+    "historicalRetryDate": "2026-10-05",
+    "reapprovalPublisher": 37788197872,
+    "nativeRowsExact": 26,
+    "catalogCount": 18,
+    "targetCount": 1,
+    "slug": "dev-approval-publish-test-not-a-real-vendor-didwana",
+    "evidence": "qa/reapproval-after-retry-2026-10-08.md"
   }
 }
