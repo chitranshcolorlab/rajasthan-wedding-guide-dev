@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>DEV Security QA | Rajasthan Wedding Guide</title><style>body{font:17px system-ui;background:#f5f0e7;color:#222;margin:0}main{max-width:740px;margin:35px auto;padding:24px;background:white;border-radius:18px}h1{font-size:27px}.notice{background:#fff0c9;padding:16px;border-radius:10px}button{padding:12px 18px;margin:10px 6px 10px 0;font:inherit}#result{white-space:pre-wrap;overflow-wrap:anywhere;padding:16px;background:#f4f4f4}a{color:#76570d}</style></head><body><main><p class="notice">DEV ONLY — केवल read-only security test. Vendor status या registration नहीं बदलेगा।</p><h1>Google Account Security QA</h1><p>Google account चुनने पर DEV backend private-list access की जाँच होगी। केवल outcome दिखेगा; vendor details और token नहीं दिखेंगे। Authorized account का access मिलना चाहिए; दूसरे account का access बंद होना चाहिए।</p><div id="googleButton"></div><button id="retry" disabled>उसी login का access फिर जाँचें</button><button id="clear">Test login भूलें</button><p>Expired-token test के लिए उसी page को खुला रखकर token expire होने के बाद फिर जाँचें। Refresh या page छोड़ने पर test login मिट जाएगा। Password या token chat में न भेजें।</p><p id="result" role="status">Google sign-in loading…</p><a href="admin-review.html">DEV admin पर लौटें</a></main><script src="scripts/dev-config.js"></script><script>
+(()=>{
+'use strict';
+const expected='https://script.google.com/macros/s/AKfycbwd2VnMXDxSHO_7dm992VZVX8wz1wUXs04lJ84ZeOMFDtYAB530DxtJN6ns6pr3B6gP6g/exec';
+const client='180810306472-6u3ujevmmm3hhvjim4jfll136tn5b5dc.apps.googleusercontent.com';
+let credential='',busy=false;
+const result=document.getElementById('result'),retry=document.getElementById('retry');
+function clear(){credential='';retry.disabled=true;result.textContent='Test login cleared.';if(window.google?.accounts?.id)google.accounts.id.disableAutoSelect();}
+async function test(){
+ if(busy||!credential)return;
+ if(window.RWG_DEV?.apiUrl!==expected){result.textContent='Blocked: configured backend is not the isolated DEV API.';return;}
+ busy=true;retry.disabled=true;result.textContent='Checking backend access…';
+ try{
+  const r=await fetch(expected,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify({action:'admin-list',idToken:credential})});
+  const j=await r.json();
+  if(j?.ok===true&&Array.isArray(j.items))result.textContent='ACCESS ALLOWED — backend accepted this account. Returned item count: '+j.items.length+'. Vendor details are not displayed.';
+  else if(j?.ok===false)result.textContent='ACCESS REJECTED — '+String(j.error||'Backend denied access.')+'\nPrivate item array returned: '+(Array.isArray(j.items)?'YES — investigate':'NO');
+  else result.textContent='UNCONFIRMED — invalid backend response.';
+ }catch(e){result.textContent='UNCONFIRMED — backend response unavailable. No status update was sent.';}
+ finally{busy=false;retry.disabled=!credential;}
+}
+retry.addEventListener('click',test);document.getElementById('clear').addEventListener('click',clear);
+window.addEventListener('pagehide',()=>{credential='';});
+window.rwgSecurityQaInit=()=>{
+ if(!window.google?.accounts?.id){result.textContent='Google sign-in unavailable. Reload later.';return;}
+ google.accounts.id.initialize({client_id:client,auto_select:false,callback:response=>{credential=response.credential;retry.disabled=false;test();}});
+ google.accounts.id.renderButton(document.getElementById('googleButton'),{theme:'outline',size:'large'});
+ result.textContent='Choose a Google account to run the read-only backend check.';
+};
+})();</script><script src="https://accounts.google.com/gsi/client" async defer onload="rwgSecurityQaInit()"></script></body></html>

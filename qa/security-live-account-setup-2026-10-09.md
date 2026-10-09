@@ -1,0 +1,7 @@
+# Read-only DEV real-account security QA setup
+
+9 October 2026. Added dev-security-qa.html using existing Google OAuth client and exact isolated DEV API. Normal GIS callback forwards credential only to existing DEV admin-list endpoint. No frontend email allowlist blocks the negative account before backend verification. Displays access outcome and item count only, never vendor details or token. Token retained only in page closure memory for optional expiry recheck; clear/pagehide removes it; no browser storage or logging. No status/registration writes, no permission changes, no new OAuth client or scopes.
+
+JavaScript syntax checked with node --check. Static inspection confirms admin-list only, exact DEV API guard, no local/session storage. Actual signed negative-account and expiry runs still pending; setup is not a PASS. Wrong audience requires a separately configured legitimate client/token; invalid issuer or missing subject cannot be asserted by modifying a Google token and retaining its signature. Existing simulated-claim tests remain distinct.
+
+New native schedule run 37872837751 created 9 October 2026 02:04:43Z (07:34:43 IST), job 113634572579 success: 49 tests passed, zero failed, 18 DEV vendors. No generated source-change commit observed in filtered log. QA04 fresh-change attribution remains pending. Formal coverage/signoffs and frozen candidate unchanged. Test-only new page is outside existing candidate freeze and needs runtime verification.
