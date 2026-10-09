@@ -1,0 +1,8 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
+const html=fs.readFileSync('admin-review.html','utf8');
+function setup(){let release;const ctx={WEB_APP_URL:'https://dev.invalid',idToken:'signed-in',requireAuth:()=>true,tokenUsable:()=>!!ctx.idToken,norm:x=>x,clearPrivateState(){ctx.idToken='';ctx.cleared=true},setAuthUI(){},fetch:()=>new Promise(r=>{release=r}),Error,JSON,String};vm.createContext(ctx);vm.runInContext(html.slice(html.indexOf('async function fetchItems('),html.indexOf('async function load(')),ctx);return{ctx,reply:j=>release({json:async()=>j})}}
+test('private read completed after logout cannot return vendor data',async()=>{const x=setup();const pending=x.ctx.fetchItems();x.ctx.idToken='';x.reply({ok:true,items:[{private:'vendor'}]});await assert.rejects(pending,/AUTH_REQUIRED/)});
+test('private read from previous login cannot return data into another login',async()=>{const x=setup();const pending=x.ctx.fetchItems();x.ctx.idToken='new-sign-in';x.reply({ok:true,items:[{private:'vendor'}]});await assert.rejects(pending,/AUTH_REQUIRED/)});
+test('backend unauthorized private read clears existing private session',async()=>{const x=setup();const pending=x.ctx.fetchItems();x.reply({ok:false,error:'Unauthorized'});await assert.rejects(pending,/Unauthorized/);assert.equal(x.ctx.cleared,true);assert.equal(x.ctx.idToken,'')});
+test('current authorized private read still returns submissions',async()=>{const x=setup();const pending=x.ctx.fetchItems();x.reply({ok:true,items:[{id:'fixture'}]});assert.equal((await pending)[0].id,'fixture')});
