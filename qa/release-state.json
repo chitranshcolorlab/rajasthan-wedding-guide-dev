@@ -1607,7 +1607,8 @@
       "developerCoverage": "PARTIAL — DEVELOPER VERIFIED",
       "developerEvidence": [
         "qa/live-smoke-2026-10-05.md",
-        "qa/direct-publisher-activation.md"
+        "qa/direct-publisher-activation.md",
+        "qa/registration-approval-publication-2026-10-09.md"
       ],
       "remainingAcceptance": "Original scheduled-publication requirement remains unverified; complete golden-vendor candidate evidence and independent signoff.",
       "evidenceReconciliation": {
@@ -2609,5 +2610,52 @@
     "remainingAcceptance": "Affected candidate artifact/publishing acceptance, full QA-64 and required independent closure remain pending.",
     "catalogSha256": "a5c746857c748cd5971bf639434d41a0a8f307bf817e01fe3fc9f59c0780c33f",
     "proof": "dev-category-link-restored-20261008.jpg"
+  },
+  "registrationApprovalPublication20261009": {
+    "environment": "DEV",
+    "fixtureId": "RWG-313849e4-708d-4d47-98ca-d4bbb3d751c3",
+    "fixtureSlug": "dev-qa-20261009-registration-approval-not-a-real-vendor-didwana",
+    "result": "DEVELOPER RUNTIME FLOW VERIFIED; formal acceptance unchanged",
+    "evidence": "qa/registration-approval-publication-2026-10-09.md",
+    "registration": {
+      "sourceRowsBefore": 26,
+      "sourceRowsAfter": 27,
+      "status": "Pending Approval",
+      "originalRowsUnchanged": true,
+      "absentFromPublicCatalog": true
+    },
+    "approval": {
+      "authorizedAdmin": "sharadmn29@gmail.com",
+      "savedStatus": "Approved",
+      "uiReadbackVerified": true,
+      "originalRowsUnchanged": true
+    },
+    "publication": {
+      "publisherRun": 37868849875,
+      "event": "workflow_dispatch",
+      "generatedCommit": "44e549801bd5119ef4b88cc425dc3f0e025a32dd",
+      "pagesRun": 37868899895,
+      "liveCatalogCount": 19,
+      "categoryNavigation": true,
+      "directRefresh": true,
+      "metadata": true
+    },
+    "cleanup": {
+      "savedStatus": "Rejected",
+      "publisherRun": 37869124927,
+      "generatedCommit": "cf51ed1aa14adac97ee54d7c23fefa50195910ef",
+      "pagesRun": 37869173964,
+      "liveCatalogCount": 18,
+      "catalogSha256": "a5c746857c748cd5971bf639434d41a0a8f307bf817e01fe3fc9f59c0780c33f",
+      "profileStatus": 404,
+      "originalRowsUnchanged": true
+    },
+    "limits": [
+      "No native event=schedule fresh-change attribution",
+      "Not frozen designated golden Shree Krishna procedure",
+      "No formal independent acceptance/signoff",
+      "No photos uploaded or real contact sent"
+    ],
+    "approvalScreenshotLibraryId": "libfile_872f8d5272b88191badf4baa63d349f2"
   }
 }
