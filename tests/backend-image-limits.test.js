@@ -36,3 +36,15 @@ test('DEV registration guard limits a phone to five attempts per hour',()=>{
  assert.throws(()=>c.checkDevSubmissionLimit_('9876543210'),/Submission limit reached/);
  assert.doesNotThrow(()=>c.checkDevSubmissionLimit_('9876543211'));
 });
+
+test('admin token verification rejects forged audience, issuer, unverified email and wrong admin',()=>{
+ const c=backend();
+ const now=Math.floor(Date.now()/1000);
+ const valid={aud:'180810306472-6u3ujevmmm3hhvjim4jfll136tn5b5dc.apps.googleusercontent.com',iss:'https://accounts.google.com',exp:now+3600,email_verified:true,email:'sharadmn29@gmail.com',sub:'test-google-sub'};
+ for(const override of [{aud:'another-client'},{iss:'https://attacker.example'},{exp:now-1},{email_verified:false},{email:'not-admin@example.com'},{sub:''}]){
+  c.UrlFetchApp={fetch:()=>({getResponseCode:()=>200,getContentText:()=>JSON.stringify({...valid,...override})})};
+  assert.equal(c.verifyGoogleAdminToken_('dummy-token').ok,false);
+ }
+ c.UrlFetchApp={fetch:()=>({getResponseCode:()=>200,getContentText:()=>JSON.stringify(valid)})};
+ assert.equal(c.verifyGoogleAdminToken_('dummy-token').ok,true);
+});
