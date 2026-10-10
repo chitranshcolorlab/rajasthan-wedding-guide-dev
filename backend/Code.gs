@@ -220,7 +220,7 @@ function requestDevPublication_(){
   if(ScriptApp.getScriptId()!=='1ET6cuL8kKoH4z-z1nGEg1_DzvCw6KKJsS_4f2Pw0JtAYp9H1CKcV7BBo')return {state:'blocked_project'};
   const response=UrlFetchApp.fetch('https://api.github.com/repos/chitranshcolorlab/rajasthan-wedding-guide-dev/actions/workflows/vendor-publisher.yml/dispatches',{
    method:'post',contentType:'application/json',headers:{Authorization:'Bearer '+token,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2026-03-10'},
-   payload:JSON.stringify({ref:'main'}),muteHttpExceptions:true,followRedirects:false
+   payload:JSON.stringify({ref:'dev/automatic-vendor-system'}),muteHttpExceptions:true,followRedirects:false
   });
   const code=response.getResponseCode();
   return code===200||code===204?{state:'queued'}:{state:'failed',httpStatus:code};
