@@ -1,8 +1,8 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
 function setup({token='dummy-test-token',env='dev',project='1ET6cuL8kKoH4z-z1nGEg1_DzvCw6KKJsS_4f2Pw0JtAYp9H1CKcV7BBo',code=204,fail=false}={}){
- const calls=[],c={PropertiesService:{getScriptProperties:()=>({getProperty:k=>({RWG_ENV:env,DEV_PUBLISH_GITHUB_TOKEN:token}[k])})},ScriptApp:{getScriptId:()=>project},UrlFetchApp:{fetch:(url,options)=>{calls.push({url,options});if(fail)throw Error('secret must never escape: '+token);return {getResponseCode:()=>code}}}};
- vm.createContext(c);vm.runInContext(fs.readFileSync('backend/Code.gs','utf8'),c);return {c,calls};
+ const calls=[],c={Utilities:{getUuid:()=> 'audit-request-test'},Logger:{log(){}},PropertiesService:{getScriptProperties:()=>({getProperty:k=>({RWG_ENV:env,DEV_PUBLISH_GITHUB_TOKEN:token}[k])})},ScriptApp:{getScriptId:()=>project},UrlFetchApp:{fetch:(url,options)=>{calls.push({url,options});if(fail)throw Error('secret must never escape: '+token);return {getResponseCode:()=>code}}}};
+ c.writeApprovalExecutionAudit_=()=>{};vm.createContext(c);vm.runInContext(fs.readFileSync('backend/Code.gs','utf8'),c);return {c,calls};
 }
 test('publisher dispatch is fixed to isolated DEV repo, main workflow, token in header only',()=>{const {c,calls}=setup();assert.equal(c.requestDevPublication_().state,'queued');assert.equal(calls.length,1);assert.equal(calls[0].url,'https://api.github.com/repos/chitranshcolorlab/rajasthan-wedding-guide-dev/actions/workflows/vendor-publisher.yml/dispatches');assert.deepEqual(JSON.parse(calls[0].options.payload),{ref:'main'});assert.equal(calls[0].options.headers.Authorization,'Bearer dummy-test-token');assert.equal(calls[0].options.followRedirects,false);assert.ok(!calls[0].options.payload.includes('dummy-test-token'));});
 test('missing token, wrong environment and wrong project make no outbound request',()=>{for(const options of [{token:''},{env:'production'},{project:'wrong-project'}]){const {c,calls}=setup(options);assert.notEqual(c.requestDevPublication_().state,'queued');assert.equal(calls.length,0);}});
