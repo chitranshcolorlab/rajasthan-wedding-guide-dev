@@ -11,7 +11,7 @@ function backend(vendors){
  const rows=[Array.from(headers),...vendors.map(v=>headers.map(h=>v[h]||''))];
  const range=(r,c,n=1,m=1)=>({getDisplayValues:()=>Array.from({length:n},(_,i)=>Array.from({length:m},(_,j)=>String(rows[r-1+i]?.[c-1+j]||''))),setValue(value){rows[r-1]??=[];rows[r-1][c-1]=value;return this},setValues(values){values.forEach((row,i)=>row.forEach((x,j)=>{rows[r-1+i]??=[];rows[r-1+i][c-1+j]=x}));return this},setFontWeight(){return this},setBackground(){return this}});
  const sheet={getLastRow:()=>rows.length,getLastColumn:()=>rows[0].length,getRange:range,getDataRange:()=>range(1,1,rows.length,rows[0].length),appendRow:row=>rows.push(row),setFrozenRows(){}};
- context.SpreadsheetApp.openById=()=>({getSheetByName:()=>sheet});context.writeAuditLog_=()=>{};
+ context.SpreadsheetApp.openById=()=>({getSheetByName:()=>sheet});context.writeAuditLog_=()=>{};context.writeApprovalExecutionAudit_=()=>{};
  return {context,rows,headers,sheet};
 }
 const parsed=x=>JSON.parse(x.getContent());
@@ -45,7 +45,7 @@ test('public API excludes pending and rejected vendors and private notes',()=>{
 });
 test('invalid approval fails before publishing and lock is released',()=>{
  const v=fixture('v5','', 'Pending Approval');v.Mobile='bad';const b=backend([v]);let releases=0;b.context.LockService.getScriptLock=()=>({waitLock(){},releaseLock(){releases++}});
- assert.throws(()=>b.context.updateStatus_({id:'v5',status:'Approved'},admin),/Invalid phone/);assert.equal(releases,1);assert.equal(b.rows[1][b.headers.indexOf('Status')],'Pending Approval');
+ assert.match(parsed(b.context.updateStatus_({id:'v5',status:'Approved'},admin)).error,/Invalid phone/);assert.equal(releases,1);assert.equal(b.rows[1][b.headers.indexOf('Status')],'Pending Approval');
 });
 test('XSS, attribute injection and unsafe outbound URLs do not enter executable HTML',()=>{
  const v=fixture();v['Business Name']='<script>alert(1)</script>';v.Services='</script><script>alert(2)</script>';v.Website='javascript:alert(3)';
