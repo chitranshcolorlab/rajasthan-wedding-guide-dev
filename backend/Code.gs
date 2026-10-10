@@ -77,7 +77,7 @@ function updateStatus_(b,a){
 
     requestId,submissionId:String(b.id||'').trim(),
 
-    requestedStatus:String(b.status||'').trim(),adminEmail:String(a.email||''),
+    requestedStatus:String(b.status||'').trim(),adminEmail:String((a&&a.email)||''),
 
     startUtc:startedAt.toISOString(),lockAcquiredUtc:'',lockWaitMs:'',
 
