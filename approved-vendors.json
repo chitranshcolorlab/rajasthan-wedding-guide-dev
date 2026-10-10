@@ -1,31 +1,4 @@
 {
   "ok": true,
-  "items": [
-    {
-      "Submission ID": "RWG-f4f1d955-f57e-4071-b3d4-4ac053a3369f",
-      "Business Name": "DEV Owner QA 20261006 1755 — Not a real vendor",
-      "Mobile": "9999999999",
-      "WhatsApp": "9999999999",
-      "Category": "Photographers & Films",
-      "District": "Didwana-Kuchaman",
-      "City": "Didwana",
-      "About Business": "",
-      "Services": "Disposable DEV registration-to-publication owner QA. Not a real vendor. Do not contact.",
-      "Starting Price": "",
-      "Years in Business": "",
-      "Service Areas": "",
-      "Languages": "",
-      "Specialities": "",
-      "Full Address": "",
-      "Logo URL": "",
-      "Photo URLs": "",
-      "Website": "",
-      "Instagram": "",
-      "Facebook": "",
-      "Google Maps": "",
-      "Portfolio Link": "",
-      "Status": "Approved",
-      "Slug": "dev-owner-qa-20261006-1755-not-a-real-vendor-didwana"
-    }
-  ]
+  "items": []
 }
