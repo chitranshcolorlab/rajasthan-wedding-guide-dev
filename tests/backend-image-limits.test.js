@@ -48,3 +48,12 @@ test('admin token verification rejects forged audience, issuer, unverified email
  c.UrlFetchApp={fetch:()=>({getResponseCode:()=>200,getContentText:()=>JSON.stringify(valid)})};
  assert.equal(c.verifyGoogleAdminToken_('dummy-token').ok,true);
 });
+
+test('public vendor response exposes only approved profile fields, never future private columns',()=>{
+ const c=backend();
+ const source={'Submission ID':'RWG-test','Business Name':'QA Business',Mobile:'9876543210',Status:'Approved',Slug:'qa-business','Owner Name':'Private Owner',Email:'private@example.com','Review Notes':'Private review','Registration Date':'2026-10-10','Internal Payment Notes':'private','Admin Secret':'private'};
+ const result=c.publicVendor_(source);
+ assert.equal(result['Business Name'],'QA Business');
+ assert.equal(result.Mobile,'9876543210');
+ for(const key of ['Owner Name','Email','Review Notes','Registration Date','Internal Payment Notes','Admin Secret'])assert.equal(Object.hasOwn(result,key),false,key+' leaked');
+});
