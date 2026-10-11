@@ -44,7 +44,11 @@ jobs:
               if path.is_file() and path.suffix.lower() in extensions:
                   shutil.copy2(path, target / path.name)
           for name in ('vendors', 'rajasthan'):
-              shutil.copytree(root / name, target / name)
+              source = root / name
+              if source.is_dir():
+                  shutil.copytree(source, target / name)
+              elif name == 'rajasthan':
+                  raise FileNotFoundError(f'Required site directory missing: {source}')
           (target / 'scripts').mkdir()
           for name in ('dev-config.js', 'vendor-register.js', 'category-vendors.js'):
               shutil.copy2(root / 'scripts' / name, target / 'scripts' / name)
