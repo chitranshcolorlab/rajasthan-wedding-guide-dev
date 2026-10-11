@@ -72,5 +72,5 @@ registrationForm.addEventListener('submit', async function(event) {
   } catch (error) {
     message.textContent = error.message || 'Submission failed. Please try again.';
     message.style.display = 'block';
-  } finally { button.disabled = false; button.textContent = 'SUBMIT DEVELOPMENT TEST'; }
+  } finally { button.disabled = false; button.textContent = 'Submit Free Listing for Review'; }
 });
