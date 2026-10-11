@@ -18,7 +18,7 @@ function setupDevSystem(){
  setupSystem();Logger.log('DEV spreadsheet: '+getSpreadsheet_().getUrl());
 }
 function doGet(e){try{const p=e&&e.parameter?e.parameter:{},action=String(p.action||'list').trim().toLowerCase();if(action==='test'){getSpreadsheet_();return json_({ok:true,environment:'dev',version:'automatic-vendor-v1'});}if(action!=='list')return json_({ok:false,error:'Unsupported GET action'});const data=getSheet_().getDataRange().getDisplayValues();let items=data.slice(1).map(r=>rowObject_(data[0],r)).filter(v=>v['Submission ID']).filter(v=>v.Status==='Approved').map(publicVendor_);if(p.status)items=items.filter(v=>v.Status===p.status);return json_({ok:true,count:items.length,items});}catch(e){Logger.log('DEV API request failed: '+String(e));return json_({ok:false,error:'Request could not be processed. Please try again or contact support.'});}}
-function doPost(e){try{const b=JSON.parse(e&&e.postData?e.postData.contents:'{}'),action=String(b.action||'').trim().toLowerCase();if(action==='submit')return submitVendor_(b);if(action==='admin-list'||action==='status'){const a=verifyGoogleAdminToken_(b.idToken);if(!a.ok)return json_(a);if(action==='status')return updateStatus_(b,a);const rows=getSheet_().getDataRange().getDisplayValues();return json_({ok:true,items:rows.slice(1).map(r=>rowObject_(rows[0],r)).filter(v=>v['Submission ID'])});}return json_({ok:false,error:'Unsupported POST action'});}catch(e){Logger.log('DEV API request failed: '+String(e));return json_({ok:false,error:'Request could not be processed. Please try again or contact support.'});}}
+function doPost(e){try{const b=JSON.parse(e&&e.postData?e.postData.contents:'{}'),action=String(b.action||'').trim().toLowerCase();if(action==='submit')return submitVendor_(b);if(action==='admin-list'||action==='status'){const a=verifyGoogleAdminToken_(b.idToken);if(!a.ok)return json_(a);if(action==='status')return updateStatus_(b,a);const rows=getSheet_().getDataRange().getDisplayValues();return json_({ok:true,items:rows.slice(1).map(r=>rowObject_(rows[0],r)).filter(v=>v['Submission ID'])});}return json_({ok:false,error:'Unsupported POST action'});}catch(e){logDevRegistrationError_(e,'doPost');Logger.log('DEV API request failed; see Registration Error Audit');return json_({ok:false,error:'Request could not be processed. Please try again or contact support.'});}}
 function verifyGoogleAdminToken_(t){try{if(!t||typeof t!=='string')return {ok:false,error:'Google ID token missing.'};const r=UrlFetchApp.fetch('https://oauth2.googleapis.com/tokeninfo?id_token='+encodeURIComponent(t),{method:'get',muteHttpExceptions:true});if(r.getResponseCode()!==200)return {ok:false,error:'Invalid or expired Google ID token.'};const p=JSON.parse(r.getContentText());if(String(p.aud||'')!==GOOGLE_CLIENT_ID)return {ok:false,error:'Invalid token audience.'};if(!['accounts.google.com','https://accounts.google.com'].includes(String(p.iss||'')))return {ok:false,error:'Invalid token issuer.'};if(!Number(p.exp)||Number(p.exp)<=Math.floor(Date.now()/1000))return {ok:false,error:'Google login has expired.'};if(p.email_verified!==true&&String(p.email_verified).toLowerCase()!=='true')return {ok:false,error:'Google email is not verified.'};const email=String(p.email||'').trim().toLowerCase();if(!email)return {ok:false,error:'Google email missing.'};if(email!==AUTHORIZED_ADMIN_EMAIL)return {ok:false,error:'This Google account is not authorized.'};if(!String(p.sub||'').trim())return {ok:false,error:'Google account ID missing.'};return {ok:true,email,sub:String(p.sub),exp:Number(p.exp)};}catch(e){return {ok:false,error:'Google authentication verification failed.'};}}
 // Best-effort per-phone abuse guard. DEV only; cache expiry resets the window.
 function checkDevSubmissionLimit_(mobile){
@@ -227,3 +227,17 @@ function requestDevPublication_(){
  }catch(e){return {state:'failed'};}
 }
 function retryDevPublication(){const result=requestDevPublication_();Logger.log('DEV publisher request: '+result.state);return result;}
+
+// DEV-only, best-effort diagnostic. Never store request bodies, tokens, or stack traces.
+function logDevRegistrationError_(err,stage){
+ try{
+  if(PropertiesService.getScriptProperties().getProperty('RWG_ENV')!=='dev')return;
+  const ss=getSpreadsheet_(),name='Registration Error Audit';
+  let sheet=ss.getSheetByName(name);
+  if(!sheet){sheet=ss.insertSheet(name);sheet.appendRow(['Timestamp','Stage','Error Type','Error Category']);}
+  const kind=String(err&&err.name||'Error').replace(/[^a-zA-Z]/g,'').slice(0,50);
+  const message=String(err&&err.message||'').toLowerCase();
+  const category=/submission limit/.test(message)?'RATE_LIMIT':/permission|access|authorization/.test(message)?'ACCESS':/invalid|missing|required/.test(message)?'VALIDATION':/quota|limit exceeded/.test(message)?'QUOTA':'UNCLASSIFIED';
+  sheet.appendRow([new Date(),String(stage).replace(/[^a-zA-Z]/g,'').slice(0,30),kind,category]);
+ }catch(auditError){Logger.log('DEV registration audit unavailable');}
+}
