@@ -41,36 +41,29 @@ async function readBusinessImage(file) {
     }
   } finally { URL.revokeObjectURL(url); }
 }
-registrationForm.addEventListener('submit', async function(event) {
-  event.preventDefault();
-  const button = this.querySelector('.submit'), message = document.getElementById('success');
-  const data = new FormData(this), payload = {action: 'submit'};
-  message.style.display = 'none';
-  for (const key of ['businessName','ownerName','mobile','whatsapp','category','district','city','services','maps','email','experience','address','serviceAreas','about','startingPrice','languages','specialities','instagram','website','facebook','portfolio']) payload[key] = String(data.get(key) || '').trim();
-  button.disabled = true; button.textContent = 'SUBMITTING...';
-  try {
-    const photos = Array.from(this.elements.photos.files), logo = this.elements.logo.files[0];
-    if (photos.length > 10) throw new Error('Please choose no more than 10 business photos.');
-    // Validate every selection before reading or submitting any file.
-    for (const file of [...photos, ...(logo ? [logo] : [])]) {
-      if (!imageTypes.has(file.type)) throw new Error('Please choose JPG, PNG or WebP images.');
-      if (file.size > 20 * 1024 * 1024) throw new Error('Please choose an original image smaller than 20 MB.');
-    }
-    button.textContent = 'COMPRESSING PHOTOS...';
-    payload.logo = logo ? await readBusinessImage(logo) : null;
-    payload.photos = [];
-    for (const photo of photos) payload.photos.push(await readBusinessImage(photo));
-    if (!WEB_APP_URL) throw new Error('Isolated DEV backend is not configured.');
-    button.textContent = 'UPLOADING...';
-    const response = await fetch(WEB_APP_URL, {method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body:JSON.stringify(payload)});
-    const result = await response.json();
-    if (!result.ok) throw new Error(result.error || 'Submission failed.');
-    const sizes = [...(payload.logo ? [payload.logo] : []), ...payload.photos].map(image => Math.ceil(image.sizeBytes / 1024) + ' KB');
-    message.textContent = 'Submitted for review. Submission ID: ' + result.id + '. Status: Pending Approval.' + (sizes.length ? ' Uploaded image sizes: ' + sizes.join(', ') + '.' : '');
-    message.style.display = 'block'; this.reset();
-    document.getElementById('district').dispatchEvent(new Event('change'));
-  } catch (error) {
-    message.textContent = error.message || 'Submission failed. Please try again.';
-    message.style.display = 'block';
-  } finally { button.disabled = false; button.textContent = 'Submit Free Listing for Review'; }
+// Model 2+: persist a free registration before offering an optional paid upgrade.
+registrationForm.addEventListener('submit',async function(event){
+ event.preventDefault();
+ const button=this.querySelector('.submit'),message=document.getElementById('success'),upgrade=document.getElementById('upgrade');
+ const data=new FormData(this);
+ const payload={action:'register-basic'};
+ for(const key of ['businessName','ownerName','mobile','category','district','city'])payload[key]=String(data.get(key)||'').trim();
+ message.style.display='none';upgrade.hidden=true;
+ if(!/^[6-9][0-9]{9}$/.test(payload.mobile.replace(/\\D/g,''))){message.textContent='Please enter a valid 10-digit mobile number.';message.style.display='block';return;}
+ button.disabled=true;button.textContent='Saving your free registration...';
+ try{
+  if(!WEB_APP_URL)throw Error('DEV backend is not configured.');
+  const response=await fetch(WEB_APP_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
+  if(!response.ok)throw Error('Registration request failed.');
+  const result=await response.json();
+  if(!result.ok)throw Error(result.error||'Registration could not be saved.');
+  message.textContent='Free registration saved. Vendor ID: '+result.id+'. Status: '+result.status+'. Complete your profile before approval.';
+  message.style.display='block';upgrade.hidden=false;
+  document.getElementById('upgradeStatus').textContent=result.alreadyRegistered?'Existing registration found. No duplicate was created.':'No payment required. Featured checkout is not enabled yet.';
+  upgrade.scrollIntoView({behavior:'smooth',block:'start'});
+ }catch(error){message.textContent=error.message||'Could not save registration. Please retry.';message.style.display='block';}
+ finally{button.disabled=false;button.textContent='Save Free Registration & Continue';}
+});
+document.getElementById('continueFree').addEventListener('click',()=>{
+ document.getElementById('upgradeStatus').textContent='Your free registration is saved. Full profile completion is required before admin approval. Please keep your Vendor ID.';
 });
