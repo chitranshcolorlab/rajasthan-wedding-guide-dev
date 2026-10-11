@@ -18,7 +18,7 @@ function setupDevSystem(){
  setupSystem();Logger.log('DEV spreadsheet: '+getSpreadsheet_().getUrl());
 }
 function doGet(e){try{const p=e&&e.parameter?e.parameter:{},action=String(p.action||'list').trim().toLowerCase();if(action==='test'){getSpreadsheet_();return json_({ok:true,environment:'dev',version:'automatic-vendor-v1'});}if(action!=='list')return json_({ok:false,error:'Unsupported GET action'});const data=getSheet_().getDataRange().getDisplayValues();let items=data.slice(1).map(r=>rowObject_(data[0],r)).filter(v=>v['Submission ID']).filter(v=>v.Status==='Approved').map(publicVendor_);if(p.status)items=items.filter(v=>v.Status===p.status);return json_({ok:true,count:items.length,items});}catch(e){Logger.log('DEV API request failed: '+String(e));return json_({ok:false,error:'Request could not be processed. Please try again or contact support.'});}}
-function doPost(e){try{const b=JSON.parse(e&&e.postData?e.postData.contents:'{}'),action=String(b.action||'').trim().toLowerCase();if(action==='submit')return submitVendor_(b);if(action==='admin-list'||action==='status'){const a=verifyGoogleAdminToken_(b.idToken);if(!a.ok)return json_(a);if(action==='status')return updateStatus_(b,a);const rows=getSheet_().getDataRange().getDisplayValues();return json_({ok:true,items:rows.slice(1).map(r=>rowObject_(rows[0],r)).filter(v=>v['Submission ID'])});}return json_({ok:false,error:'Unsupported POST action'});}catch(e){logDevRegistrationError_(e,'doPost');Logger.log('DEV API request failed; see Registration Error Audit');return json_({ok:false,error:'Request could not be processed. Please try again or contact support.'});}}
+function doPost(e){try{const b=JSON.parse(e&&e.postData?e.postData.contents:'{}'),action=String(b.action||'').trim().toLowerCase();if(action==='submit')return submitVendor_(b);if(action==='register-basic')return registerBasicVendor_(b);if(action==='admin-list'||action==='status'){const a=verifyGoogleAdminToken_(b.idToken);if(!a.ok)return json_(a);if(action==='status')return updateStatus_(b,a);const rows=getSheet_().getDataRange().getDisplayValues();return json_({ok:true,items:rows.slice(1).map(r=>rowObject_(rows[0],r)).filter(v=>v['Submission ID'])});}return json_({ok:false,error:'Unsupported POST action'});}catch(e){logDevRegistrationError_(e,'doPost');Logger.log('DEV API request failed; see Registration Error Audit');return json_({ok:false,error:'Request could not be processed. Please try again or contact support.'});}}
 function verifyGoogleAdminToken_(t){try{if(!t||typeof t!=='string')return {ok:false,error:'Google ID token missing.'};const r=UrlFetchApp.fetch('https://oauth2.googleapis.com/tokeninfo?id_token='+encodeURIComponent(t),{method:'get',muteHttpExceptions:true});if(r.getResponseCode()!==200)return {ok:false,error:'Invalid or expired Google ID token.'};const p=JSON.parse(r.getContentText());if(String(p.aud||'')!==GOOGLE_CLIENT_ID)return {ok:false,error:'Invalid token audience.'};if(!['accounts.google.com','https://accounts.google.com'].includes(String(p.iss||'')))return {ok:false,error:'Invalid token issuer.'};if(!Number(p.exp)||Number(p.exp)<=Math.floor(Date.now()/1000))return {ok:false,error:'Google login has expired.'};if(p.email_verified!==true&&String(p.email_verified).toLowerCase()!=='true')return {ok:false,error:'Google email is not verified.'};const email=String(p.email||'').trim().toLowerCase();if(!email)return {ok:false,error:'Google email missing.'};if(email!==AUTHORIZED_ADMIN_EMAIL)return {ok:false,error:'This Google account is not authorized.'};if(!String(p.sub||'').trim())return {ok:false,error:'Google account ID missing.'};return {ok:true,email,sub:String(p.sub),exp:Number(p.exp)};}catch(e){return {ok:false,error:'Google authentication verification failed.'};}}
 // Best-effort per-phone abuse guard. DEV only; cache expiry resets the window.
 function checkDevSubmissionLimit_(mobile){
@@ -30,6 +30,32 @@ function checkDevSubmissionLimit_(mobile){
   const cache=CacheService.getScriptCache(),count=Number(cache.get(key)||0);
   if(count>=5)throw Error('Submission limit reached. Please try again later.');
   cache.put(key,String(count+1),3600);
+ }finally{lock.releaseLock();}
+}
+// Model 2+ DEV: a basic registration is a review-only record, never auto-published.
+// Featured payment is deliberately NOT accepted here until verified Razorpay integration exists.
+function registerBasicVendor_(b){
+ const name=String(b.businessName||'').trim(),owner=String(b.ownerName||'').trim();
+ const mobile=String(b.mobile||'').replace(/\D/g,'');
+ const category=String(b.category||'').trim(),city=String(b.city||'').trim();
+ const catalog=JSON.parse(RWG_CATALOG_JSON);
+ if(!name||name.length>160||!owner||owner.length>120||!city||city.length>100)throw Error('Invalid basic details');
+ if(!/^(?:91)?[6-9][0-9]{9}$/.test(mobile))throw Error('Invalid mobile number');
+ if(!catalog.categories.some(x=>x[0]===category))throw Error('Invalid category');
+ const districts=Object.keys(catalog.locations).filter(k=>catalog.locations[k].includes(city));
+ const district=String(b.district||'').trim();
+ if(!districts.includes(district))throw Error('Please select a valid district and city');
+ const lock=LockService.getScriptLock();lock.waitLock(30000);
+ try{
+  const s=getSheet_(),rows=s.getDataRange().getDisplayValues(),h=rows[0];
+  const existing=rows.slice(1).map(r=>rowObject_(h,r)).find(v=>String(v.Mobile).replace(/\D/g,'').slice(-10)===mobile.slice(-10)&&String(v['Business Name']).trim().toLowerCase()===name.toLowerCase());
+  if(existing)return json_({ok:true,id:existing['Submission ID'],status:existing.Status,alreadyRegistered:true,plan:'Free'});
+  checkDevSubmissionLimit_(mobile);
+  const id='RWG-'+Utilities.getUuid();
+  const v={'Submission ID':id,'Business Name':name,'Owner Name':owner,'Mobile':mobile,'WhatsApp':mobile,'Category':category,'District':district,'City':city,'Registration Date':Utilities.formatDate(new Date(),'Asia/Kolkata','yyyy-MM-dd HH:mm:ss'),'Status':'Profile Incomplete','Review Notes':'Basic free registration; profile completion required before approval'};
+  s.appendRow(h.map(k=>safeCell_(v[k]||'')));
+  SpreadsheetApp.flush();
+  return json_({ok:true,id,status:'Profile Incomplete',plan:'Free'});
  }finally{lock.releaseLock();}
 }
 function submitVendor_(b){validateVendor_(b);if(b.photos&&!Array.isArray(b.photos))throw Error('Invalid photos');if((b.photos||[]).length>10)throw Error('Maximum 10 photos allowed');[b.logo,...(b.photos||[])].forEach(validateImage_);checkDevSubmissionLimit_(b.mobile);const s=getSheet_(),id='RWG-'+Utilities.getUuid(),folder=getUploadFolder_(),now=new Date();const logo=saveFile_(folder,b.logo,id+'-logo'),photos=(Array.isArray(b.photos)?b.photos.slice(0,10):[]).map((p,i)=>saveFile_(folder,p,id+'-photo-'+(i+1))).filter(Boolean);const row=[id,b.businessName,b.ownerName,b.mobile,b.whatsapp,b.email||'',b.experience||'',b.category,b.district,b.city,b.address||'',b.serviceAreas||'',b.maps||'',b.about||'',b.services,b.startingPrice||'',b.languages||'',b.specialities||'',b.instagram||'',b.website||'',b.facebook||'',b.portfolio||'',logo,photos.join('\n'),Utilities.formatDate(now,'Asia/Kolkata','yyyy-MM-dd HH:mm:ss'),'Pending Approval',b.notes||''];const h=s.getRange(1,1,1,s.getLastColumn()).getDisplayValues()[0],v=rowObject_(HEADERS,row);s.appendRow(h.map(k=>safeCell_(v[k]||'')));SpreadsheetApp.flush();return json_({ok:true,id,status:'Pending Approval'});}
