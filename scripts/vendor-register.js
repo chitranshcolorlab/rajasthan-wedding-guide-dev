@@ -57,7 +57,7 @@ registrationForm.addEventListener('submit',async function(event){
   if(!response.ok)throw Error('Registration request failed.');
   const result=await response.json();
   if(!result.ok)throw Error(result.error||'Registration could not be saved.');
-  if(result.resumeToken){sessionStorage.setItem('rwg_dev_resume',JSON.stringify({id:result.id,token:result.resumeToken}));}
+  if(result.resumeToken){const creds={id:result.id,token:result.resumeToken};sessionStorage.setItem('rwg_dev_resume',JSON.stringify(creds));history.replaceState(null,'',location.pathname+location.search+'#resume='+encodeURIComponent(creds.id)+'.'+encodeURIComponent(creds.token));document.getElementById('copyResume').hidden=false;}
   message.textContent='Free registration saved. Vendor ID: '+result.id+'. Status: '+result.status+'. Complete your profile before approval.';
   message.style.display='block';upgrade.hidden=false;
   document.getElementById('upgradeStatus').textContent=result.alreadyRegistered?'Existing registration found. No duplicate was created.':'No payment required. Featured checkout is not enabled yet.';
@@ -85,4 +85,18 @@ document.getElementById('completeForm').addEventListener('submit',async function
   status.textContent='Profile submitted for admin approval. Vendor ID: '+result.id+'.';
   button.disabled=true;button.textContent='Submitted for Admin Approval';
  }catch(error){status.textContent=error.message||'Please retry';button.disabled=false;button.textContent='Submit Profile for Admin Approval';}
+});
+
+(function restoreSecureResume(){
+ const match=location.hash.match(/^#resume=(RWG-[a-f0-9-]{36})\.([a-f0-9-]{72})$/i);
+ if(!match)return;
+ sessionStorage.setItem('rwg_dev_resume',JSON.stringify({id:match[1],token:match[2]}));
+ document.getElementById('upgrade').hidden=false;
+ document.getElementById('copyResume').hidden=false;
+ document.getElementById('upgradeStatus').textContent='Secure resume link restored. Complete your profile below.';
+})();
+document.getElementById('copyResume').addEventListener('click',async()=>{
+ const status=document.getElementById('upgradeStatus');
+ try{await navigator.clipboard.writeText(location.href);status.textContent='Private resume link copied. Keep it safe; anyone with this link can edit your unfinished profile.';}
+ catch{status.textContent='Copy the full URL from your browser address bar and keep it private.';}
 });
