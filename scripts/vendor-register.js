@@ -57,6 +57,7 @@ registrationForm.addEventListener('submit',async function(event){
   if(!response.ok)throw Error('Registration request failed.');
   const result=await response.json();
   if(!result.ok)throw Error(result.error||'Registration could not be saved.');
+  if(result.resumeToken){sessionStorage.setItem('rwg_dev_resume',JSON.stringify({id:result.id,token:result.resumeToken}));}
   message.textContent='Free registration saved. Vendor ID: '+result.id+'. Status: '+result.status+'. Complete your profile before approval.';
   message.style.display='block';upgrade.hidden=false;
   document.getElementById('upgradeStatus').textContent=result.alreadyRegistered?'Existing registration found. No duplicate was created.':'No payment required. Featured checkout is not enabled yet.';
@@ -66,4 +67,22 @@ registrationForm.addEventListener('submit',async function(event){
 });
 document.getElementById('continueFree').addEventListener('click',()=>{
  document.getElementById('upgradeStatus').textContent='Your free registration is saved. Full profile completion is required before admin approval. Please keep your Vendor ID.';
+});
+
+document.getElementById('completeForm').addEventListener('submit',async function(event){
+ event.preventDefault();
+ const status=document.getElementById('completeStatus'),button=this.querySelector('button[type=submit]');
+ let credentials;
+ try{credentials=JSON.parse(sessionStorage.getItem('rwg_dev_resume')||'null');}catch{}
+ if(!credentials?.id||!credentials?.token){status.textContent='Secure resume access is unavailable in this tab. Please use the original registration session; do not register again.';return;}
+ const data=new FormData(this),payload={action:'complete-profile',id:credentials.id,resumeToken:credentials.token};
+ for(const key of ['services','whatsapp','about','address','serviceAreas','instagram','website'])payload[key]=String(data.get(key)||'').trim();
+ button.disabled=true;button.textContent='Saving profile...';status.textContent='';
+ try{
+  const response=await fetch(WEB_APP_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
+  if(!response.ok)throw Error('Network error');
+  const result=await response.json();if(!result.ok)throw Error(result.error||'Profile completion failed');
+  status.textContent='Profile submitted for admin approval. Vendor ID: '+result.id+'.';
+  button.disabled=true;button.textContent='Submitted for Admin Approval';
+ }catch(error){status.textContent=error.message||'Please retry';button.disabled=false;button.textContent='Submit Profile for Admin Approval';}
 });
