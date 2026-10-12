@@ -53,6 +53,9 @@ registrationForm.addEventListener('submit',async function(event){
  button.disabled=true;button.textContent='Saving your free registration...';
  try{
   if(!WEB_APP_URL)throw Error('DEV backend is not configured.');
+  const ownerFile=data.get('ownerPhoto');
+  if(!ownerFile||!ownerFile.size)throw Error('Please select your own photo.');
+  payload.ownerPhoto=await readBusinessImage(ownerFile);
   const response=await fetch(WEB_APP_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
   if(!response.ok)throw Error('Registration request failed.');
   const result=await response.json();
@@ -78,11 +81,10 @@ document.getElementById('completeForm').addEventListener('submit',async function
  const data=new FormData(this),payload={action:'complete-profile',id:credentials.id,resumeToken:credentials.token};
  for(const key of ['services','whatsapp','about','address','serviceAreas','instagram','website'])payload[key]=String(data.get(key)||'').trim();
  const ownerFile=data.get('ownerPhoto');
- if(!ownerFile||!ownerFile.size){status.textContent='Please upload your own photo.';return;}
+
  if(payload.services.length>100){status.textContent='Description must be 100 characters or fewer.';return;}
  button.disabled=true;button.textContent='Saving profile...';status.textContent='';
  try{
-  payload.ownerPhoto=await readBusinessImage(ownerFile);
   const response=await fetch(WEB_APP_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
   if(!response.ok)throw Error('Network error');
   const result=await response.json();if(!result.ok)throw Error(result.error||'Profile completion failed');
