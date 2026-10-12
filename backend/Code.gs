@@ -51,8 +51,11 @@ function registerBasicVendor_(b){
   const existing=rows.slice(1).map(r=>rowObject_(h,r)).find(v=>String(v.Mobile).replace(/\D/g,'').slice(-10)===mobile.slice(-10)&&String(v['Business Name']).trim().toLowerCase()===name.toLowerCase());
   if(existing)return json_({ok:true,id:existing['Submission ID'],status:existing.Status,alreadyRegistered:true,plan:'Free',message:'Existing registration found. Resume access requires the original private link.'});
   const id='RWG-'+Utilities.getUuid();
+  if(!b.ownerPhoto)throw Error('Owner photo required');
+  validateImage_(b.ownerPhoto);
+  const photoUrl=saveFile_(getUploadFolder_(),b.ownerPhoto,id+'-owner');
   const resumeToken=Utilities.getUuid()+Utilities.getUuid();
-  const v={'Submission ID':id,'Business Name':name,'Owner Name':owner,'Mobile':mobile,'WhatsApp':mobile,'Category':category,'District':district,'City':city,'Registration Date':Utilities.formatDate(new Date(),'Asia/Kolkata','yyyy-MM-dd HH:mm:ss'),'Status':'Profile Incomplete','Review Notes':'Basic free registration; profile completion required before approval'};
+  const v={'Submission ID':id,'Business Name':name,'Owner Name':owner,'Mobile':mobile,'WhatsApp':mobile,'Category':category,'District':district,'City':city,'Registration Date':Utilities.formatDate(new Date(),'Asia/Kolkata','yyyy-MM-dd HH:mm:ss'),'Status':'Profile Incomplete','Review Notes':'Basic free registration; profile completion required before approval','Logo URL':photoUrl};
   if(!h.includes('Resume Token Hash')){s.getRange(1,h.length+1).setValue('Resume Token Hash');h.push('Resume Token Hash');}
   v['Resume Token Hash']=hashResumeToken_(resumeToken);
   s.appendRow(h.map(k=>safeCell_(v[k]||'')));
