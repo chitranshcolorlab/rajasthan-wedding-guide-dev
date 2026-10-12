@@ -90,18 +90,23 @@ test('public and private lists find vendor ID after an empty column is moved fir
  assert.equal(parsed(b.context.doPost({postData:{contents:JSON.stringify({action:'admin-list',idToken:'mock'})}})).items.length,1);
 });
 
-test('optional public business details survive snapshot and render safely',()=>{
- const row={...fixture(), 'Years in Business':'5', 'Service Areas':'Didwana', Languages:'Hindi, English', Specialities:'<script>alert(1)</script>'};
+test('free profile omits legacy paid details and escapes business description',()=>{
+ const row={...fixture(), 'Years in Business':'5', 'Service Areas':'Legacy service area', Languages:'Hindi, English', Specialities:'Legacy specialities', 'Starting Price':'9999', 'Full Address':'Legacy street address', 'About Business':'<script>alert(1)</script>'};
  const v=normalize([row])[0],html=render(v,'https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/');
  assert.equal(v.Languages,'Hindi, English');
- for(const value of ['5','Didwana','Hindi, English','&lt;script&gt;alert(1)&lt;/script&gt;'])assert.ok(html.includes(value));
+ for(const value of ['Legacy service area','Hindi, English','Legacy specialities','9999','Legacy street address'])assert.ok(!html.includes(value));
+ assert.ok(html.includes('&lt;script&gt;alert(1)&lt;/script&gt;'));
  assert.ok(!html.includes('<script>alert(1)</script>'));
+ assert.ok(html.includes('Business Description'));
 });
 
-test('ten uploaded public photo links survive publishing and render as ten images',()=>{
+test('free profile omits ten legacy portfolio photos but retains owner photo',()=>{
  const photos=Array.from({length:10},(_,i)=>'https://example.com/photo-'+i+'.webp');
- const v=normalize([{...fixture(), 'Photo URLs':photos.join('\n')}])[0];
+ const owner='https://example.com/owner.webp';
+ const v=normalize([{...fixture(), 'Photo URLs':photos.join('\n'), 'Logo URL':owner}])[0];
  const html=render(v,'https://chitranshcolorlab.github.io/rajasthan-wedding-guide-dev/');
- assert.equal((html.match(/loading="lazy"/g)||[]).length,10);
- for(const url of photos)assert.ok(html.includes(url));
+ assert.ok(html.includes(owner));
+ assert.ok(html.includes('owner photo'));
+ assert.ok(!html.includes('<h2>Gallery</h2>'));
+ for(const url of photos)assert.ok(!html.includes(url));
 });
