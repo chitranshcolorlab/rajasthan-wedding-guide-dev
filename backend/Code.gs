@@ -45,6 +45,11 @@ function registerBasicVendor_(b){
  const districts=Object.keys(catalog.locations).filter(k=>catalog.locations[k].includes(city));
  const district=String(b.district||'').trim();
  if(!districts.includes(district))throw Error('Please select a valid district and city');
+ const description=String(b.services||'').trim(),whatsapp=String(b.whatsapp||mobile).replace(/\D/g,'');
+ if(!description||description.length>100)throw Error('Description must be 1–100 characters');
+ if(!/^[6-9][0-9]{9}$/.test(whatsapp))throw Error('Invalid WhatsApp number');
+ if(!b.ownerPhoto)throw Error('Owner photo required');
+ validateImage_(b.ownerPhoto);
  const lock=LockService.getScriptLock();lock.waitLock(30000);
  try{
   const s=getSheet_(),rows=s.getDataRange().getDisplayValues(),h=rows[0];
@@ -55,12 +60,12 @@ function registerBasicVendor_(b){
   validateImage_(b.ownerPhoto);
   const photoUrl=saveFile_(getUploadFolder_(),b.ownerPhoto,id+'-owner');
   const resumeToken=Utilities.getUuid()+Utilities.getUuid();
-  const v={'Submission ID':id,'Business Name':name,'Owner Name':owner,'Mobile':mobile,'WhatsApp':mobile,'Category':category,'District':district,'City':city,'Registration Date':Utilities.formatDate(new Date(),'Asia/Kolkata','yyyy-MM-dd HH:mm:ss'),'Status':'Profile Incomplete','Review Notes':'Basic free registration; profile completion required before approval','Logo URL':photoUrl};
+  const v={'Submission ID':id,'Business Name':name,'Owner Name':owner,'Mobile':mobile,'WhatsApp':whatsapp,'Category':category,'District':district,'City':city,'Registration Date':Utilities.formatDate(new Date(),'Asia/Kolkata','yyyy-MM-dd HH:mm:ss'),'Status':'Pending Approval','Review Notes':'Free one-step registration; awaiting admin approval','Services':description,'About Business':description,'Logo URL':photoUrl};
   if(!h.includes('Resume Token Hash')){s.getRange(1,h.length+1).setValue('Resume Token Hash');h.push('Resume Token Hash');}
   v['Resume Token Hash']=hashResumeToken_(resumeToken);
   s.appendRow(h.map(k=>safeCell_(v[k]||'')));
   SpreadsheetApp.flush();
-  return json_({ok:true,id,resumeToken,status:'Profile Incomplete',plan:'Free'});
+  return json_({ok:true,id,resumeToken,status:'Pending Approval',plan:'Free'});
  }finally{lock.releaseLock();}
 }
 function hashResumeToken_(token){return Utilities.base64EncodeWebSafe(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,String(token)));}
