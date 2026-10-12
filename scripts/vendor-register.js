@@ -77,8 +77,12 @@ document.getElementById('completeForm').addEventListener('submit',async function
  if(!credentials?.id||!credentials?.token){status.textContent='Secure resume access is unavailable in this tab. Please use the original registration session; do not register again.';return;}
  const data=new FormData(this),payload={action:'complete-profile',id:credentials.id,resumeToken:credentials.token};
  for(const key of ['services','whatsapp','about','address','serviceAreas','instagram','website'])payload[key]=String(data.get(key)||'').trim();
+ const ownerFile=data.get('ownerPhoto');
+ if(!ownerFile||!ownerFile.size){status.textContent='Please upload your own photo.';return;}
+ if(payload.services.length>100){status.textContent='Description must be 100 characters or fewer.';return;}
  button.disabled=true;button.textContent='Saving profile...';status.textContent='';
  try{
+  payload.ownerPhoto=await readBusinessImage(ownerFile);
   const response=await fetch(WEB_APP_URL,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(payload)});
   if(!response.ok)throw Error('Network error');
   const result=await response.json();if(!result.ok)throw Error(result.error||'Profile completion failed');
