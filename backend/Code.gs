@@ -74,8 +74,11 @@ function completeVendorProfile_(b){
   if(!['Profile Incomplete','Edit Required','Pending Approval'].includes(v.Status))return json_({ok:false,error:'Profile cannot be edited in this status'});
   const merged={businessName:v['Business Name'],ownerName:v['Owner Name'],mobile:v.Mobile,whatsapp:String(b.whatsapp||v.Mobile),category:v.Category,district:v.District,city:v.City,services:String(b.services||'').trim()};
   validateVendor_(merged);
-  if(merged.services.length>3000)throw Error('Services description too long');
+  if(merged.services.length>100)throw Error('Free description must be 100 characters or fewer');
+  if(!b.ownerPhoto&&!v['Logo URL'])throw Error('Owner photo is required');
+  if(b.ownerPhoto)validateImage_(b.ownerPhoto);
   const allowed={'WhatsApp':merged.whatsapp,'Services':merged.services,'About Business':String(b.about||'').slice(0,3000),'Full Address':String(b.address||'').slice(0,500),'Service Areas':String(b.serviceAreas||'').slice(0,500),'Instagram':String(b.instagram||'').slice(0,500),'Website':String(b.website||'').slice(0,500)};
+  if(b.ownerPhoto){const photoUrl=saveFile_(getUploadFolder_(),b.ownerPhoto,id+'-owner');allowed['Logo URL']=photoUrl;}
   for(const [field,value] of Object.entries(allowed)){const col=h.indexOf(field);if(col>=0)s.getRange(rowIndex+1,col+1).setValue(safeCell_(value));}
   s.getRange(rowIndex+1,h.indexOf('Status')+1).setValue('Pending Approval');
   s.getRange(rowIndex+1,h.indexOf('Review Notes')+1).setValue('Free profile completed; awaiting admin approval');
