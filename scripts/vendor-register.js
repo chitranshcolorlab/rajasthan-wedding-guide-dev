@@ -41,12 +41,14 @@ async function readBusinessImage(file) {
     }
   } finally { URL.revokeObjectURL(url); }
 }
-const mobileInput=registrationForm.querySelector('[name="mobile"]');
-const whatsappInput=registrationForm.querySelector('[name="whatsapp"]');
+const mobileInput=registrationForm.elements?.namedItem?.('mobile')||registrationForm.querySelector?.('[name="mobile"]');
+const whatsappInput=registrationForm.elements?.namedItem?.('whatsapp')||registrationForm.querySelector?.('[name="whatsapp"]');
 const sameWhatsApp=document.getElementById('sameWhatsApp');
 function syncWhatsApp(){if(sameWhatsApp.checked)whatsappInput.value=mobileInput.value;}
-sameWhatsApp.addEventListener('change',syncWhatsApp);
-mobileInput.addEventListener('input',syncWhatsApp);
+if(sameWhatsApp?.addEventListener&&mobileInput?.addEventListener&&whatsappInput){
+ sameWhatsApp.addEventListener('change',syncWhatsApp);
+ mobileInput.addEventListener('input',syncWhatsApp);
+}
 registrationForm.addEventListener('submit',async function(event){
  event.preventDefault();
  const button=this.querySelector('.submit'),message=document.getElementById('success'),data=new FormData(this);
