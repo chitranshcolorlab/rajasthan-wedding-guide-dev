@@ -1,4 +1,31 @@
 {
   "ok": true,
-  "items": []
+  "items": [
+    {
+      "Submission ID": "RWG-5f0cc196-4d52-4d25-853c-cf10be0021df",
+      "Business Name": "DEV QA Dummy Vendor 20261015",
+      "Mobile": "9000000000",
+      "WhatsApp": "9000000000",
+      "Category": "Photographers & Films",
+      "District": "Didwana-Kuchaman",
+      "City": "Didwana",
+      "About Business": "Disposable isolated DEV test vendor. No real customer.",
+      "Services": "Dummy QA only - do not contact",
+      "Starting Price": "",
+      "Years in Business": "",
+      "Service Areas": "",
+      "Languages": "",
+      "Specialities": "",
+      "Full Address": "",
+      "Logo URL": "",
+      "Photo URLs": "",
+      "Website": "",
+      "Instagram": "",
+      "Facebook": "",
+      "Google Maps": "",
+      "Portfolio Link": "",
+      "Status": "Approved",
+      "Slug": "dev-qa-dummy-vendor-20261015-didwana"
+    }
+  ]
 }
