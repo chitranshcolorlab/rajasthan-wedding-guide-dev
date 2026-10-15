@@ -1,4 +1,57 @@
 {
   "ok": true,
-  "items": []
+  "items": [
+    {
+      "Submission ID": "RWG-5f0cc196-4d52-4d25-853c-cf10be0021df",
+      "Business Name": "DEV QA Dummy Vendor 20261015",
+      "Mobile": "9000000000",
+      "WhatsApp": "9000000000",
+      "Category": "Photographers & Films",
+      "District": "Didwana-Kuchaman",
+      "City": "Didwana",
+      "About Business": "Disposable isolated DEV test vendor. No real customer.",
+      "Services": "Dummy QA only - do not contact",
+      "Starting Price": "",
+      "Years in Business": "",
+      "Service Areas": "",
+      "Languages": "",
+      "Specialities": "",
+      "Full Address": "",
+      "Logo URL": "",
+      "Photo URLs": "",
+      "Website": "",
+      "Instagram": "",
+      "Facebook": "",
+      "Google Maps": "",
+      "Portfolio Link": "",
+      "Status": "Approved",
+      "Slug": "dev-qa-dummy-vendor-20261015-didwana"
+    },
+    {
+      "Submission ID": "RWG-8b259a18-ce59-4f72-9e95-06abeb3d20dc",
+      "Business Name": "DEV Browser QA Vendor 20261015",
+      "Mobile": "9000000001",
+      "WhatsApp": "9000000001",
+      "Category": "Photographers & Films",
+      "District": "Didwana-Kuchaman",
+      "City": "Didwana",
+      "About Business": "DEV browser QA only. Dummy vendor; do not contact.",
+      "Services": "DEV browser QA only. Dummy vendor; do not contact.",
+      "Starting Price": "",
+      "Years in Business": "",
+      "Service Areas": "",
+      "Languages": "",
+      "Specialities": "",
+      "Full Address": "",
+      "Logo URL": "https://drive.google.com/thumbnail?id=1qtxuOSO3r5EpDpJOPOr9Jz0ed_gF4M_e&sz=w1600",
+      "Photo URLs": "",
+      "Website": "",
+      "Instagram": "",
+      "Facebook": "",
+      "Google Maps": "",
+      "Portfolio Link": "",
+      "Status": "Approved",
+      "Slug": "dev-browser-qa-vendor-20261015-didwana"
+    }
+  ]
 }
